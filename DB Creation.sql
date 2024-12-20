@@ -1,7 +1,7 @@
-CREATE DATABASE GestionPedidos;
+CREATE DATABASE GestionInventarios;
 GO
 
-USE GestionPedidos;
+USE GestionInventarios;
 GO
 
 -- Tabla Region
