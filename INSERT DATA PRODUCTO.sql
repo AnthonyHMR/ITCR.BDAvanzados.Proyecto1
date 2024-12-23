@@ -2,11 +2,10 @@ USE DB_InventariosGlobal;
 GO
 
 -------------------------------------------------------------------------------
--- Subcategoría: Camisetas y Tops (40 INSERTS)
+-- Subcategoría: Camisetas y Tops (100 INSERTS)
 -------------------------------------------------------------------------------
 INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
 VALUES 
-
 ('Camiseta Básica Algodón Blanca', 15.99, 'Ropa', 'Camiseta clásica de algodón 100%, corte regular.', 15, 1), 
 ('Top Crop Nike Dri-FIT', 29.99, 'Ropa', 'Top deportivo con tecnología de absorción de sudor.', 8, 1),
 ('Camiseta Polo Ralph Lauren', 45.00, 'Ropa', 'Polo clásico con logo bordado, algodón piqué.', 6, 1),
@@ -46,244 +45,1015 @@ VALUES
 ('Top Cut-Out Topshop', 29.90, 'Ropa', 'Top con recortes estratégicos.', 5, 1),
 ('Camiseta Roxy', 21.99, 'Ropa', 'Camiseta playera con estampado bohemio.', 8, 1),
 ('Top Drapeado Coast', 42.00, 'Ropa', 'Top elegante con drapeado lateral.', 4, 1),
-('Camiseta Converse', 25.99, 'Ropa', 'Camiseta con estampado retro All Star.', 7, 1);
+('Camiseta Converse', 25.99, 'Ropa', 'Camiseta con estampado retro All Star.', 7, 1),
+('Top Cuello Tortoise Bershka', 20.99, 'Ropa', 'Top elegante con cuello estilo tortoise.', 6, 1),
+('Camiseta Gráfica Nike', 29.50, 'Ropa', 'Camiseta con estampado gráfico exclusivo.', 10, 1),
+('Top Volantes Stradivarius', 19.90, 'Ropa', 'Top con detalles de volantes en las mangas.', 7, 1),
+('Camiseta Under Armour CoolSwitch', 35.00, 'Ropa', 'Camiseta técnica con tecnología de enfriamiento.', 8, 1),
+('Top Estilo Kimono Zara', 39.90, 'Ropa', 'Top holgado con mangas anchas estilo kimono.', 5, 1),
+('Camiseta Boxy Fit H&M', 24.99, 'Ropa', 'Camiseta amplia con dobladillo recto.', 9, 1),
+('Top De Punto Mango', 32.00, 'Ropa', 'Top ajustado de punto con textura suave.', 6, 1),
+('Camiseta Performance Adidas', 26.99, 'Ropa', 'Camiseta para alto rendimiento con tejido transpirable.', 10, 1),
+('Top Liso Springfield', 18.50, 'Ropa', 'Top básico con acabado suave.', 8, 1),
+('Camiseta Slim Fit Pull&Bear', 19.99, 'Ropa', 'Camiseta ajustada de algodón.', 9, 1),
+('Top Bardot Dorothy Perkins', 25.90, 'Ropa', 'Top con escote bardot y diseño elegante.', 5, 1),
+('Camiseta Oversize Levis', 29.90, 'Ropa', 'Camiseta holgada con diseño minimalista.', 7, 1),
+('Top Wrap Banana Republic', 39.99, 'Ropa', 'Top cruzado con cinturón ajustable.', 4, 1),
+('Camiseta Relaxed Fit Everlane', 23.00, 'Ropa', 'Camiseta de ajuste relajado y algodón orgánico.', 10, 1),
+('Top Fruncido Aéropostale', 19.95, 'Ropa', 'Top con detalles fruncidos y tela elástica.', 6, 1),
+('Camiseta Streetwear Stussy', 28.99, 'Ropa', 'Camiseta estilo urbano con diseño gráfico.', 8, 1),
+('Top Crop Cuello Redondo ASOS', 22.90, 'Ropa', 'Top corto con cuello redondo y mangas cortas.', 7, 1),
+('Camiseta Técnica Patagonia', 34.50, 'Ropa', 'Camiseta para actividades outdoor, tejido sostenible.', 6, 1),
+('Top Satinado River Island', 42.00, 'Ropa', 'Top brillante con acabado satinado.', 5, 1),
+('Camiseta Patchwork Zara', 29.99, 'Ropa', 'Camiseta con diseño de retazos y costuras visibles.', 8, 1),
+('Top Básico Massimo Dutti', 35.00, 'Ropa', 'Top simple de algodón premium.', 4, 1),
+('Camiseta Diseñador Balenciaga', 450.00, 'Ropa', 'Camiseta de lujo con diseño exclusivo.', 1, 1),
+('Top Frío Forever 21', 19.50, 'Ropa', 'Top sin hombros, ideal para el verano.', 9, 1),
+('Camiseta Deportiva Decathlon', 12.99, 'Ropa', 'Camiseta básica para entrenamiento.', 10, 1),
+('Top Campesino Zara', 29.90, 'Ropa', 'Top con diseño bohemio y mangas anchas.', 6, 1),
+('Camiseta Artesanal Artesanías MX', 45.00, 'Ropa', 'Camiseta con bordado artesanal.', 3, 1),
+('Top Escote Cuadrado Uniqlo', 25.50, 'Ropa', 'Top con escote cuadrado y diseño moderno.', 7, 1),
+('Camiseta Oversize UNIQLO', 27.90, 'Ropa', 'Camiseta básica con corte holgado.', 8, 1),
+('Top Deportivo Decathlon', 16.50, 'Ropa', 'Top ajustado con tejido transpirable.', 9, 1),
+('Camiseta Termorreguladora Columbia', 39.90, 'Ropa', 'Camiseta para climas extremos.', 5, 1),
+('Top Vintage Mango', 29.99, 'Ropa', 'Top con diseño vintage y estampados florales.', 6, 1),
+('Camiseta Tie-Dye Bershka', 22.99, 'Ropa', 'Camiseta con diseño tie-dye color pastel.', 8, 1),
+('Top Étnico Zara', 33.90, 'Ropa', 'Top con bordados de inspiración étnica.', 4, 1),
+('Camiseta Técnica Decathlon', 18.50, 'Ropa', 'Camiseta técnica para running.', 10, 1),
+('Top Casual GAP', 26.00, 'Ropa', 'Top informal para el día a día.', 8, 1),
+('Camiseta Retro Adidas', 34.90, 'Ropa', 'Camiseta con diseño retro de los años 90.', 6, 1),
+('Top Reciclado Everlane', 28.00, 'Ropa', 'Top sostenible hecho de materiales reciclados.', 7, 1),
+('Camiseta Gráfica Vans', 23.90, 'Ropa', 'Camiseta con diseño gráfico estilo urbano.', 8, 1),
+('Top Deportivo Puma X', 25.00, 'Ropa', 'Top para entrenamientos de alto rendimiento.', 10, 1),
+('Camiseta Urbana DC Shoes', 27.00, 'Ropa', 'Camiseta con estilo skater urbano.', 7, 1),
+('Camiseta Slim Fit Zara', 27.99, 'Ropa', 'Camiseta de corte ajustado con diseño moderno.', 8, 1),
+('Top Deportivo Seamless Nike', 34.90, 'Ropa', 'Top sin costuras para mayor comodidad.', 10, 1),
+('Camiseta Cuello Mao Massimo Dutti', 39.99, 'Ropa', 'Camiseta elegante con cuello mao.', 5, 1),
+('Top Manga Globo H&M', 22.50, 'Ropa', 'Top con mangas estilo globo.', 6, 1),
+('Camiseta Técnica Quechua', 19.99, 'Ropa', 'Camiseta ligera para actividades al aire libre.', 12, 1),
+('Top Tirantes Ajustables Oysho', 16.99, 'Ropa', 'Top con tirantes ajustables y encaje.', 9, 1),
+('Camiseta Manga Larga Columbia', 35.50, 'Ropa', 'Camiseta para clima frío, manga larga.', 7, 1),
+('Top Detalle Bordado Mango', 29.90, 'Ropa', 'Top con detalles bordados a mano.', 6, 1),
+('Camiseta Cropped Bershka', 21.50, 'Ropa', 'Camiseta corta con diseño urbano.', 10, 1),
+('Top Escote Halter ASOS', 24.90, 'Ropa', 'Top con escote halter y diseño minimalista.', 8, 1),
+('Camiseta Oversized Nike', 28.99, 'Ropa', 'Camiseta de estilo amplio y relajado.', 9, 1),
+('Top Básico Decathlon', 14.99, 'Ropa', 'Top para uso diario con tejido suave.', 11, 1),
+('Camiseta Técnica Montaña Quechua', 24.50, 'Ropa', 'Camiseta diseñada para senderismo y trekking.', 7, 1),
+('Top Deportivo Liso Reebok', 19.99, 'Ropa', 'Top deportivo básico para entrenamientos.', 9, 1),
+('Camiseta Skate Element', 23.50, 'Ropa', 'Camiseta inspirada en el estilo skate.', 6, 1),
+('Top Acanalado Bershka', 17.99, 'Ropa', 'Top ajustado con diseño acanalado.', 8, 1),
+('Camiseta Urban Graphic Vans', 26.90, 'Ropa', 'Camiseta gráfica con diseños urbanos.', 10, 1),
+('Top Casual Pull&Bear', 19.50, 'Ropa', 'Top versátil para looks casuales.', 7, 1),
+('Camiseta Deportivo Running Nike', 32.50, 'Ropa', 'Camiseta diseñada específicamente para corredores.', 8, 1),
+('Top con Lazo Stradivarius', 29.99, 'Ropa', 'Top con diseño de lazo en la parte frontal.', 5, 1);
 
 -------------------------------------------------------------------------------
--- Subcategoría: Pantalones y Faldas (40 INSERTS)
+-- Subcategoría: Pantalones y Faldas (100 INSERTS)
 -------------------------------------------------------------------------------
 INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Jeans Levis 501 Original', 89.99, 'Ropa', 'Vaqueros clásicos de corte recto.', 10, 1);
-
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Falda Plisada Zara', 39.90, 'Ropa', 'Falda midi plisada con cintura elástica.', 6, 1);
-
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Pantalón Chino Dockers', 45.00, 'Ropa', 'Pantalón casual de algodón slim fit.', 8, 1);
-
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Falda Vaquera Pull&Bear', 29.99, 'Ropa', 'Falda corta de mezclilla con botones.', 5, 1);
-
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Pantalón Deportivo Nike', 49.99, 'Ropa', 'Pantalón de chándal con tecnología Dri-FIT.', 12, 1);
-
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Falda Larga Mango', 35.90, 'Ropa', 'Falda maxi con estampado floral.', 4, 1);
-
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Jeans Skinny H&M', 34.99, 'Ropa', 'Vaqueros ajustados de tiro alto.', 8, 1);
-
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Falda Tubo Karen Millen', 59.90, 'Ropa', 'Falda de corte lápiz para oficina.', 3, 1);
-
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Pantalón Cargo Bershka', 32.99, 'Ropa', 'Pantalón estilo militar con bolsillos.', 6, 1);
-
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Falda Tennis Adidas', 45.00, 'Ropa', 'Falda deportiva con shorts incorporados.', 5, 1);
-
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Jeans Mom Fit Topshop', 49.99, 'Ropa', 'Vaqueros de cintura alta estilo vintage.', 7, 1);
-
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Falda Wrap Massimo Dutti', 55.90, 'Ropa', 'Falda cruzada de tejido fluido.', 4, 1);
-
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Pantalón Palazzo Zara', 39.99, 'Ropa', 'Pantalón ancho de tiro alto.', 5, 1);
-
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Falda Mini Stradivarius', 19.99, 'Ropa', 'Falda corta con volantes.', 8, 1);
-
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Jeans Straight Calvin Klein', 79.90, 'Ropa', 'Vaqueros rectos de corte clásico.', 6, 1);
-
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Falda Skater Forever 21', 24.90, 'Ropa', 'Falda circular con vuelo.', 7, 1);
-
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Pantalón Pinzas Mango', 42.99, 'Ropa', 'Pantalón formal con pliegues.', 4, 1);
-
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Falda Cuero Sintético Bershka', 29.99, 'Ropa', 'Falda de polipiel con cremallera.', 5, 1);
-
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Pantalón Jogger Puma', 39.90, 'Ropa', 'Pantalón deportivo con puños elásticos.', 8, 1);
-
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Falda Cargo Urban Outfitters', 45.00, 'Ropa', 'Falda estilo militar con bolsillos.', 4, 1);
-
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Jeans Bootcut Gap', 59.99, 'Ropa', 'Vaqueros con ligero acampanado.', 6, 1);
-
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Falda Plisada Tommy Hilfiger', 69.90, 'Ropa', 'Falda midi con diseño plisado.', 3, 1);
-
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Pantalón Cuadros Uniqlo', 39.99, 'Ropa', 'Pantalón formal con patrón de cuadros.', 5, 1);
-
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Falda Denim Levis', 49.99, 'Ropa', 'Falda vaquera con botones frontales.', 6, 1);
-
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Pantalón Culotte COS', 59.90, 'Ropa', 'Pantalón ancho cropped.', 4, 1);
-
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Falda Asimétrica & Other Stories', 49.00, 'Ropa', 'Falda con corte irregular.', 3, 1);
-
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Jeans Baggy Pepe Jeans', 65.00, 'Ropa', 'Vaqueros anchos estilo oversize.', 5, 1);
-
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Falda Pareo Oysho', 25.99, 'Ropa', 'Falda de playa con diseño envolvente.', 6, 1);
-
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Pantalón Lino Arket', 69.90, 'Ropa', 'Pantalón de lino para verano.', 4, 1);
-
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Falda Tablones Sandro', 89.00, 'Ropa', 'Falda con pliegues definidos.', 3, 1);
-
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Pantalón Ciclista Fila', 29.99, 'Ropa', 'Pantalón corto ajustado deportivo.', 7, 1);
-
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Falda Crochet Free People', 75.00, 'Ropa', 'Falda tejida estilo bohemio.', 3, 1);
-
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Jeans Wide Leg Weekday', 55.00, 'Ropa', 'Vaqueros anchos de tiro alto.', 5, 1);
-
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Falda Estampada Desigual', 59.90, 'Ropa', 'Falda con estampado multicolor.', 4, 1);
-
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Pantalón Vestir Hugo Boss', 99.00, 'Ropa', 'Pantalón formal de corte recto.', 3, 1);
-
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Falda Satén Reformation', 79.00, 'Ropa', 'Falda brillante con abertura.', 3, 1);
-
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Pantalón Deportivo Under Armour', 54.99, 'Ropa', 'Pantalón técnico para entrenamiento.', 6, 1);
-
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Falda Tul Needle & Thread', 89.90, 'Ropa', 'Falda de tul con capas.', 2, 1);
+VALUES
+('Jeans Levis 501 Original', 89.99, 'Ropa', 'Vaqueros clásicos de corte recto.', 10, 1),
+('Falda Plisada Zara', 39.90, 'Ropa', 'Falda midi plisada con cintura elástica.', 6, 1),
+('Pantalón Chino Dockers', 45.00, 'Ropa', 'Pantalón casual de algodón slim fit.', 8, 1),
+('Falda Vaquera Pull&Bear', 29.99, 'Ropa', 'Falda corta de mezclilla con botones.', 5, 1),
+('Pantalón Deportivo Nike', 49.99, 'Ropa', 'Pantalón de chándal con tecnología Dri-FIT.', 12, 1),
+('Falda Larga Mango', 35.90, 'Ropa', 'Falda maxi con estampado floral.', 4, 1),
+('Jeans Skinny H&M', 34.99, 'Ropa', 'Vaqueros ajustados de tiro alto.', 8, 1),
+('Falda Tubo Karen Millen', 59.90, 'Ropa', 'Falda de corte lápiz para oficina.', 3, 1),
+('Pantalón Cargo Bershka', 32.99, 'Ropa', 'Pantalón estilo militar con bolsillos.', 6, 1),
+('Falda Tennis Adidas', 45.00, 'Ropa', 'Falda deportiva con shorts incorporados.', 5, 1),
+('Jeans Mom Fit Topshop', 49.99, 'Ropa', 'Vaqueros de cintura alta estilo vintage.', 7, 1),
+('Falda Wrap Massimo Dutti', 55.90, 'Ropa', 'Falda cruzada de tejido fluido.', 4, 1),
+('Pantalón Palazzo Zara', 39.99, 'Ropa', 'Pantalón ancho de tiro alto.', 5, 1),
+('Falda Mini Stradivarius', 19.99, 'Ropa', 'Falda corta con volantes.', 8, 1),
+('Jeans Straight Calvin Klein', 79.90, 'Ropa', 'Vaqueros rectos de corte clásico.', 6, 1),
+('Falda Skater Forever 21', 24.90, 'Ropa', 'Falda circular con vuelo.', 7, 1),
+('Pantalón Pinzas Mango', 42.99, 'Ropa', 'Pantalón formal con pliegues.', 4, 1),
+('Falda Cuero Sintético Bershka', 29.99, 'Ropa', 'Falda de polipiel con cremallera.', 5, 1),
+('Pantalón Jogger Puma', 39.90, 'Ropa', 'Pantalón deportivo con puños elásticos.', 8, 1),
+('Falda Cargo Urban Outfitters', 45.00, 'Ropa', 'Falda estilo militar con bolsillos.', 4, 1),
+('Jeans Bootcut Gap', 59.99, 'Ropa', 'Vaqueros con ligero acampanado.', 6, 1),
+('Falda Plisada Tommy Hilfiger', 69.90, 'Ropa', 'Falda midi con diseño plisado.', 3, 1),
+('Pantalón Cuadros Uniqlo', 39.99, 'Ropa', 'Pantalón formal con patrón de cuadros.', 5, 1),
+('Falda Denim Levis', 49.99, 'Ropa', 'Falda vaquera con botones frontales.', 6, 1),
+('Pantalón Culotte COS', 59.90, 'Ropa', 'Pantalón ancho cropped.', 4, 1),
+('Falda Asimétrica & Other Stories', 49.00, 'Ropa', 'Falda con corte irregular.', 3, 1),
+('Jeans Baggy Pepe Jeans', 65.00, 'Ropa', 'Vaqueros anchos estilo oversize.', 5, 1),
+('Falda Pareo Oysho', 25.99, 'Ropa', 'Falda de playa con diseño envolvente.', 6, 1),
+('Pantalón Lino Arket', 69.90, 'Ropa', 'Pantalón de lino para verano.', 4, 1),
+('Falda Tablones Sandro', 89.00, 'Ropa', 'Falda con pliegues definidos.', 3, 1),
+('Pantalón Ciclista Fila', 29.99, 'Ropa', 'Pantalón corto ajustado deportivo.', 7, 1),
+('Falda Crochet Free People', 75.00, 'Ropa', 'Falda tejida estilo bohemio.', 3, 1),
+('Jeans Wide Leg Weekday', 55.00, 'Ropa', 'Vaqueros anchos de tiro alto.', 5, 1),
+('Falda Estampada Desigual', 59.90, 'Ropa', 'Falda con estampado multicolor.', 4, 1),
+('Pantalón Vestir Hugo Boss', 99.00, 'Ropa', 'Pantalón formal de corte recto.', 3, 1),
+('Falda Satén Reformation', 79.00, 'Ropa', 'Falda brillante con abertura.', 3, 1),
+('Pantalón Deportivo Under Armour', 54.99, 'Ropa', 'Pantalón técnico para entrenamiento.', 6, 1),
+('Falda Tul Needle & Thread', 89.90, 'Ropa', 'Falda de tul con capas.', 2, 1),
+('Jeans Slim Fit Guess', 59.99, 'Ropa', 'Vaqueros ajustados con diseño moderno.', 8, 1),
+('Falda Midi Satinada Stradivarius', 34.99, 'Ropa', 'Falda de satén con caída elegante.', 5, 1),
+('Pantalón Recto Zara', 49.99, 'Ropa', 'Pantalón clásico de corte recto.', 6, 1),
+('Falda Boho Chic Free People', 69.90, 'Ropa', 'Falda larga con diseño bohemio.', 4, 1),
+('Jeans High Waist H&M', 39.99, 'Ropa', 'Vaqueros de tiro alto con diseño casual.', 7, 1),
+('Falda A-Línea Mango', 29.99, 'Ropa', 'Falda de corte A con diseño minimalista.', 6, 1),
+('Pantalón Pana Uniqlo', 55.00, 'Ropa', 'Pantalón de pana con textura suave.', 4, 1),
+('Falda Tropical Zara', 35.99, 'Ropa', 'Falda con estampado de hojas tropicales.', 6, 1),
+('Pantalón Skinny Fit Levi’s', 65.99, 'Ropa', 'Vaqueros ajustados para un look moderno.', 8, 1),
+('Falda Denim Negra Bershka', 25.99, 'Ropa', 'Falda vaquera en color negro.', 5, 1),
+('Pantalón Flare H&M', 49.90, 'Ropa', 'Pantalón con corte acampanado.', 6, 1),
+('Falda Lino Oysho', 29.90, 'Ropa', 'Falda fresca de lino para verano.', 4, 1),
+('Jeans Stretch Calvin Klein', 79.99, 'Ropa', 'Vaqueros elásticos para mayor comodidad.', 7, 1),
+('Falda Tiro Alto Massimo Dutti', 45.00, 'Ropa', 'Falda de cintura alta con diseño elegante.', 3, 1),
+('Pantalón Jogger Adidas', 59.90, 'Ropa', 'Pantalón deportivo con corte ajustado.', 5, 1),
+('Falda Recta Pull&Bear', 19.99, 'Ropa', 'Falda básica de corte recto.', 8, 1),
+('Pantalón de Vestir Zara', 39.99, 'Ropa', 'Pantalón formal ideal para oficina.', 6, 1),
+('Falda Rayas Tommy Hilfiger', 49.90, 'Ropa', 'Falda con estampado a rayas.', 4, 1),
+('Jeans Loose Fit Topshop', 55.99, 'Ropa', 'Vaqueros anchos para un estilo relajado.', 7, 1),
+('Falda Satinada Bershka', 29.99, 'Ropa', 'Falda de satén con brillo sutil.', 5, 1),
+('Pantalón Capri Mango', 42.99, 'Ropa', 'Pantalón corto estilo capri.', 4, 1),
+('Falda Volantes Zara', 35.99, 'Ropa', 'Falda corta con diseño de volantes.', 6, 1),
+('Jeans Vintage Levi’s', 89.99, 'Ropa', 'Vaqueros con diseño vintage.', 8, 1),
+('Falda Maxi Massimo Dutti', 69.90, 'Ropa', 'Falda larga de diseño elegante.', 3, 1),
+('Pantalón Cargo H&M', 49.99, 'Ropa', 'Pantalón estilo cargo con bolsillos grandes.', 7, 1),
+('Falda Bordada Oysho', 34.90, 'Ropa', 'Falda con detalles bordados.', 5, 1),
+('Pantalón Culotte Zara', 45.00, 'Ropa', 'Pantalón ancho con corte cropped.', 6, 1),
+('Falda Animal Print Stradivarius', 29.90, 'Ropa', 'Falda con estampado de leopardo.', 7, 1),
+('Jeans Acid Wash Bershka', 39.90, 'Ropa', 'Vaqueros con acabado desgastado.', 5, 1),
+('Falda Geométrica Desigual', 49.90, 'Ropa', 'Falda con diseño de figuras geométricas.', 4, 1),
+('Pantalón Gabardina Mango', 55.90, 'Ropa', 'Pantalón de gabardina en corte slim.', 6, 1),
+('Falda Glitter H&M', 39.99, 'Ropa', 'Falda corta con detalles brillantes.', 5, 1),
+('Pantalón Relaxed Fit Uniqlo', 49.99, 'Ropa', 'Pantalón relajado para mayor comodidad.', 6, 1),
+('Falda Lápiz Zara', 35.99, 'Ropa', 'Falda lápiz clásica.', 4, 1),
+('Jeans Rotos Pull&Bear', 45.00, 'Ropa', 'Vaqueros desgastados para un look moderno.', 7, 1),
+('Falda Trenzada Mango', 39.90, 'Ropa', 'Falda de tejido trenzado.', 5, 1),
+('Pantalón Straight Leg COS', 59.99, 'Ropa', 'Pantalón de pierna recta.', 4, 1),
+('Falda Glitter Zara', 29.99, 'Ropa', 'Falda brillante ideal para fiestas.', 6, 1),
+('Jeans Slim Calvin Klein', 79.99, 'Ropa', 'Vaqueros ajustados y clásicos.', 5, 1),
+('Falda Pareo Desigual', 44.90, 'Ropa', 'Falda cruzada con estampado único.', 4, 1),
+('Pantalón Slim Dockers', 55.90, 'Ropa', 'Pantalón casual de diseño ajustado.', 7, 1),
+('Falda Rosa Pastel Mango', 29.90, 'Ropa', 'Falda midi en tono pastel.', 5, 1),
+('Jeans Blanco Levi’s', 89.99, 'Ropa', 'Vaqueros blancos para un look fresco.', 3, 1),
+('Falda Encaje Oysho', 34.90, 'Ropa', 'Falda con detalles de encaje.', 6, 1),
+('Pantalón Beige H&M', 39.90, 'Ropa', 'Pantalón básico en color beige.', 5, 1),
+('Falda Asimétrica Zara', 45.00, 'Ropa', 'Falda con diseño irregular.', 4, 1),
+('Jeans Super Skinny Topshop', 49.99, 'Ropa', 'Vaqueros ultra ajustados.', 7, 1),
+('Falda Crochet Bershka', 35.99, 'Ropa', 'Falda tejida a mano.', 3, 1),
+('Pantalón Oversize Pull&Bear', 49.99, 'Ropa', 'Pantalón amplio y cómodo.', 6, 1),
+('Falda Multicolor Desigual', 59.99, 'Ropa', 'Falda con patrones y colores vivos.', 5, 1),
+('Pantalón Ecofriendly Mango', 55.90, 'Ropa', 'Pantalón fabricado con materiales sostenibles.', 4, 1),
+('Falda de Punto H&M', 29.99, 'Ropa', 'Falda de tejido cálido y cómodo.', 6, 1),
+('Jeans Cortos Levi’s', 39.99, 'Ropa', 'Shorts vaqueros clásicos.', 5, 1),
+('Falda Transparente Zara', 49.90, 'Ropa', 'Falda midi con transparencias sutiles.', 3, 1),
+('Jeans Slim Fit Zara', 49.99, 'Ropa', 'Vaqueros ajustados de diseño clásico.', 7, 1),
+('Falda Acampanada H&M', 25.99, 'Ropa', 'Falda corta con diseño acampanado.', 6, 1),
+('Pantalón Deportivo Reebok', 39.90, 'Ropa', 'Pantalón técnico ideal para entrenamientos.', 5, 1),
+('Falda Lino Beige Mango', 35.99, 'Ropa', 'Falda fresca de lino en tono beige.', 4, 1),
+('Jeans Negros Skinny Bershka', 39.99, 'Ropa', 'Vaqueros ajustados en color negro.', 8, 1),
+('Falda Bordada Floral Oysho', 29.90, 'Ropa', 'Falda con bordados florales delicados.', 6, 1),
+('Pantalón Recto Formal Zara', 55.00, 'Ropa', 'Pantalón formal con corte recto.', 3, 1),
+('Falda Midi Botones Stradivarius', 29.99, 'Ropa', 'Falda midi con detalle de botones frontales.', 5, 1);
 
 -------------------------------------------------------------------------------
--- Subcategoría: Vestidos y Monos (40 INSERTS)
+-- Subcategoría: Vestidos y Monos (100 INSERTS)
 -------------------------------------------------------------------------------
 INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Vestido Floral Zara', 49.99, 'Ropa', 'Vestido midi con estampado de flores.', 5, 1);
+VALUES
+('Vestido Floral Zara', 49.99, 'Ropa', 'Vestido midi con estampado de flores.', 5, 1),
+('Mono Vaquero H&M', 39.90, 'Ropa', 'Mono denim de manga larga.', 4, 1),
+('Vestido Punto Mango', 35.99, 'Ropa', 'Vestido ajustado de punto elástico.', 6, 1),
+('Mono Culotte Massimo Dutti', 69.90, 'Ropa', 'Mono elegante con pernera ancha.', 3, 1),
+('Vestido Camisero Polo Ralph Lauren', 129.00, 'Ropa', 'Vestido estilo camisa con cinturón.', 2, 1),
+('Mono Deportivo Nike', 54.99, 'Ropa', 'Mono ajustado para entrenamiento.', 5, 1),
+('Vestido Fiesta Karen Millen', 159.00, 'Ropa', 'Vestido de cóctel con pedrería.', 2, 1),
+('Mono Corto Pull&Bear', 29.99, 'Ropa', 'Mono estilo playero con estampado.', 6, 1),
+('Vestido Tejido Free People', 89.90, 'Ropa', 'Vestido bohemio de punto grueso.', 3, 1),
+('Mono Largo Bershka', 34.99, 'Ropa', 'Mono de tirantes con espalda cruzada.', 4, 1),
+('Vestido Wrap Diane von Furstenberg', 298.00, 'Ropa', 'Vestido cruzado de seda estampada.', 1, 1),
+('Mono Peto Levis', 79.90, 'Ropa', 'Mono vaquero estilo peto clásico.', 4, 1),
+('Vestido Lino Arket', 79.00, 'Ropa', 'Vestido suelto de lino para verano.', 3, 1),
+('Mono Satén & Other Stories', 89.00, 'Ropa', 'Mono elegante con diseño fluido.', 2, 1),
+('Vestido Maxi Desigual', 95.90, 'Ropa', 'Vestido largo con estampado colorido.', 3, 1),
+('Mono Palazzo Topshop', 55.00, 'Ropa', 'Mono de pierna ancha con cinturón.', 4, 1),
+('Vestido Cóctel Coast', 149.00, 'Ropa', 'Vestido corto para eventos formales.', 2, 1),
+('Mono Short Oysho', 39.99, 'Ropa', 'Mono corto estilo casual.', 5, 1),
+('Vestido Playa Calzedonia', 45.00, 'Ropa', 'Vestido ligero de tejido transparente.', 4, 1),
+('Mono Terciopelo Urban Outfitters', 69.90, 'Ropa', 'Mono de terciopelo con manga larga.', 3, 1),
+('Vestido Asimétrico COS', 89.00, 'Ropa', 'Vestido con diseño asimétrico minimalista.', 2, 1),
+('Mono Estampado Anthropologie', 128.00, 'Ropa', 'Mono con estampado bohemio exclusivo.', 2, 1),
+('Vestido Denim Pepe Jeans', 85.00, 'Ropa', 'Vestido vaquero con botones frontales.', 3, 1),
+('Mono Rayas Sandro', 175.00, 'Ropa', 'Mono de rayas con cinturón incorporado.', 2, 1),
+('Vestido Punto Guess', 99.90, 'Ropa', 'Vestido ceñido de punto con logo.', 3, 1),
+('Mono Kimono Style Uterqüe', 129.00, 'Ropa', 'Mono estilo kimono con estampado oriental.', 2, 1),
+('Vestido Volantes Reformation', 248.00, 'Ropa', 'Vestido sostenible con volantes.', 1, 1),
+('Mono Work Wear Dickies', 59.90, 'Ropa', 'Mono de trabajo resistente.', 4, 1),
+('Vestido Camiseta Tommy Hilfiger', 79.90, 'Ropa', 'Vestido estilo camiseta oversized.', 3, 1),
+('Mono Plisado Adolfo Domínguez', 159.00, 'Ropa', 'Mono con plisado permanente.', 2, 1),
+('Vestido Jersey Weekend Max Mara', 195.00, 'Ropa', 'Vestido de punto fino con cuello alto.', 2, 1),
+('Mono Casual GAP', 69.95, 'Ropa', 'Mono informal de algodón.', 3, 1),
+('Vestido Tubo Hugo Boss', 229.00, 'Ropa', 'Vestido entallado para oficina.', 2, 1),
+('Mono Print River Island', 65.00, 'Ropa', 'Mono con estampado geométrico.', 3, 1),
+('Vestido Encaje Self-Portrait', 375.00, 'Ropa', 'Vestido de encaje con detalles calados.', 1, 1),
+('Mono Jumpsuit Forever 21', 29.90, 'Ropa', 'Mono básico con bolsillos.', 5, 1),
+('Vestido Blazer Zara', 69.90, 'Ropa', 'Vestido estilo americana cruzado.', 3, 1),
+('Mono Halter Mango', 49.99, 'Ropa', 'Mono con cuello halter y espalda descubierta.', 4, 1),
+('Vestido Bohemio Free People', 168.00, 'Ropa', 'Vestido largo estilo boho con bordados.', 2, 1),
+('Vestido Midi Zara', 49.99, 'Ropa', 'Vestido midi con estampado floral.', 5, 1),
+('Mono Casual Stradivarius', 29.90, 'Ropa', 'Mono corto casual de algodón.', 6, 1),
+('Vestido Largo Mango', 69.90, 'Ropa', 'Vestido largo con aberturas laterales.', 3, 1),
+('Mono Elegante Massimo Dutti', 99.90, 'Ropa', 'Mono largo con diseño sofisticado.', 2, 1),
+('Vestido Lentejuelas Bershka', 45.00, 'Ropa', 'Vestido corto con lentejuelas brillantes.', 4, 1),
+('Mono Fluido Zara', 39.90, 'Ropa', 'Mono fluido con tirantes ajustables.', 5, 1),
+('Vestido Plisado H&M', 49.99, 'Ropa', 'Vestido midi plisado.', 4, 1),
+('Mono Denim Pull&Bear', 35.99, 'Ropa', 'Mono vaquero estilo peto.', 6, 1),
+('Vestido Satén Mango', 89.90, 'Ropa', 'Vestido largo de satén.', 3, 1),
+('Mono Minimalista COS', 79.00, 'Ropa', 'Mono largo de diseño minimalista.', 3, 1),
+('Vestido Peplum Topshop', 55.00, 'Ropa', 'Vestido ajustado con volante peplum.', 4, 1),
+('Mono Estilo Safari Zara', 49.90, 'Ropa', 'Mono corto estilo safari.', 5, 1),
+('Vestido Volantes Free People', 129.00, 'Ropa', 'Vestido corto con volantes y bordados.', 2, 1),
+('Mono Corto Stradivarius', 25.99, 'Ropa', 'Mono corto con estampado geométrico.', 6, 1),
+('Vestido Cuello Halter Massimo Dutti', 119.00, 'Ropa', 'Vestido largo con cuello halter.', 3, 1),
+('Mono Estilo Militar Mango', 89.99, 'Ropa', 'Mono largo estilo militar.', 3, 1),
+('Vestido Capa H&M', 69.99, 'Ropa', 'Vestido largo con detalle de capa.', 2, 1),
+('Mono Elegante Uterqüe', 129.90, 'Ropa', 'Mono de fiesta con escote en V.', 2, 1),
+('Vestido Floral Largo Zara', 49.99, 'Ropa', 'Vestido largo con estampado floral.', 4, 1),
+('Mono Deportivo Adidas', 59.90, 'Ropa', 'Mono deportivo con logo.', 3, 1),
+('Vestido Terciopelo COS', 89.00, 'Ropa', 'Vestido corto de terciopelo.', 3, 1),
+('Mono Bohemio Free People', 99.99, 'Ropa', 'Mono largo con estampado bohemio.', 3, 1),
+('Vestido Bardot Mango', 69.99, 'Ropa', 'Vestido ajustado con hombros descubiertos.', 2, 1),
+('Mono Oversize Pull&Bear', 49.99, 'Ropa', 'Mono oversize con bolsillos.', 6, 1),
+('Vestido Corsé Zara', 59.90, 'Ropa', 'Vestido con diseño de corsé.', 4, 1),
+('Mono Satén H&M', 79.99, 'Ropa', 'Mono de satén con cinturón.', 3, 1),
+('Vestido Camisero Mango', 89.00, 'Ropa', 'Vestido midi estilo camisa.', 3, 1),
+('Mono Culotte Bershka', 35.99, 'Ropa', 'Mono culotte con estampado floral.', 5, 1),
+('Vestido Estilo Trench Zara', 99.00, 'Ropa', 'Vestido estilo gabardina.', 3, 1),
+('Mono Animal Print H&M', 69.90, 'Ropa', 'Mono corto con estampado animal.', 4, 1),
+('Vestido Escote Corazón Mango', 89.90, 'Ropa', 'Vestido largo con escote corazón.', 2, 1),
+('Mono Cuello Halter Zara', 59.99, 'Ropa', 'Mono con cuello halter.', 3, 1),
+('Vestido Bordado Stradivarius', 39.99, 'Ropa', 'Vestido corto bordado.', 6, 1),
+('Mono Fluido Uterqüe', 149.00, 'Ropa', 'Mono largo fluido con cinturón.', 2, 1),
+('Vestido Retro Mango', 75.99, 'Ropa', 'Vestido midi estilo retro.', 3, 1),
+('Mono Ajustado Bershka', 29.90, 'Ropa', 'Mono ajustado con tirantes.', 6, 1),
+('Vestido Estilo Vintage Zara', 95.00, 'Ropa', 'Vestido con diseño vintage.', 3, 1),
+('Mono Largo Stradivarius', 45.99, 'Ropa', 'Mono largo con cinturón.', 4, 1),
+('Vestido Slip Dress Mango', 89.90, 'Ropa', 'Vestido de tirantes estilo slip.', 2, 1),
+('Mono Pata Ancha Massimo Dutti', 119.00, 'Ropa', 'Mono de pierna ancha con tirantes.', 3, 1),
+('Vestido Camisero Largo Zara', 59.90, 'Ropa', 'Vestido camisero largo con bolsillos.', 4, 1),
+('Mono Escote Profundo Mango', 129.90, 'Ropa', 'Mono largo con escote profundo.', 2, 1),
+('Vestido Seda COS', 199.00, 'Ropa', 'Vestido largo de seda.', 1, 1),
+('Mono Estampado H&M', 49.90, 'Ropa', 'Mono corto estampado.', 6, 1),
+('Vestido Estilo Corsé Bershka', 59.99, 'Ropa', 'Vestido con diseño de corsé.', 3, 1),
+('Mono Estilo Kimono Mango', 99.90, 'Ropa', 'Mono largo estilo kimono.', 3, 1),
+('Vestido Lencero Zara', 89.90, 'Ropa', 'Vestido largo estilo lencero.', 2, 1),
+('Mono Casual H&M', 39.90, 'Ropa', 'Mono corto casual.', 5, 1),
+('Vestido Estampado Floral Mango', 69.90, 'Ropa', 'Vestido largo con estampado floral.', 4, 1),
+('Mono Largo Ajustado Zara', 79.99, 'Ropa', 'Mono largo ajustado.', 3, 1),
+('Vestido Escote Espalda Massimo Dutti', 99.90, 'Ropa', 'Vestido largo con escote en espalda.', 2, 1),
+('Mono Oversize Bershka', 39.90, 'Ropa', 'Mono oversize de algodón.', 6, 1),
+('Vestido Midi Ajustado Zara', 49.99, 'Ropa', 'Vestido midi ajustado.', 3, 1),
+('Mono Estilo Utility Mango', 89.90, 'Ropa', 'Mono estilo utility con bolsillos.', 3, 1),
+('Vestido Elegante Stradivarius', 79.90, 'Ropa', 'Vestido largo elegante.', 2, 1),
+('Mono Denim Largo H&M', 55.99, 'Ropa', 'Mono vaquero largo.', 4, 1),
+('Vestido Asimétrico Zara', 69.99, 'Ropa', 'Vestido con diseño asimétrico.', 3, 1),
+('Mono Cruzado Mango', 89.90, 'Ropa', 'Mono cruzado con cinturón.', 2, 1),
+('Vestido Glitter Zara', 79.99, 'Ropa', 'Vestido corto con detalles de glitter.', 3, 1),
+('Mono Tuxedo Mango', 129.90, 'Ropa', 'Mono elegante estilo smoking.', 2, 1),
+('Vestido Midi Bohemio Stradivarius', 49.99, 'Ropa', 'Vestido midi con estampado bohemio.', 4, 1);
 
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Mono Vaquero H&M', 39.90, 'Ropa', 'Mono denim de manga larga.', 4, 1);
+-------------------------------------------------------------------------------
+-- Subcategoría: Chaquetas y Blazers (100 INSERTS)
+-------------------------------------------------------------------------------
+INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)  
+VALUES  
+('Blazer Clásico Zara', 89.99, 'Ropa', 'Blazer de corte clásico y entallado.', 5, 1),  
+('Chaqueta Bomber H&M', 49.99, 'Ropa', 'Chaqueta bomber acolchada con cierre frontal.', 8, 1),  
+('Blazer Oversize Mango', 99.90, 'Ropa', 'Blazer de estilo oversize con hombros estructurados.', 4, 1),  
+('Chaqueta Vaquera Levis', 79.99, 'Ropa', 'Chaqueta denim clásica con bolsillos frontales.', 6, 1),  
+('Blazer Tweed Massimo Dutti', 129.00, 'Ropa', 'Blazer de tweed con botones dorados.', 3, 1),  
+('Chaqueta de Cuero Mango', 199.90, 'Ropa', 'Chaqueta de piel auténtica estilo biker.', 2, 1),  
+('Blazer Slim Fit Hugo Boss', 299.00, 'Ropa', 'Blazer ajustado para ocasiones formales.', 2, 1),  
+('Chaqueta de Punto COS', 89.00, 'Ropa', 'Chaqueta ligera de punto para entretiempo.', 4, 1),  
+('Blazer Cruzado Zara', 119.00, 'Ropa', 'Blazer de doble botonadura con acabado brillante.', 5, 1),  
+('Chaqueta Parka Uniqlo', 129.90, 'Ropa', 'Parka impermeable con capucha desmontable.', 6, 1),  
+('Blazer Corto Bershka', 69.99, 'Ropa', 'Blazer cropped con diseño juvenil.', 7, 1),  
+('Chaqueta Utility Pull&Bear', 49.90, 'Ropa', 'Chaqueta con múltiples bolsillos funcionales.', 8, 1),  
+('Blazer Lino Massimo Dutti', 139.00, 'Ropa', 'Blazer fresco de lino ideal para verano.', 3, 1),  
+('Chaqueta Acolchada Nike', 89.99, 'Ropa', 'Chaqueta deportiva acolchada con tecnología térmica.', 5, 1),  
+('Blazer Estampado Zara', 99.90, 'Ropa', 'Blazer con diseño de cuadros modernos.', 4, 1),  
+('Chaqueta Bomber Bershka', 59.99, 'Ropa', 'Chaqueta bomber de satén con bordados.', 6, 1),  
+('Blazer Velvet Mango', 149.90, 'Ropa', 'Blazer de terciopelo con solapa satinada.', 3, 1),  
+('Chaqueta Militar Topshop', 79.90, 'Ropa', 'Chaqueta de estilo militar con detalles metálicos.', 5, 1),  
+('Blazer Rayas Tommy Hilfiger', 159.00, 'Ropa', 'Blazer de rayas con cierre de un botón.', 3, 1),  
+('Chaqueta Corta H&M', 49.99, 'Ropa', 'Chaqueta corta estilo bolero.', 7, 1),  
+('Blazer Blanco Mango', 119.00, 'Ropa', 'Blazer blanco de corte minimalista.', 5, 1),  
+('Chaqueta Padded Uniqlo', 99.90, 'Ropa', 'Chaqueta acolchada ligera y compacta.', 4, 1),  
+('Blazer Floral Zara', 99.00, 'Ropa', 'Blazer estampado con flores en tonos pastel.', 5, 1),  
+('Chaqueta Cazadora Levis', 129.90, 'Ropa', 'Cazadora denim con interior de borrego.', 3, 1),  
+('Blazer Cuadro Príncipe de Gales Mango', 139.00, 'Ropa', 'Blazer con estampado clásico.', 4, 1),  
+('Chaqueta Impermeable Columbia', 149.90, 'Ropa', 'Chaqueta técnica impermeable para exteriores.', 2, 1),  
+('Blazer Satinado Massimo Dutti', 179.00, 'Ropa', 'Blazer con acabado satinado para eventos.', 2, 1),  
+('Chaqueta Biker Stradivarius', 69.99, 'Ropa', 'Chaqueta estilo biker en color negro.', 6, 1),  
+('Blazer Asimétrico Zara', 99.90, 'Ropa', 'Blazer con diseño asimétrico y moderno.', 5, 1),  
+('Chaqueta Estilo Baseball Pull&Bear', 49.99, 'Ropa', 'Chaqueta estilo universitario.', 8, 1),  
+('Blazer Beige Mango', 109.90, 'Ropa', 'Blazer en color neutro para oficina.', 5, 1),  
+('Chaqueta Cuello Mao COS', 89.90, 'Ropa', 'Chaqueta de diseño minimalista con cuello mao.', 4, 1),  
+('Blazer Drapeado Mango', 119.00, 'Ropa', 'Blazer con efecto drapeado en las solapas.', 5, 1),  
+('Chaqueta Reversible North Face', 199.90, 'Ropa', 'Chaqueta reversible con diseño acolchado.', 3, 1),  
+('Blazer Metalizado Zara', 149.90, 'Ropa', 'Blazer con acabado metalizado para fiestas.', 2, 1),  
+('Chaqueta Trucker Levis', 99.90, 'Ropa', 'Chaqueta estilo trucker clásica.', 5, 1),  
+('Blazer Camel Massimo Dutti', 169.00, 'Ropa', 'Blazer de lana en color camel.', 2, 1),  
+('Chaqueta Softshell Columbia', 129.90, 'Ropa', 'Chaqueta softshell para actividades al aire libre.', 4, 1),  
+('Blazer Vintage Mango', 129.00, 'Ropa', 'Blazer inspirado en los años 80.', 3, 1),  
+('Chaqueta Crop Zara', 59.90, 'Ropa', 'Chaqueta corta estilo crop.', 7, 1),  
+('Blazer Cuero Massimo Dutti', 299.00, 'Ropa', 'Blazer de cuero genuino.', 1, 1),  
+('Chaqueta Estampado Camo Pull&Bear', 79.99, 'Ropa', 'Chaqueta con estampado de camuflaje.', 6, 1),  
+('Blazer Textura Mango', 149.90, 'Ropa', 'Blazer con textura de espiga.', 3, 1),  
+('Chaqueta Puff Adidas', 129.99, 'Ropa', 'Chaqueta acolchada con diseño deportivo.', 5, 1),  
+('Blazer Negro Hugo Boss', 299.90, 'Ropa', 'Blazer formal de alta gama.', 2, 1),  
+('Chaqueta Cuero Sintético Bershka', 79.99, 'Ropa', 'Chaqueta tipo biker de polipiel.', 4, 1),  
+('Blazer Azul Marino Mango', 99.90, 'Ropa', 'Blazer clásico azul marino.', 5, 1),  
+('Chaqueta Bomber Zara', 69.90, 'Ropa', 'Bomber con detalle en mangas.', 6, 1),  
+('Blazer Satinado Forever 21', 49.99, 'Ropa', 'Blazer brillante para ocasiones especiales.', 6, 1),  
+('Chaqueta Oversize H&M', 69.99, 'Ropa', 'Chaqueta con diseño amplio y relajado.', 5, 1),
+('Blazer Botones Dorados Zara', 129.90, 'Ropa', 'Blazer con doble botonadura dorada.', 4, 1),  
+('Chaqueta Trench Massimo Dutti', 199.90, 'Ropa', 'Chaqueta estilo trench coat en color beige.', 3, 1),  
+('Blazer Degradado Mango', 139.90, 'Ropa', 'Blazer con efecto degradado único.', 4, 1),  
+('Chaqueta Polar North Face', 99.90, 'Ropa', 'Chaqueta polar térmica para invierno.', 6, 1),  
+('Blazer Ajustado Stradivarius', 59.99, 'Ropa', 'Blazer entallado con diseño juvenil.', 5, 1),  
+('Chaqueta Parka Pull&Bear', 89.99, 'Ropa', 'Chaqueta tipo parka con capucha de pelo.', 4, 1),  
+('Blazer Rosa Pastel H&M', 49.99, 'Ropa', 'Blazer en tono pastel ideal para primavera.', 6, 1),  
+('Chaqueta Trench Oversize Zara', 149.90, 'Ropa', 'Trench coat oversize con cinturón.', 3, 1),  
+('Blazer Lana Hugo Boss', 399.90, 'Ropa', 'Blazer de lana fina para eventos formales.', 2, 1),  
+('Chaqueta Cropped Bershka', 59.99, 'Ropa', 'Chaqueta corta con detalles metálicos.', 5, 1),  
+('Blazer Cuello Mao Mango', 109.90, 'Ropa', 'Blazer sin solapas con diseño elegante.', 3, 1),  
+('Chaqueta Windbreaker Columbia', 99.90, 'Ropa', 'Chaqueta rompevientos resistente al agua.', 4, 1),  
+('Blazer Satinado Rosa Zara', 129.90, 'Ropa', 'Blazer con diseño satin en tono rosado.', 3, 1),  
+('Chaqueta Puffer Adidas', 149.90, 'Ropa', 'Chaqueta acolchada con diseño ligero.', 6, 1),  
+('Blazer Beige Oversize Stradivarius', 89.90, 'Ropa', 'Blazer oversize en tono beige.', 5, 1),  
+('Chaqueta Acolchada H&M', 79.90, 'Ropa', 'Chaqueta acolchada básica para invierno.', 7, 1),  
+('Blazer Largo Zara', 99.99, 'Ropa', 'Blazer largo con bolsillos frontales.', 4, 1),  
+('Chaqueta Estilo Capa COS', 159.90, 'Ropa', 'Chaqueta inspirada en las capas medievales.', 3, 1),  
+('Blazer Estilo Safari Massimo Dutti', 139.90, 'Ropa', 'Blazer con diseño de bolsillos grandes.', 4, 1),  
+('Chaqueta Capucha Bershka', 59.90, 'Ropa', 'Chaqueta con capucha ajustable.', 6, 1),  
+('Blazer Brillante Mango', 119.90, 'Ropa', 'Blazer con acabado brillante para eventos.', 5, 1),  
+('Chaqueta Estilo Trucker Stradivarius', 69.99, 'Ropa', 'Chaqueta con diseño clásico vaquero.', 7, 1),  
+('Blazer Terciopelo Azul Zara', 159.90, 'Ropa', 'Blazer en terciopelo azul oscuro.', 3, 1),  
+('Chaqueta Impermeable Mango', 129.90, 'Ropa', 'Chaqueta ligera y resistente al agua.', 4, 1),  
+('Blazer Estilo Biker Pull&Bear', 59.99, 'Ropa', 'Blazer inspirado en chaquetas de moto.', 6, 1),  
+('Chaqueta Blazer Corto Stradivarius', 49.90, 'Ropa', 'Chaqueta estilo blazer cropped.', 5, 1),  
+('Blazer Básico H&M', 39.99, 'Ropa', 'Blazer de estilo básico y funcional.', 8, 1),  
+('Chaqueta Técnica Columbia', 199.99, 'Ropa', 'Chaqueta técnica para actividades al aire libre.', 3, 1),  
+('Blazer Cuadros Topshop', 109.90, 'Ropa', 'Blazer con estampado de cuadros clásicos.', 4, 1),  
+('Chaqueta Acolchada Desigual', 149.90, 'Ropa', 'Chaqueta con diseño acolchado único.', 3, 1),  
+('Blazer Floral Satinado Zara', 159.90, 'Ropa', 'Blazer con estampado floral brillante.', 2, 1),  
+('Chaqueta Ligera Mango', 69.90, 'Ropa', 'Chaqueta ligera para primavera.', 7, 1),  
+('Blazer Slim Fit Hugo Boss', 399.90, 'Ropa', 'Blazer de alta gama para eventos formales.', 2, 1),  
+('Chaqueta Negra Estilo Biker Zara', 79.99, 'Ropa', 'Chaqueta de polipiel en color negro.', 6, 1),  
+('Blazer Crop Mango', 99.90, 'Ropa', 'Blazer corto con detalles de botones.', 4, 1),  
+('Chaqueta Denim Oversize H&M', 59.99, 'Ropa', 'Chaqueta vaquera oversize.', 5, 1),  
+('Blazer con Solapa Satinada Zara', 139.90, 'Ropa', 'Blazer con solapas en acabado satinado.', 3, 1),  
+('Chaqueta Trucker Desigual', 109.90, 'Ropa', 'Chaqueta vaquera con detalles únicos.', 4, 1),  
+('Blazer Casual Mango', 119.90, 'Ropa', 'Blazer ideal para looks informales.', 5, 1),  
+('Chaqueta Técnica Puma', 129.90, 'Ropa', 'Chaqueta ligera y técnica para running.', 6, 1),  
+('Blazer Clásico Camel Zara', 89.99, 'Ropa', 'Blazer clásico en tono camel.', 4, 1),  
+('Chaqueta Cuello Alto Uniqlo', 99.90, 'Ropa', 'Chaqueta con cuello alto y diseño acolchado.', 3, 1),  
+('Blazer Morado Mango', 129.90, 'Ropa', 'Blazer en tono morado intenso.', 2, 1),  
+('Chaqueta Casual Bershka', 49.90, 'Ropa', 'Chaqueta básica para uso diario.', 7, 1),  
+('Blazer Cuero Sintético Zara', 149.90, 'Ropa', 'Blazer en polipiel para ocasiones nocturnas.', 3, 1),  
+('Chaqueta Puff Ligera H&M', 59.99, 'Ropa', 'Chaqueta acolchada ligera para diario.', 6, 1),  
+('Blazer Largo Azul Mango', 109.90, 'Ropa', 'Blazer largo en tono azul cielo.', 4, 1),  
+('Chaqueta Polar Puma', 79.90, 'Ropa', 'Chaqueta de polar suave.', 5, 1),  
+('Blazer Rayas Diplomaticas Zara', 169.90, 'Ropa', 'Blazer con diseño clásico y elegante.', 3, 1),
+('Blazer Vintage Ralph Lauren', 299.90, 'Ropa', 'Blazer estilo vintage con botones de cuero.', 2, 1);
 
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Vestido Punto Mango', 35.99, 'Ropa', 'Vestido ajustado de punto elástico.', 6, 1);
+-------------------------------------------------------------------------------
+-- Subcategoría: Abrigos y Parkas (100 INSERTS)
+-------------------------------------------------------------------------------
+INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo) VALUES 
+('Abrigo Clásico Zara', 149.99, 'Ropa', 'Abrigo largo de lana con solapa.', 5, 1),
+('Parka Impermeable The North Face', 199.90, 'Ropa', 'Parka resistente al agua con capucha ajustable.', 4, 1),
+('Abrigo Oversize Mango', 129.00, 'Ropa', 'Abrigo holgado de tejido suave.', 6, 1),
+('Parka Acolchada Columbia', 179.00, 'Ropa', 'Parka acolchada para climas fríos.', 3, 1),
+('Abrigo Cruzado Massimo Dutti', 199.99, 'Ropa', 'Abrigo de corte cruzado con botones dorados.', 2, 1),
+('Parka Militar Bershka', 89.99, 'Ropa', 'Parka estilo militar con bolsillos frontales.', 7, 1),
+('Abrigo Teddy H&M', 79.90, 'Ropa', 'Abrigo de tejido de borrego.', 6, 1),
+('Parka Larga Uniqlo', 129.99, 'Ropa', 'Parka térmica con relleno de plumón.', 5, 1),
+('Abrigo de Cachemir Hugo Boss', 299.00, 'Ropa', 'Abrigo de cachemir con diseño elegante.', 2, 1),
+('Parka Corta Adidas', 99.90, 'Ropa', 'Parka deportiva con capucha desmontable.', 6, 1),
+('Abrigo Tweed Chanel', 399.00, 'Ropa', 'Abrigo de tweed con diseño clásico.', 1, 1),
+('Parka Plumón Patagonia', 249.90, 'Ropa', 'Parka ligera de plumón reciclado.', 3, 1),
+('Abrigo Estilo Bata Mango', 139.00, 'Ropa', 'Abrigo tipo bata con cinturón.', 4, 1),
+('Parka Invierno Nike', 149.99, 'Ropa', 'Parka de invierno con aislamiento térmico.', 5, 1),
+('Abrigo Capa Zara', 119.99, 'Ropa', 'Abrigo estilo capa con cuello alto.', 4, 1),
+('Parka Reflectante Puma', 99.90, 'Ropa', 'Parka reflectante ideal para actividades nocturnas.', 6, 1),
+('Abrigo Gabardina Burberry', 499.00, 'Ropa', 'Abrigo de gabardina clásico con forro icónico.', 2, 1),
+('Parka Casual Levis', 129.90, 'Ropa', 'Parka casual con capucha de pelo sintético.', 4, 1),
+('Abrigo Piel Sintética Pull&Bear', 89.99, 'Ropa', 'Abrigo de piel sintética en tonos neutros.', 5, 1),
+('Parka Deportiva Reebok', 89.90, 'Ropa', 'Parka deportiva resistente al viento.', 6, 1),
+('Abrigo Doble Faz Desigual', 179.90, 'Ropa', 'Abrigo reversible con estampados llamativos.', 3, 1),
+('Parka Minimalista COS', 169.90, 'Ropa', 'Parka minimalista con diseño limpio.', 4, 1),
+('Abrigo Largo Stradivarius', 119.99, 'Ropa', 'Abrigo largo con botones metálicos.', 5, 1),
+('Parka Estilo Urbano Timberland', 199.00, 'Ropa', 'Parka resistente para uso diario.', 4, 1),
+('Abrigo Acolchado Moncler', 599.00, 'Ropa', 'Abrigo de lujo con relleno de pluma.', 1, 1),
+('Parka Montañismo Salomon', 229.90, 'Ropa', 'Parka técnica para montañismo.', 2, 1),
+('Abrigo Cuello Subido Guess', 149.00, 'Ropa', 'Abrigo con cuello alto y cremallera.', 4, 1),
+('Parka de Invierno Helly Hansen', 179.99, 'Ropa', 'Parka resistente al agua y con aislamiento.', 3, 1),
+('Abrigo Peacoat GAP', 109.99, 'Ropa', 'Abrigo corto estilo marinero.', 5, 1),
+('Parka Camuflaje Bershka', 99.90, 'Ropa', 'Parka con estampado de camuflaje.', 6, 1),
+('Abrigo Alpaca Uterqüe', 299.90, 'Ropa', 'Abrigo de alpaca con textura suave.', 2, 1),
+('Parka Cortavientos The North Face', 129.99, 'Ropa', 'Parka ligera resistente al viento.', 5, 1),
+('Abrigo Beige Mango', 119.90, 'Ropa', 'Abrigo clásico en tono beige.', 6, 1),
+('Parka con Bolsillos Zara', 89.99, 'Ropa', 'Parka utilitaria con múltiples bolsillos.', 5, 1),
+('Abrigo Estilo Vintage H&M', 89.90, 'Ropa', 'Abrigo con diseño retro.', 4, 1),
+('Parka Aislada Fjällräven', 229.99, 'Ropa', 'Parka de alta calidad para bajas temperaturas.', 3, 1),
+('Abrigo Cuello Peter Pan Stradivarius', 99.90, 'Ropa', 'Abrigo con cuello redondo.', 5, 1),
+('Parka Largo Midi Nike', 129.99, 'Ropa', 'Parka deportiva de largo intermedio.', 4, 1),
+('Abrigo Estampado Desigual', 139.90, 'Ropa', 'Abrigo con estampado artístico.', 3, 1),
+('Parka Impermeable Decathlon', 79.99, 'Ropa', 'Parka funcional para actividades al aire libre.', 6, 1),
+('Abrigo Cuero Sintético Zara', 129.99, 'Ropa', 'Abrigo de cuero sintético con diseño moderno.', 4, 1),
+('Parka Alpina Helly Hansen', 199.90, 'Ropa', 'Parka de rendimiento alpino.', 3, 1),
+('Abrigo Batín Hugo Boss', 249.00, 'Ropa', 'Abrigo con diseño de batín y cinturón.', 2, 1),
+('Parka Termal Patagonia', 249.90, 'Ropa', 'Parka con tecnología térmica avanzada.', 3, 1),
+('Abrigo de Felpa H&M', 79.99, 'Ropa', 'Abrigo de felpa con bolsillos.', 6, 1),
+('Parka Resistente al Agua Columbia', 179.90, 'Ropa', 'Parka con protección contra la lluvia.', 5, 1),
+('Abrigo Drapeado Mango', 129.00, 'Ropa', 'Abrigo con diseño drapeado en la parte frontal.', 4, 1),
+('Parka Corta GAP', 109.00, 'Ropa', 'Parka casual para uso diario.', 5, 1),
+('Abrigo con Abertura COS', 179.00, 'Ropa', 'Abrigo largo con abertura trasera.', 2, 1),
+('Parka Funcional The North Face', 199.99, 'Ropa', 'Parka técnica para actividades al aire libre.', 3, 1),
+('Abrigo con Capucha Pull&Bear', 89.99, 'Ropa', 'Abrigo informal con capucha desmontable.', 4, 1),
+('Parka de Nieve Salomon', 229.90, 'Ropa', 'Parka para deportes de invierno.', 2, 1),
+('Abrigo Grueso Mango', 139.90, 'Ropa', 'Abrigo grueso para temperaturas bajas.', 3, 1),
+('Parka Capucha Forrada Bershka', 99.99, 'Ropa', 'Parka con interior forrado de borrego.', 4, 1),
+('Abrigo con Cremallera Zara', 119.90, 'Ropa', 'Abrigo largo con cierre frontal.', 5, 1),
+('Parka Acolchada Timberland', 229.99, 'Ropa', 'Parka resistente con relleno acolchado.', 2, 1),
+('Abrigo Azul Marino Massimo Dutti', 189.00, 'Ropa', 'Abrigo elegante en tono azul marino.', 3, 1),
+('Parka con Capucha Uterqüe', 199.90, 'Ropa', 'Parka con capucha desmontable y diseño urbano.', 4, 1),
+('Abrigo Lana Calvin Klein', 299.00, 'Ropa', 'Abrigo largo de lana con diseño sofisticado.', 2, 1),
+('Parka Resistente Fjällräven', 299.90, 'Ropa', 'Parka de rendimiento técnico.', 3, 1),
+('Abrigo Oversize Zara', 129.99, 'Ropa', 'Abrigo holgado con bolsillos delanteros.', 5, 1),
+('Parka Acolchada Invierno Mango', 159.00, 'Ropa', 'Parka gruesa con relleno térmico.', 4, 1),
+('Abrigo Cuadros Massimo Dutti', 199.90, 'Ropa', 'Abrigo de lana con diseño de cuadros.', 3, 1),
+('Parka Deportiva Adidas', 139.99, 'Ropa', 'Parka ligera y transpirable para deportes.', 5, 1),
+('Abrigo Cruzado Clásico H&M', 99.90, 'Ropa', 'Abrigo cruzado con botones grandes.', 6, 1),
+('Parka Largo Midi Patagonia', 229.99, 'Ropa', 'Parka funcional de longitud media.', 3, 1),
+('Abrigo Entallado Guess', 149.00, 'Ropa', 'Abrigo con diseño ajustado y cinturón.', 4, 1),
+('Parka Estilo Militar Zara', 109.99, 'Ropa', 'Parka de inspiración militar con bolsillos.', 5, 1),
+('Abrigo Textura Peluche Mango', 119.99, 'Ropa', 'Abrigo suave con textura tipo peluche.', 6, 1),
+('Parka Impermeable Montaña Columbia', 189.99, 'Ropa', 'Parka impermeable para actividades al aire libre.', 4, 1),
+('Abrigo Lana Merino Massimo Dutti', 259.00, 'Ropa', 'Abrigo de lana merino de alta calidad.', 2, 1),
+('Parka Forrada H&M', 99.99, 'Ropa', 'Parka con interior forrado de borrego.', 4, 1),
+('Abrigo Casual Levis', 139.90, 'Ropa', 'Abrigo casual para el día a día.', 5, 1),
+('Parka Softshell Helly Hansen', 199.99, 'Ropa', 'Parka resistente al viento y ligera.', 3, 1),
+('Abrigo Estilo Kimono Uterqüe', 229.99, 'Ropa', 'Abrigo con corte tipo kimono y diseño moderno.', 2, 1),
+('Parka Extra Larga COS', 189.90, 'Ropa', 'Parka de diseño minimalista y extra largo.', 4, 1),
+('Abrigo Trench Gap', 129.99, 'Ropa', 'Abrigo tipo trench con cinturón ajustable.', 5, 1),
+('Parka Técnico Reebok', 109.90, 'Ropa', 'Parka ligera para entrenamiento en climas fríos.', 6, 1),
+('Abrigo Estilo Elegante Zara', 149.99, 'Ropa', 'Abrigo sofisticado con cuello en V.', 5, 1),
+('Parka Ajustable Timberland', 219.99, 'Ropa', 'Parka ajustable con capucha.', 3, 1),
+('Abrigo de Felpa Mango', 89.90, 'Ropa', 'Abrigo corto con textura suave.', 4, 1),
+('Parka de Invierno Nike', 149.00, 'Ropa', 'Parka para climas fríos con aislamiento térmico.', 5, 1),
+('Abrigo con Bolsillos GAP', 119.99, 'Ropa', 'Abrigo funcional con grandes bolsillos laterales.', 6, 1),
+('Parka Reflectante Puma', 99.99, 'Ropa', 'Parka reflectante ideal para actividades nocturnas.', 4, 1),
+('Abrigo Grueso Columbia', 199.00, 'Ropa', 'Abrigo diseñado para temperaturas bajas.', 3, 1),
+('Parka Estilo Casual Adidas', 119.90, 'Ropa', 'Parka ligera y cómoda para uso diario.', 5, 1),
+('Abrigo Corto Stradivarius', 99.90, 'Ropa', 'Abrigo entallado con solapas elegantes.', 4, 1),
+('Parka Térmica Fjällräven', 239.99, 'Ropa', 'Parka diseñada para condiciones extremas.', 3, 1),
+('Abrigo de Noche Uterqüe', 249.00, 'Ropa', 'Abrigo para eventos formales con diseño exclusivo.', 2, 1),
+('Parka de Plumas Uniqlo', 189.99, 'Ropa', 'Parka ligera con relleno de plumas.', 3, 1),
+('Abrigo Cuello Alto COS', 179.90, 'Ropa', 'Abrigo de lana con cuello alto y diseño moderno.', 4, 1),
+('Parka Estampado Animal Zara', 129.90, 'Ropa', 'Parka con estampado animal y capucha.', 6, 1),
+('Abrigo con Diseño Geométrico Desigual', 169.00, 'Ropa', 'Abrigo llamativo con estampado geométrico.', 5, 1),
+('Parka Alpina Salomon', 249.90, 'Ropa', 'Parka técnica para aventuras alpinas.', 3, 1),
+('Abrigo Largo con Cinturón Mango', 149.90, 'Ropa', 'Abrigo elegante con cinturón ajustable.', 4, 1),
+('Parka Negra Básica H&M', 89.90, 'Ropa', 'Parka corta básica en color negro.', 5, 1),
+('Abrigo Estilo Casual Pull&Bear', 99.99, 'Ropa', 'Abrigo juvenil y versátil.', 6, 1),
+('Parka Capucha Pelo Bershka', 119.90, 'Ropa', 'Parka con capucha de pelo sintético.', 4, 1),
+('Abrigo con Aberturas Laterales COS', 199.00, 'Ropa', 'Abrigo largo con aberturas laterales modernas.', 2, 1),
+('Parka Largo XXL Columbia', 239.99, 'Ropa', 'Parka extra larga con diseño funcional.', 3, 1);
 
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Mono Culotte Massimo Dutti', 69.90, 'Ropa', 'Mono elegante con pernera ancha.', 3, 1);
+-------------------------------------------------------------------------------
+-- Subcategoría: Sudaderas y Jerseys (100 INSERTS)
+-------------------------------------------------------------------------------
+INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo) VALUES 
+('Sudadera con Capucha Nike', 49.99, 'Ropa', 'Sudadera clásica con capucha y bolsillo frontal.', 6, 1),
+('Jersey Cuello Redondo Zara', 39.99, 'Ropa', 'Jersey de punto fino con cuello redondo.', 5, 1),
+('Sudadera Oversize H&M', 29.99, 'Ropa', 'Sudadera holgada ideal para un estilo casual.', 6, 1),
+('Jersey Trenzado Mango', 45.99, 'Ropa', 'Jersey de lana con diseño de trenzas.', 4, 1),
+('Sudadera Deportiva Adidas', 59.90, 'Ropa', 'Sudadera transpirable para actividades deportivas.', 5, 1),
+('Jersey Cuello Alto Massimo Dutti', 79.90, 'Ropa', 'Jersey elegante con cuello alto y tejido cálido.', 3, 1),
+('Sudadera Estampada Pull&Bear', 34.99, 'Ropa', 'Sudadera juvenil con estampado gráfico.', 6, 1),
+('Jersey Lana Merino Uniqlo', 69.99, 'Ropa', 'Jersey de lana merino ideal para climas fríos.', 3, 1),
+('Sudadera Sin Capucha Bershka', 29.99, 'Ropa', 'Sudadera básica con diseño minimalista.', 6, 1),
+('Jersey Oversize COS', 89.90, 'Ropa', 'Jersey amplio con diseño moderno.', 4, 1),
+('Sudadera Técnica Reebok', 49.90, 'Ropa', 'Sudadera técnica ligera para entrenamiento.', 5, 1),
+('Jersey Estilo Marinero GAP', 59.99, 'Ropa', 'Jersey con rayas marineras en algodón suave.', 3, 1),
+('Sudadera Tie-Dye Urban Outfitters', 39.90, 'Ropa', 'Sudadera con diseño tie-dye colorido.', 6, 1),
+('Jersey de Cachemira Zara', 149.99, 'Ropa', 'Jersey de cachemira suave y elegante.', 2, 1),
+('Sudadera Corta Nike', 44.99, 'Ropa', 'Sudadera corta con diseño juvenil.', 5, 1),
+('Jersey Jacquard Mango', 55.99, 'Ropa', 'Jersey con diseño de jacquard moderno.', 4, 1),
+('Sudadera con Cierre Completo Adidas', 59.90, 'Ropa', 'Sudadera con cremallera completa y bolsillos.', 5, 1),
+('Jersey Cuello V H&M', 39.99, 'Ropa', 'Jersey básico con cuello en forma de V.', 6, 1),
+('Sudadera Forrada Bershka', 34.99, 'Ropa', 'Sudadera interior forrado para mayor calidez.', 6, 1),
+('Jersey Corto Stradivarius', 29.99, 'Ropa', 'Jersey corto con diseño juvenil.', 5, 1),
+('Sudadera Unisex Champion', 49.99, 'Ropa', 'Sudadera clásica unisex con logo bordado.', 4, 1),
+('Jersey Tejido Fino Massimo Dutti', 79.90, 'Ropa', 'Jersey de tejido ligero y diseño elegante.', 3, 1),
+('Sudadera Capucha y Estampado Levis', 54.99, 'Ropa', 'Sudadera con capucha y estampado frontal.', 5, 1),
+('Jersey Punto Grueso Zara', 49.99, 'Ropa', 'Jersey grueso ideal para climas fríos.', 4, 1),
+('Sudadera Básica Oysho', 39.99, 'Ropa', 'Sudadera básica en algodón suave.', 6, 1),
+('Jersey Largo GAP', 59.99, 'Ropa', 'Jersey largo perfecto para combinar con leggings.', 5, 1),
+('Sudadera Cropped H&M', 24.99, 'Ropa', 'Sudadera corta y ajustada para estilos modernos.', 6, 1),
+('Jersey Diseño Escandinavo Mango', 69.99, 'Ropa', 'Jersey con patrones de estilo nórdico.', 3, 1),
+('Sudadera Estilo Universitaria Tommy Hilfiger', 79.99, 'Ropa', 'Sudadera estilo universitario con bordados.', 2, 1),
+('Jersey de Lurex Massimo Dutti', 89.90, 'Ropa', 'Jersey elegante con detalles brillantes.', 2, 1),
+('Sudadera de Fleece Columbia', 59.99, 'Ropa', 'Sudadera térmica de tejido polar.', 4, 1),
+('Jersey Básico COS', 49.99, 'Ropa', 'Jersey simple y elegante de algodón.', 6, 1),
+('Sudadera con Capucha Puma', 44.99, 'Ropa', 'Sudadera clásica con capucha ajustable.', 5, 1),
+('Jersey a Rayas Mango', 39.99, 'Ropa', 'Jersey ligero con estampado de rayas horizontales.', 6, 1),
+('Sudadera con Bolsillo Kanguro Reebok', 49.99, 'Ropa', 'Sudadera funcional con bolsillo tipo canguro.', 4, 1),
+('Jersey Cuello Barco Zara', 59.99, 'Ropa', 'Jersey con diseño femenino y cuello barco.', 3, 1),
+('Sudadera Logo Grande Nike', 54.99, 'Ropa', 'Sudadera con logotipo grande en el pecho.', 5, 1),
+('Jersey con Detalles Texturados GAP', 69.99, 'Ropa', 'Jersey con texturas en relieve para un look moderno.', 3, 1),
+('Sudadera Técnica Patagonia', 79.90, 'Ropa', 'Sudadera ligera y transpirable para deportes.', 4, 1),
+('Jersey Largo con Cinturón Mango', 49.99, 'Ropa', 'Jersey largo con cinturón ajustable.', 6, 1),
+('Sudadera Gráfica Bershka', 34.99, 'Ropa', 'Sudadera juvenil con gráficos llamativos.', 5, 1),
+('Jersey Tejido Acabado Rústico Zara', 59.99, 'Ropa', 'Jersey con acabado artesanal.', 4, 1),
+('Sudadera Corta con Estampado H&M', 29.99, 'Ropa', 'Sudadera juvenil con estampado moderno.', 6, 1),
+('Jersey Estilo Vintage Mango', 69.99, 'Ropa', 'Jersey de diseño vintage con colores vivos.', 3, 1),
+('Sudadera Bicolor Pull&Bear', 34.99, 'Ropa', 'Sudadera con diseño en dos colores.', 5, 1),
+('Jersey Cuello Perkins Zara', 49.99, 'Ropa', 'Jersey de cuello perkins elegante y cálido.', 4, 1),
+('Sudadera Deportiva Sin Capucha Adidas', 44.90, 'Ropa', 'Sudadera deportiva sin capucha.', 6, 1),
+('Jersey Largo H&M', 39.99, 'Ropa', 'Jersey básico largo con diseño casual.', 5, 1),
+('Sudadera Estilo Futurista COS', 79.99, 'Ropa', 'Sudadera con cortes asimétricos y diseño moderno.', 3, 1),
+('Jersey a Cuadros Mango', 59.99, 'Ropa', 'Jersey estampado con diseño de cuadros.', 4, 1),
+('Sudadera Básica Color Neutro Bershka', 34.99, 'Ropa', 'Sudadera en colores neutros, ideal para combinar.', 6, 1),
+('Jersey de Invierno Uniqlo', 69.99, 'Ropa', 'Jersey grueso diseñado para climas fríos.', 3, 1),
+('Sudadera Oversize con Estampado Zara', 44.99, 'Ropa', 'Sudadera holgada con estampado frontal llamativo.', 5, 1),
+('Jersey de Lana Trenzado Uniqlo', 59.99, 'Ropa', 'Jersey de lana con diseño trenzado clásico.', 4, 1),
+('Sudadera con Cremallera Parcial Columbia', 49.90, 'Ropa', 'Sudadera con media cremallera y bolsillo lateral.', 5, 1),
+('Jersey Color Block Pull&Bear', 39.99, 'Ropa', 'Jersey con diseño de bloques de color.', 6, 1),
+('Sudadera con Forro Sherpa Bershka', 54.99, 'Ropa', 'Sudadera con interior de sherpa para mayor calidez.', 3, 1),
+('Jersey con Lentejuelas Zara', 69.99, 'Ropa', 'Jersey festivo con detalles de lentejuelas.', 4, 1),
+('Sudadera de Algodón Orgánico H&M', 29.99, 'Ropa', 'Sudadera básica de algodón sostenible.', 6, 1),
+('Jersey Corto Punto Grueso Mango', 49.99, 'Ropa', 'Jersey corto y cálido de punto grueso.', 5, 1),
+('Sudadera con Diseño Retro Adidas', 59.99, 'Ropa', 'Sudadera con estampado y corte retro.', 4, 1),
+('Jersey Estampado Floral Massimo Dutti', 79.90, 'Ropa', 'Jersey con diseño floral para primavera.', 3, 1),
+('Sudadera Gráfica Oversize Urban Outfitters', 44.90, 'Ropa', 'Sudadera con gráficos y corte holgado.', 5, 1),
+('Jersey con Borlas Zara', 69.99, 'Ropa', 'Jersey decorado con borlas de lana.', 3, 1),
+('Sudadera Estilo Militar Pull&Bear', 39.99, 'Ropa', 'Sudadera con estampado de camuflaje.', 6, 1),
+('Jersey a Rayas Multicolor Mango', 59.99, 'Ropa', 'Jersey a rayas con combinación de colores vivos.', 5, 1),
+('Sudadera con Capucha Acolchada Nike', 74.90, 'Ropa', 'Sudadera con interior acolchado y capucha.', 4, 1),
+('Jersey Básico Cuello Redondo COS', 49.99, 'Ropa', 'Jersey clásico con diseño minimalista.', 6, 1),
+('Sudadera de Algodón Levis', 54.90, 'Ropa', 'Sudadera básica de algodón con logo.', 5, 1),
+('Jersey con Cuello en Pico Massimo Dutti', 79.99, 'Ropa', 'Jersey elegante con cuello en pico profundo.', 3, 1),
+('Sudadera con Estampado Gráfico GAP', 39.99, 'Ropa', 'Sudadera con diseño gráfico llamativo.', 6, 1),
+('Jersey con Mangas Acampanadas Mango', 59.99, 'Ropa', 'Jersey con diseño de mangas amplias.', 4, 1),
+('Sudadera Cropped Logo Grande Nike', 44.99, 'Ropa', 'Sudadera corta con logotipo grande.', 5, 1),
+('Jersey Largo con Cuello Cisne Zara', 79.99, 'Ropa', 'Jersey largo con cuello alto y diseño sofisticado.', 3, 1),
+('Sudadera con Capucha Larga Adidas', 59.90, 'Ropa', 'Sudadera con capucha y corte largo.', 4, 1),
+('Jersey Tejido a Mano H&M', 49.99, 'Ropa', 'Jersey de estilo artesanal tejido a mano.', 6, 1),
+('Sudadera Térmica Columbia', 69.99, 'Ropa', 'Sudadera técnica con tejido térmico.', 5, 1),
+('Jersey Estilo Vintage Stradivarius', 39.99, 'Ropa', 'Jersey con diseño retro y colores suaves.', 4, 1),
+('Sudadera Básica Oversize Bershka', 34.99, 'Ropa', 'Sudadera básica con corte holgado.', 6, 1),
+('Jersey con Botones Decorativos Mango', 49.99, 'Ropa', 'Jersey decorado con botones en los hombros.', 5, 1),
+('Sudadera Deportiva Puma', 49.90, 'Ropa', 'Sudadera ligera y transpirable.', 4, 1),
+('Jersey de Lana Recycled H&M', 39.99, 'Ropa', 'Jersey hecho con lana reciclada.', 6, 1),
+('Sudadera Cropped Estilo Urbano Nike', 54.99, 'Ropa', 'Sudadera corta con diseño urbano moderno.', 5, 1),
+('Jersey con Capucha y Bolsillo Zara', 59.99, 'Ropa', 'Jersey con capucha y bolsillo tipo canguro.', 4, 1),
+('Sudadera con Rayas Horizontales Mango', 49.90, 'Ropa', 'Sudadera con diseño clásico de rayas.', 6, 1),
+('Jersey Largo y Suave Pull&Bear', 39.99, 'Ropa', 'Jersey largo y cómodo para días fríos.', 5, 1),
+('Sudadera Estilo Deportivo Adidas', 59.99, 'Ropa', 'Sudadera diseñada para entrenamiento físico.', 4, 1),
+('Sudadera Estilo Deportivo Nike', 59.99, 'Ropa', 'Sudadera diseñada para entrenamiento físico.', 4, 1),
+('Jersey Trenzado Estilo Boho Mango', 69.99, 'Ropa', 'Jersey con diseño bohemio y trenzas.', 3, 1),
+('Sudadera con Cremallera y Bolsillos GAP', 44.90, 'Ropa', 'Sudadera funcional con bolsillos laterales.', 6, 1),
+('Jersey Cuello Mao Zara', 79.99, 'Ropa', 'Jersey elegante con cuello mao y botones.', 4, 1),
+('Sudadera Estampado Tie-Dye Bershka', 39.99, 'Ropa', 'Sudadera con estampado tie-dye juvenil.', 5, 1),
+('Jersey Multicolor Jacquard COS', 89.90, 'Ropa', 'Jersey con diseño intrincado y colores vivos.', 3, 1),
+('Sudadera Técnica para Correr Nike', 59.90, 'Ropa', 'Sudadera ligera ideal para running.', 5, 1),
+('Sudadera Técnica para Correr Adidas', 59.90, 'Ropa', 'Sudadera ligera ideal para running.', 5, 1),
+('Jersey con Estilo Deportivo Adidas', 49.99, 'Ropa', 'Jersey inspirado en ropa deportiva.', 4, 1),
+('Sudadera Larga Tipo Vestido Zara', 49.99, 'Ropa', 'Sudadera larga que puede usarse como vestido.', 6, 1),
+('Jersey Cuello Barco Estilo Vintage Mango', 59.99, 'Ropa', 'Jersey amplio con cuello barco.', 5, 1),
+('Sudadera de Diseño Original Uniqlo', 44.90, 'Ropa', 'Sudadera con gráficos exclusivos.', 4, 1),
+('Jersey Cuello Redondo de Invierno GAP', 39.99, 'Ropa', 'Jersey cálido para temporadas frías.', 6, 1);
 
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Vestido Camisero Polo Ralph Lauren', 129.00, 'Ropa', 'Vestido estilo camisa con cinturón.', 2, 1);
+-------------------------------------------------------------------------------
+-- Subcategoría: Ropa de Baño (100 INSERTS)
+-------------------------------------------------------------------------------
+INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo) VALUES
+('Bikini de 2 Piezas Estilo Halter Victorias Secret', 45.99, 'Ropa', 'Bikini de dos piezas con top estilo halter, ideal para tomar el sol.', 10, 1),
+('Bañador Enterizo Adidas', 59.99, 'Ropa', 'Bañador enterizo de alta calidad con soporte y ajuste perfecto.', 6, 1),
+('Bikini de Rayas Estilo Triangular H&M', 29.99, 'Ropa', 'Bikini de rayas con top estilo triangular y ajuste cómodo.', 15, 1),
+('Bañador de Una Sola Pieza Speedo', 54.99, 'Ropa', 'Bañador de una sola pieza, ideal para natación con soporte adicional.', 8, 1),
+('Bikini Push-Up Calvin Klein', 39.99, 'Ropa', 'Bikini con top push-up, ideal para realzar la figura con elegancia.', 10, 1),
+('Bañador con Detalles de Encaje La Perla', 99.99, 'Ropa', 'Bañador con detalles de encaje para un look sofisticado y elegante.', 5, 1),
+('Bikini Deportivo Nike', 42.99, 'Ropa', 'Bikini de corte deportivo, ideal para actividades acuáticas intensas.', 8, 1),
+('Bañador Estilo Halter Azul Marino Tommy Hilfiger', 58.99, 'Ropa', 'Bañador de una pieza estilo halter, cómodo y elegante para la playa.', 6, 1),
+('Bikini Estilo Tanga Sloggi', 26.99, 'Ropa', 'Bikini de estilo tanga, cómodo y con un ajuste perfecto.', 12, 1),
+('Bañador con Espalda Cruzada Uniqlo', 49.99, 'Ropa', 'Bañador con espalda cruzada, ideal para nadadores o actividades acuáticas.', 7, 1),
+('Bikini de Flecos La Senza', 39.99, 'Ropa', 'Bikini de dos piezas con detalles de flecos, perfecto para la playa.', 10, 1),
+('Bañador de Rayas Estilo Retro H&M', 41.99, 'Ropa', 'Bañador de rayas estilo retro, con corte en la cintura para un look vintage.', 9, 1),
+('Bikini Estilo Bandeau Victorias Secret', 38.99, 'Ropa', 'Bikini estilo bandeau, sin tirantes y perfecto para broncearse.', 11, 1),
+('Bañador de Natación Speedo', 55.99, 'Ropa', 'Bañador de natación profesional, de alta elasticidad y gran confort.', 6, 1),
+('Bikini de Encaje Estilo Triangular Tommy Hilfiger', 41.99, 'Ropa', 'Bikini de encaje con top triangular, cómodo y elegante.', 9, 1),
+('Bañador con Cintura Alta H&M', 35.99, 'Ropa', 'Bañador de una pieza con cintura alta, ideal para un look retro y cómodo.', 12, 1),
+('Bikini con Detalles Dorados La Perla', 52.99, 'Ropa', 'Bikini con detalles dorados, elegante y sofisticado para la playa.', 8, 1),
+('Bañador Enterizo Deportivo Reebok', 50.99, 'Ropa', 'Bañador enterizo con soporte y ajuste perfecto, ideal para entrenamientos acuáticos.', 7, 1),
+('Bikini Estilo Crop Top Calvin Klein', 45.99, 'Ropa', 'Bikini con top estilo crop, perfecto para un look moderno y cómodo.', 10, 1),
+('Bañador Enterizo con Espalda Abierta Nike', 49.99, 'Ropa', 'Bañador enterizo con espalda abierta para mayor comodidad y ventilación.', 8, 1),
+('Bikini Estilo V de Encaje H&M', 34.99, 'Ropa', 'Bikini con top estilo V, con detalles de encaje para un toque sensual.', 14, 1),
+('Bañador Estilo Tanga La Senza', 39.99, 'Ropa', 'Bañador estilo tanga, elegante y cómodo para tomar el sol.', 10, 1),
+('Bikini Estilo Deportivo Reebok', 41.99, 'Ropa', 'Bikini estilo deportivo, perfecto para actividades acuáticas intensas.', 9, 1),
+('Bañador Estilo Halter con Rayas Adidas', 47.99, 'Ropa', 'Bañador estilo halter con rayas, ideal para un look retro y elegante.', 7, 1),
+('Bikini con Estampado Tropical Victorias Secret', 37.99, 'Ropa', 'Bikini con estampado tropical, perfecto para un día de playa o piscina.', 12, 1),
+('Bañador de Natación Speedo', 59.99, 'Ropa', 'Bañador de natación profesional, diseñado para máxima flexibilidad y confort.', 6, 1),
+('Bikini de Encaje y Rayas Sloggi', 32.99, 'Ropa', 'Bikini con detalles de encaje y rayas, para un look sexy y sofisticado.', 8, 1),
+('Bañador Enterizo Estilo Deportivo Uniqlo', 54.99, 'Ropa', 'Bañador de una pieza estilo deportivo, ideal para entrenamientos acuáticos.', 6, 1),
+('Bikini Estilo Bralette Calvin Klein', 44.99, 'Ropa', 'Bikini estilo bralette, con soporte y un diseño moderno y elegante.', 10, 1),
+('Bañador Estilo Mono Azul La Perla', 95.99, 'Ropa', 'Bañador estilo mono con detalles de encaje, para un look elegante y sofisticado.', 5, 1),
+('Bikini Estilo V de Rayas Tommy Hilfiger', 42.99, 'Ropa', 'Bikini estilo V con rayas, para un look moderno y cómodo en la playa.', 9, 1),
+('Bañador Enterizo Estilo Deportivo Reebok', 59.99, 'Ropa', 'Bañador enterizo deportivo con corte aerodinámico para natación de alto rendimiento.', 8, 1),
+('Bikini de Estilo Retro La Senza', 38.99, 'Ropa', 'Bikini de estilo retro con top de corte alto y detalles vintage.', 10, 1),
+('Bañador con Espalda Cruzada H&M', 44.99, 'Ropa', 'Bañador de una pieza con espalda cruzada, ideal para nadadores o actividades acuáticas.', 7, 1),
+('Bikini Deportivo Estilo Halter Victorias Secret', 46.99, 'Ropa', 'Bikini estilo halter deportivo, perfecto para deportes acuáticos activos.', 10, 1),
+('Bañador Estilo Halter de Seda Calvin Klein', 92.99, 'Ropa', 'Bañador estilo halter de seda, lujoso y elegante para ocasiones especiales.', 5, 1),
+('Bikini de Tiras La Perla', 41.99, 'Ropa', 'Bikini con tiras finas y detalles elegantes, ideal para un look sofisticado.', 12, 1),
+('Bañador Estilo Retro con Cintura Alta Sloggi', 38.99, 'Ropa', 'Bañador de una pieza estilo retro con cintura alta, para un look vintage.', 9, 1),
+('Bikini Estilo Tanga con Rayas H&M', 29.99, 'Ropa', 'Bikini estilo tanga con rayas, cómodo y ideal para tomar el sol.', 12, 1),
+('Bañador Enterizo con Diseño Floral Tommy Hilfiger', 63.99, 'Ropa', 'Bañador enterizo con diseño floral, elegante y fresco para el verano.', 8, 1),
+('Bikini Estilo Bandeau de Rayas La Senza', 34.99, 'Ropa', 'Bikini estilo bandeau con rayas, ideal para un look playero chic.', 11, 1),
+('Bañador Enterizo Deportivo Adidas', 60.99, 'Ropa', 'Bañador enterizo estilo deportivo, ideal para entrenamientos acuáticos intensos.', 7, 1),
+('Bikini Estilo Bralette con Rayas Calvin Klein', 39.99, 'Ropa', 'Bikini estilo bralette con rayas, cómodo y moderno para el verano.', 10, 1),
+('Bañador de Natación con Detalles de Encaje Speedo', 65.99, 'Ropa', 'Bañador profesional con detalles de encaje, ideal para natación y confort.', 6, 1),
+('Bikini de Rayas Verticales La Perla', 36.99, 'Ropa', 'Bikini de rayas verticales, elegante y perfecto para un look veraniego.', 8, 1),
+('Bañador Enterizo Estilo Clásico H&M', 48.99, 'Ropa', 'Bañador enterizo con corte clásico, cómodo y elegante para la piscina.', 9, 1),
+('Bikini Estilo Tanga Estampado H&M', 29.99, 'Ropa', 'Bikini estilo tanga con estampado floral, perfecto para la playa o piscina.', 15, 1),
+('Bañador Enterizo de Colores Brillantes La Senza', 89.99, 'Ropa', 'Bañador enterizo con colores brillantes, ideal para un look vibrante y alegre.', 6, 1),
+('Bikini Deportivo con Corte Alto Reebok', 44.99, 'Ropa', 'Bikini deportivo con corte alto, ideal para deportes acuáticos activos.', 9, 1),
+('Bañador Estilo Bañera La Perla', 99.99, 'Ropa', 'Bañador estilo bañera con detalles de encaje y un ajuste cómodo.', 5, 1),
+('Bikini Estilo Halter con Cintura Alta Victorias Secret', 47.99, 'Ropa', 'Bikini estilo halter con cintura alta, perfecto para un look de verano retro.', 10, 1),
+('Bikini Estilo Triangular con Detalles de Conchas La Senza', 39.99, 'Ropa', 'Bikini estilo triangular con detalles de conchas, ideal para un look bohemio.', 12, 1),
+('Bañador Enterizo con Diseño Animal Print Victorias Secret', 72.99, 'Ropa', 'Bañador enterizo con diseño animal print, sofisticado y atractivo.', 6, 1),
+('Bikini Estilo Bralette con Flores Sloggi', 35.99, 'Ropa', 'Bikini estilo bralette con flores, ideal para un look fresco y veraniego.', 14, 1),
+('Bañador Estilo Halter con Detalles de Pompón H&M', 46.99, 'Ropa', 'Bañador de una pieza estilo halter con detalles de pompones, ideal para la playa.', 8, 1),
+('Bikini con Cintura Alta Estilo Retro La Perla', 49.99, 'Ropa', 'Bikini con cintura alta estilo retro, elegante y cómodo para el sol.', 10, 1),
+('Bañador Enterizo con Espalda Abierta Calvin Klein', 55.99, 'Ropa', 'Bañador enterizo con espalda abierta para una mayor comodidad en la piscina.', 7, 1),
+('Bikini con Cintura Alta de Rayas Adidas', 42.99, 'Ropa', 'Bikini de cintura alta con rayas, perfecto para un look elegante y retro.', 9, 1),
+('Bañador de Rayas con Detalles de Encaje La Senza', 58.99, 'Ropa', 'Bañador de rayas con detalles de encaje, ideal para un look veraniego y sexy.', 7, 1),
+('Bikini de Doble Tirante H&M', 32.99, 'Ropa', 'Bikini con doble tirante, cómodo y con un diseño moderno y femenino.', 11, 1),
+('Bañador Enterizo Estilo Clásico con Detalles La Perla', 79.99, 'Ropa', 'Bañador enterizo estilo clásico con detalles de encaje, elegante y cómodo.', 5, 1),
+('Bikini Estilo Triangular con Rayas Uniqlo', 34.99, 'Ropa', 'Bikini estilo triangular con rayas, perfecto para un look relajado y moderno.', 12, 1),
+('Bañador Estilo Mono con Estampado Tropical Calvin Klein', 69.99, 'Ropa', 'Bañador estilo mono con estampado tropical, ideal para la playa.', 6, 1),
+('Bikini de Tiras Estilo Halter Victorias Secret', 49.99, 'Ropa', 'Bikini con tiras estilo halter, elegante y cómodo para todos los tipos de cuerpo.', 8, 1),
+('Bañador Enterizo con Escote Profundo La Perla', 89.99, 'Ropa', 'Bañador enterizo con escote profundo, para un look atrevido y sofisticado.', 5, 1),
+('Bikini de Rayas con Detalles de Tiras Reebok', 44.99, 'Ropa', 'Bikini con rayas y detalles de tiras, ideal para un look playero chic.', 10, 1),
+('Bañador Estilo Strapless Tommy Hilfiger', 56.99, 'Ropa', 'Bañador estilo strapless con detalles elegantes, cómodo para todo el día.', 7, 1),
+('Bikini con Detalles de Lazo H&M', 38.99, 'Ropa', 'Bikini con detalles de lazo, ideal para un look femenino y coqueto.', 9, 1),
+('Bañador de Estilo Deportivo Speedo', 62.99, 'Ropa', 'Bañador deportivo de una pieza con diseño ergonómico, ideal para nadadores.', 6, 1),
+('Bikini Estilo Bandeau con Estampado Floral La Senza', 41.99, 'Ropa', 'Bikini estilo bandeau con estampado floral, ideal para el verano.', 8, 1),
+('Bañador Enterizo Estilo Deportivo Nike', 68.99, 'Ropa', 'Bañador enterizo estilo deportivo, diseñado para actividades acuáticas de alto rendimiento.', 7, 1),
+('Bikini de Encaje Estilo Bralette Calvin Klein', 47.99, 'Ropa', 'Bikini de encaje estilo bralette, cómodo y elegante para la playa.', 9, 1),
+('Bañador Estilo Retro con Cintura Alta H&M', 53.99, 'Ropa', 'Bañador estilo retro con cintura alta, ideal para un look vintage y cómodo.', 7, 1),
+('Bikini Estilo Halter de Colores Vibrantes La Perla', 52.99, 'Ropa', 'Bikini estilo halter con colores vibrantes, para un look lleno de energía y estilo.', 6, 1),
+('Bañador Estilo Sporty Reebok', 49.99, 'Ropa', 'Bañador de estilo sporty con detalles ergonómicos, ideal para el entrenamiento acuático.', 8, 1),
+('Bikini de Rayas y Detalles de Cordón Sloggi', 36.99, 'Ropa', 'Bikini de rayas con detalles de cordón, cómodo y moderno para el verano.', 10, 1),
+('Bañador Enterizo con Espalda Abierta La Senza', 79.99, 'Ropa', 'Bañador enterizo con espalda abierta, elegante y cómodo para todos los cuerpos.', 6, 1),
+('Bikini de Algodón Estilo Bandeau Tommy Hilfiger', 48.99, 'Ropa', 'Bikini de algodón estilo bandeau, suave y cómodo para la piscina o la playa.', 8, 1),
+('Bañador Enterizo Estilo Clásico con Cintura Alta Uniqlo', 62.99, 'Ropa', 'Bañador enterizo con cintura alta estilo clásico, para un ajuste perfecto.', 7, 1),
+('Bikini Estilo Tanga con Detalles de Tiras H&M', 33.99, 'Ropa', 'Bikini estilo tanga con detalles de tiras, cómodo y chic para el verano.', 10, 1),
+('Bañador Estilo Deportivo con Espalda Cruzada Nike', 55.99, 'Ropa', 'Bañador estilo deportivo con espalda cruzada, ideal para nadadores profesionales.', 7, 1),
+('Bikini de Seda Estilo Triangular La Perla', 74.99, 'Ropa', 'Bikini de seda estilo triangular, lujoso y perfecto para un look elegante en la playa.', 6, 1),
+('Bañador Enterizo con Detalles Dorados H&M', 79.99, 'Ropa', 'Bañador enterizo con detalles dorados, elegante y con un ajuste perfecto.', 5, 1),
+('Bikini Estilo Bralette con Estampado de Flores Victorias Secret', 49.99, 'Ropa', 'Bikini estilo bralette con estampado de flores, perfecto para el verano.', 8, 1),
+('Bañador Estilo Mono con Corte Alto Reebok', 72.99, 'Ropa', 'Bañador estilo mono con corte alto, ideal para nadadores y actividades acuáticas.', 7, 1),
+('Bikini Estilo Halter con Estampado Floral La Senza', 42.99, 'Ropa', 'Bikini estilo halter con estampado floral, para un look fresco y veraniego.', 9, 1),
+('Bañador de Corte Clásico Estilo Bikini La Perla', 77.99, 'Ropa', 'Bañador de corte clásico con detalles de encaje, ideal para un look sofisticado.', 5, 1),
+('Bikini con Cintura Alta y Detalles de Lazo H&M', 35.99, 'Ropa', 'Bikini con cintura alta y detalles de lazo, cómodo y elegante para la playa.', 12, 1),
+('Bañador Enterizo con Espalda Alta Victorias Secret', 63.99, 'Ropa', 'Bañador enterizo con espalda alta, ideal para un ajuste perfecto y elegante.', 6, 1),
+('Bikini Estilo Bandeau con Detalles de Encaje La Perla', 53.99, 'Ropa', 'Bikini estilo bandeau con detalles de encaje, cómodo y sexy para el verano.', 7, 1),
+('Bañador Estilo Retro con Detalles de Pompón Reebok', 62.99, 'Ropa', 'Bañador estilo retro con detalles de pompones, ideal para un look único y cómodo.', 6, 1),
+('Bikini Deportivo Estilo Alto Calvin Klein', 51.99, 'Ropa', 'Bikini estilo alto con detalles deportivos, ideal para entrenamientos acuáticos.', 9, 1),
+('Bañador de Natación Profesional Speedo', 68.99, 'Ropa', 'Bañador de natación profesional con diseño ergonómico, para mayor rendimiento en el agua.', 6, 1),
+('Bikini Estilo Halter con Estampado Animal Print La Senza', 48.99, 'Ropa', 'Bikini estilo halter con estampado animal print, ideal para un look atractivo y moderno.', 7, 1),
+('Bikini Estilo Triangular con Detalles de Lazo Victorias Secret', 42.99, 'Ropa', 'Bikini estilo triangular con detalles de lazo, elegante y cómodo para el verano.', 8, 1),
+('Bañador Enterizo con Detalles de Encaje La Perla', 79.99, 'Ropa', 'Bañador enterizo con detalles de encaje, ideal para un look sofisticado y elegante.', 5, 1),
+('Bikini Estilo Bralette con Detalles Dorados H&M', 45.99, 'Ropa', 'Bikini estilo bralette con detalles dorados, perfecto para un look glamoroso y veraniego.', 9, 1),
+('Bañador Deportivo de Corte Bajo Speedo', 58.99, 'Ropa', 'Bañador deportivo con corte bajo, ideal para entrenamientos y deportes acuáticos.', 6, 1),
+('Bikini con Tiras en la Cintura Calvin Klein', 41.99, 'Ropa', 'Bikini con tiras en la cintura, cómodo y estilizado para un look chic de playa.', 7, 1),
+('Bañador Estilo Bandeau con Detalles de Rayas La Senza', 63.99, 'Ropa', 'Bañador estilo bandeau con detalles de rayas, moderno y perfecto para el verano.', 6, 1);
 
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Mono Deportivo Nike', 54.99, 'Ropa', 'Mono ajustado para entrenamiento.', 5, 1);
+-------------------------------------------------------------------------------
+-- Subcategoría: Ropa de Trabajo (100 INSERTS)
+-------------------------------------------------------------------------------
+INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo) VALUES
+('Pantalón de Trabajo Dickies', 49.99, 'Ropa', 'Pantalón resistente para trabajo, ideal para oficios manuales.', 10, 1),
+('Camisa Polo de Trabajo Carhartt', 34.99, 'Ropa', 'Camisa polo cómoda y duradera, perfecta para trabajos al aire libre.', 12, 1),
+('Chaqueta de Trabajo Reflectante 3M', 69.99, 'Ropa', 'Chaqueta de trabajo con material reflectante para trabajos nocturnos o de baja visibilidad.', 8, 1),
+('Bota de Seguridad Timberland PRO', 89.99, 'Ropa', 'Bota de seguridad de alta calidad, ideal para trabajos que requieren protección en el pie.', 15, 1),
+('Overol de Trabajo Red Kap', 57.99, 'Ropa', 'Overol de trabajo resistente, ideal para proteger la ropa durante el trabajo físico.', 10, 1),
+('Gorro de Trabajo de Algodón Carhartt', 18.99, 'Ropa', 'Gorro de trabajo de algodón, cómodo y transpirable para largas jornadas.', 20, 1),
+('Guantes de Trabajo de Cuero Mechanix Wear', 22.99, 'Ropa', 'Guantes de trabajo de cuero, ideales para protección en trabajos pesados.', 30, 1),
+('Chaqueta Softshell de Trabajo Columbia', 89.99, 'Ropa', 'Chaqueta softshell con tecnología de aislamiento, perfecta para trabajos en exteriores.', 7, 1),
+('Pantalón de Trabajo con Refuerzos Dickies', 64.99, 'Ropa', 'Pantalón de trabajo con refuerzos en las rodillas, resistente para condiciones difíciles.', 9, 1),
+('Camisa de Manga Larga para Trabajo Carhartt', 39.99, 'Ropa', 'Camisa de manga larga de algodón, ideal para el trabajo en climas frescos.', 14, 1),
+('Bota de Seguridad con Punta de Acero Caterpillar', 99.99, 'Ropa', 'Bota de seguridad con punta de acero y suela antideslizante para ambientes laborales peligrosos.', 12, 1),
+('Pantalón Corto de Trabajo Columbia', 35.99, 'Ropa', 'Pantalón corto de trabajo cómodo y funcional, ideal para ambientes cálidos.', 15, 1),
+('Chaqueta de Trabajo con Capucha Carhartt', 72.99, 'Ropa', 'Chaqueta de trabajo con capucha, resistente y perfecta para exteriores en invierno.', 6, 1),
+('Pantalón de Trabajo para Hombre Wrangler', 55.99, 'Ropa', 'Pantalón de trabajo cómodo y duradero, adecuado para largas jornadas.', 10, 1),
+('Gorra de Trabajo Nike', 25.99, 'Ropa', 'Gorra de trabajo transpirable, ideal para protección solar durante el trabajo al aire libre.', 18, 1),
+('Bota de Trabajo de Cuero con Suela Antideslizante Timberland', 105.99, 'Ropa', 'Bota de trabajo de cuero con suela antideslizante, perfecta para condiciones de trabajo resbaladizas.', 9, 1),
+('Chaqueta de Alta Visibilidad con Reflectores Carhartt', 79.99, 'Ropa', 'Chaqueta de alta visibilidad con reflectores, ideal para trabajos en la carretera.', 7, 1),
+('Gafas de Seguridad 3M', 15.99, 'Ropa', 'Gafas de seguridad cómodas y resistentes para proteger los ojos en ambientes laborales.', 25, 1),
+('Pantalón de Trabajo de Alta Visibilidad Dickies', 69.99, 'Ropa', 'Pantalón de trabajo de alta visibilidad con bandas reflectantes, esencial para la seguridad laboral.', 8, 1),
+('Camisa de Trabajo de Manga Corta Wrangler', 29.99, 'Ropa', 'Camisa de trabajo de manga corta, cómoda y transpirable para climas cálidos.', 16, 1),
+('Botines de Seguridad con Punta de Acero Timberland', 98.99, 'Ropa', 'Botines de seguridad con punta de acero, ideales para trabajos en construcción.', 11, 1),
+('Gorra de Seguridad de Poliéster Carhartt', 20.99, 'Ropa', 'Gorra de seguridad resistente al sol, ideal para trabajo al aire libre.', 18, 1),
+('Chaqueta de Trabajo Impermeable Patagonia', 120.99, 'Ropa', 'Chaqueta de trabajo impermeable, resistente al agua para condiciones extremas.', 6, 1),
+('Pantalón de Trabajo de Cargo Carhartt', 54.99, 'Ropa', 'Pantalón de cargo de trabajo con múltiples bolsillos, ideal para herramientas y equipos.', 12, 1),
+('Guantes de Trabajo de Nylon Mechanix Wear', 19.99, 'Ropa', 'Guantes de trabajo de nylon, ligeros y resistentes para trabajos precisos.', 30, 1),
+('Chaqueta de Trabajo Antiviento Columbia', 85.99, 'Ropa', 'Chaqueta antiviento, ideal para condiciones de trabajo al aire libre en climas fríos.', 7, 1),
+('Pantalón de Trabajo con Cintura Ajustable Dickies', 62.99, 'Ropa', 'Pantalón de trabajo con cintura ajustable, cómodo para todo el día de trabajo.', 9, 1),
+('Bota de Seguridad Antideslizante Caterpillar', 109.99, 'Ropa', 'Bota de seguridad con suela antideslizante, ideal para trabajos en ambientes resbaladizos.', 10, 1),
+('Chaqueta de Alta Visibilidad Reflectante Carhartt', 89.99, 'Ropa', 'Chaqueta de alta visibilidad con reflectantes para trabajo nocturno o en condiciones de poca luz.', 6, 1),
+('Pantalón de Trabajo con Bolsillos de Carga Dickies', 68.99, 'Ropa', 'Pantalón de trabajo con bolsillos de carga, ideal para almacenar herramientas y equipos.', 12, 1),
+('Guantes de Trabajo de Látex Mechanix Wear', 15.99, 'Ropa', 'Guantes de trabajo de látex, perfectos para trabajos que requieren destreza manual.', 40, 1),
+('Chaqueta de Trabajo de Invierno Columbia', 115.99, 'Ropa', 'Chaqueta de invierno de trabajo, ideal para mantener el calor en ambientes fríos.', 5, 1),
+('Bota de Seguridad para Trabajo en Construcción Red Wing', 129.99, 'Ropa', 'Bota de seguridad para trabajo en construcción, con protección avanzada para el pie.', 8, 1),
+('Pantalón de Trabajo Elástico Wrangler', 59.99, 'Ropa', 'Pantalón de trabajo elástico, cómodo y duradero para todo tipo de movimientos.', 11, 1),
+('Chaqueta Antiviento de Trabajo Patagonia', 102.99, 'Ropa', 'Chaqueta de trabajo antiviento, perfecta para protegerse del frío durante las jornadas laborales.', 7, 1),
+('Guantes de Trabajo de Algodón Mechanix Wear', 17.99, 'Ropa', 'Guantes de trabajo de algodón, cómodos y resistentes para tareas livianas.', 35, 1),
+('Pantalón de Trabajo con Protecciones en Rodillas Dickies', 74.99, 'Ropa', 'Pantalón de trabajo con protecciones en las rodillas para mayor comodidad y seguridad.', 8, 1),
+('Gorra de Trabajo de Seguridad Carhartt', 24.99, 'Ropa', 'Gorra de seguridad de trabajo, ideal para protección solar y comodidad.', 18, 1),
+('Chaqueta de Trabajo de Poliéster Columbia', 89.99, 'Ropa', 'Chaqueta de trabajo de poliéster, ligera y resistente, ideal para trabajos de exteriores.', 6, 1),
+('Pantalón de Trabajo de Tela Resistente Carhartt', 67.99, 'Ropa', 'Pantalón de trabajo de tela resistente, ideal para largas jornadas de trabajo físico.', 11, 1),
+('Guantes de Trabajo con Refuerzos Mechanix Wear', 21.99, 'Ropa', 'Guantes de trabajo con refuerzos, ideales para trabajos pesados y de alta resistencia.', 28, 1),
+('Bota de Seguridad de Cuero Caterpillar', 94.99, 'Ropa', 'Bota de seguridad de cuero con suela antideslizante, ideal para trabajo en exteriores.', 9, 1),
+('Camisa de Trabajo de Manga Larga Columbia', 42.99, 'Ropa', 'Camisa de trabajo de manga larga, resistente y cómoda para largos turnos laborales.', 14, 1),
+('Pantalón de Trabajo con Refuerzos en Codos Dickies', 62.99, 'Ropa', 'Pantalón de trabajo con refuerzos en codos, ideal para trabajos de oficina y al aire libre.', 8, 1),
+('Chaqueta de Alta Visibilidad Nike', 79.99, 'Ropa', 'Chaqueta de alta visibilidad, esencial para trabajos en la carretera y condiciones de baja visibilidad.', 5, 1),
+('Botines de Seguridad con Protecciones Puma', 119.99, 'Ropa', 'Botines de seguridad con protecciones, ideales para trabajos en el sector de la construcción.', 7, 1),
+('Pantalón de Trabajo Resistente a Aceite Carhartt', 74.99, 'Ropa', 'Pantalón de trabajo resistente a aceites, ideal para trabajos en talleres y entornos industriales.', 6, 1),
+('Chaqueta de Trabajo Antimanchas Columbia', 85.99, 'Ropa', 'Chaqueta de trabajo antimanchas, fácil de limpiar y perfecta para el trabajo diario.', 8, 1),
+('Guantes de Trabajo Reforzados Mechanix Wear', 25.99, 'Ropa', 'Guantes de trabajo reforzados, perfectos para ambientes industriales y trabajos pesados.', 30, 1),
+('Bota de Seguridad con Punta de Acero Nike', 104.99, 'Ropa', 'Bota de seguridad con punta de acero, duradera y cómoda para todo tipo de trabajo.', 10, 1),
+('Chaqueta Softshell de Trabajo Dickies', 79.99, 'Ropa', 'Chaqueta softshell resistente, ideal para trabajo al aire libre en condiciones frías.', 8, 1),
+('Chaqueta de Trabajo con Forro Polar Carhartt', 89.99, 'Ropa', 'Chaqueta de trabajo con forro polar para mantener el calor en climas fríos.', 6, 1),
+('Pantalón de Trabajo con Cintura Elástica Dickies', 67.99, 'Ropa', 'Pantalón de trabajo con cintura elástica para mayor comodidad durante el trabajo.', 10, 1),
+('Bota de Seguridad con Suela de Caucho Timberland', 109.99, 'Ropa', 'Bota de seguridad con suela de caucho antideslizante, ideal para terrenos resbaladizos.', 7, 1),
+('Camisa de Trabajo de Manga Corta Nike', 36.99, 'Ropa', 'Camisa de manga corta, cómoda y resistente para trabajos de exterior o interiores.', 14, 1),
+('Guantes de Trabajo de Algodón Reforzado Mechanix Wear', 23.99, 'Ropa', 'Guantes de trabajo de algodón con refuerzos, ideales para trabajos en condiciones abrasivas.', 25, 1),
+('Chaqueta de Trabajo Impermeable Patagonia', 112.99, 'Ropa', 'Chaqueta impermeable de trabajo, perfecta para condiciones lluviosas en el exterior.', 8, 1),
+('Pantalón de Trabajo con Refuerzos en Rodillas Carhartt', 74.99, 'Ropa', 'Pantalón de trabajo con refuerzos en las rodillas, ideal para trabajos en terrenos difíciles.', 10, 1),
+('Bota de Trabajo con Suela Antideslizante Caterpillar', 115.99, 'Ropa', 'Bota de trabajo de alta resistencia con suela antideslizante para seguridad en superficies resbaladizas.', 9, 1),
+('Chaqueta Reflectante de Trabajo 3M', 69.99, 'Ropa', 'Chaqueta reflectante con tecnología 3M, esencial para trabajar en condiciones de baja visibilidad.', 7, 1),
+('Pantalón de Trabajo con Bolsillos Laterales Dickies', 58.99, 'Ropa', 'Pantalón de trabajo con múltiples bolsillos laterales, ideal para llevar herramientas y equipos.', 12, 1),
+('Guantes de Trabajo de Cuero Reforzado Mechanix Wear', 27.99, 'Ropa', 'Guantes de trabajo de cuero con refuerzos para mayor protección en trabajos pesados.', 30, 1),
+('Chaqueta de Trabajo con Capucha Dickies', 82.99, 'Ropa', 'Chaqueta de trabajo con capucha ajustable, ideal para climas fríos y lluviosos.', 5, 1),
+('Pantalón de Trabajo de Tela Resistente Wrangler', 59.99, 'Ropa', 'Pantalón de trabajo hecho de tela resistente, diseñado para soportar condiciones laborales exigentes.', 10, 1),
+('Bota de Seguridad con Punta de Acero Red Wing', 139.99, 'Ropa', 'Bota de seguridad con punta de acero y diseño ergonómico para mayor confort y protección.', 8, 1),
+('Chaqueta de Trabajo Térmica Carhartt', 109.99, 'Ropa', 'Chaqueta de trabajo térmica que proporciona aislamiento y protección en ambientes fríos.', 6, 1),
+('Guantes de Trabajo de Nitrilo Mechanix Wear', 19.99, 'Ropa', 'Guantes de trabajo de nitrilo para trabajos que requieren un toque fino y protección.', 28, 1),
+('Pantalón de Trabajo con Cintura Ajustable Wrangler', 63.99, 'Ropa', 'Pantalón de trabajo con cintura ajustable, cómodo y resistente para largas jornadas laborales.', 10, 1),
+('Bota de Seguridad Resistente al Agua Timberland', 125.99, 'Ropa', 'Bota de seguridad resistente al agua, ideal para trabajos en ambientes húmedos o exteriores.', 7, 1),
+('Camisa de Trabajo de Cuello Alto Columbia', 42.99, 'Ropa', 'Camisa de trabajo de cuello alto, ideal para protegerse del frío en ambientes laborales al aire libre.', 14, 1),
+('Chaqueta de Trabajo con Zipper Nike', 77.99, 'Ropa', 'Chaqueta de trabajo con zipper, cómoda y resistente para trabajar en diversas condiciones.', 5, 1),
+('Pantalón de Trabajo Confort Wrangler', 61.99, 'Ropa', 'Pantalón de trabajo de corte cómodo y tela resistente, ideal para trabajos prolongados.', 9, 1),
+('Guantes de Trabajo de Kevlar Mechanix Wear', 29.99, 'Ropa', 'Guantes de trabajo de kevlar, ideales para trabajos que requieren protección extra en ambientes peligrosos.', 20, 1),
+('Bota de Trabajo Resistente a Cortes Caterpillar', 114.99, 'Ropa', 'Bota de trabajo resistente a cortes y abrasiones, ideal para condiciones de trabajo difíciles.', 6, 1),
+('Pantalón de Trabajo con Refuerzos en Caderas Dickies', 67.99, 'Ropa', 'Pantalón de trabajo con refuerzos en las caderas, ideal para trabajos que requieren movilidad y resistencia.', 10, 1),
+('Chaqueta de Trabajo con Bolsillos Frontales Columbia', 95.99, 'Ropa', 'Chaqueta de trabajo con múltiples bolsillos frontales, ideal para llevar herramientas y materiales.', 7, 1),
+('Guantes de Trabajo Antideslizantes Mechanix Wear', 22.99, 'Ropa', 'Guantes de trabajo antideslizantes, perfectos para tareas que requieren un agarre firme y seguridad.', 32, 1),
+('Bota de Trabajo con Protección de Goma Red Wing', 138.99, 'Ropa', 'Bota de trabajo con protección de goma y suela antideslizante, ideal para terrenos difíciles.', 9, 1),
+('Chaqueta de Trabajo Reforzada Carhartt', 98.99, 'Ropa', 'Chaqueta de trabajo reforzada, ideal para condiciones de trabajo extremas y largas horas de uso.', 8, 1),
+('Pantalón de Trabajo Estilo Cargo Wrangler', 62.99, 'Ropa', 'Pantalón de trabajo estilo cargo con múltiples bolsillos, ideal para cargar herramientas.', 12, 1),
+('Bota de Seguridad con Suela de PU Timberland', 110.99, 'Ropa', 'Bota de seguridad con suela de PU, resistente y cómoda para largas horas de trabajo.', 10, 1),
+('Camisa de Trabajo con Protección UV Carhartt', 48.99, 'Ropa', 'Camisa de trabajo con protección UV, ideal para trabajar al aire libre bajo el sol.', 11, 1),
+('Guantes de Trabajo de Poliuretano Mechanix Wear', 21.99, 'Ropa', 'Guantes de trabajo de poliuretano, ideales para trabajos que requieren un tacto delicado y protección.', 30, 1),
+('Chaqueta de Trabajo de Lluvia Columbia', 102.99, 'Ropa', 'Chaqueta de trabajo impermeable, ideal para condiciones de lluvia y trabajo al aire libre.', 6, 1),
+('Pantalón de Trabajo con Protección a los Rayos UV Dickies', 64.99, 'Ropa', 'Pantalón de trabajo con protección UV, ideal para trabajo en exteriores bajo el sol intenso.', 10, 1),
+('Bota de Seguridad para Condiciones Frías Carhartt', 125.99, 'Ropa', 'Bota de seguridad para condiciones frías, aislante y con protección adicional contra el frío.', 8, 1),
+('Chaqueta de Trabajo con Forro Polar Columbia', 108.99, 'Ropa', 'Chaqueta de trabajo con forro polar, ideal para mantener el calor en condiciones de frío extremo.', 6, 1),
+('Guantes de Trabajo de Tacto Fino Mechanix Wear', 26.99, 'Ropa', 'Guantes de trabajo de tacto fino, ideales para trabajos de precisión y protección ligera.', 32, 1),
+('Pantalón de Trabajo de Nylon Resistente Wrangler', 58.99, 'Ropa', 'Pantalón de trabajo de nylon resistente, ideal para ambientes de trabajo con condiciones severas.', 9, 1),
+('Bota de Seguridad con Protección Completa Caterpillar', 139.99, 'Ropa', 'Bota de seguridad con protección completa, punta de acero y suela resistente para cualquier terreno.', 7, 1),
+('Chaqueta de Trabajo de Microfibra Nike', 89.99, 'Ropa', 'Chaqueta de trabajo de microfibra, ligera y resistente a los elementos.', 6, 1),
+('Pantalón de Trabajo con Protecciones en Rodillas Wrangler', 68.99, 'Ropa', 'Pantalón de trabajo con protección adicional en las rodillas para mayor durabilidad.', 8, 1),
+('Guantes de Trabajo con Protección de Impactos Mechanix Wear', 34.99, 'Ropa', 'Guantes de trabajo con protección de impactos, ideales para trabajos que requieren protección intensiva.', 28, 1),
+('Chaqueta de Trabajo Resistente al Viento Columbia', 96.99, 'Ropa', 'Chaqueta de trabajo resistente al viento, ideal para trabajos al aire libre en condiciones difíciles.', 6, 1),
+('Pantalón de Trabajo con Costuras Reforzadas Dickies', 65.99, 'Ropa', 'Pantalón de trabajo con costuras reforzadas, diseñado para mayor durabilidad en condiciones de trabajo extremas.', 9, 1),
+('Guantes de Trabajo con Protección Contra Cortes Mechanix Wear', 32.99, 'Ropa', 'Guantes de trabajo con protección contra cortes, ideales para trabajos con materiales afilados o peligrosos.', 25, 1),
+('Bota de Trabajo para Terrenos Rocosos Timberland', 124.99, 'Ropa', 'Bota de trabajo especialmente diseñada para terrenos rocosos, con suela antideslizante y duradera.', 8, 1),
+('Chaqueta de Trabajo con Aislamiento Thinsulate Carhartt', 114.99, 'Ropa', 'Chaqueta de trabajo con aislamiento Thinsulate, perfecta para ambientes laborales fríos y exteriores.', 6, 1),
+('Pantalón de Trabajo con Cintura Ajustable y Refuerzos Carhartt', 72.99, 'Ropa', 'Pantalón de trabajo con cintura ajustable y refuerzos, ideal para tareas exigentes y terrenos difíciles.', 10, 1),
+('Bota de Trabajo Antiestática Caterpillar', 119.99, 'Ropa', 'Bota de trabajo con suela antiestática, ideal para entornos de trabajo que requieren protección contra descargas eléctricas.', 7, 1);
 
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Vestido Fiesta Karen Millen', 159.00, 'Ropa', 'Vestido de cóctel con pedrería.', 2, 1);
+-------------------------------------------------------------------------------
+-- Subcategoría: Trajes (100 INSERTS)
+-------------------------------------------------------------------------------
+INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo) VALUES
+('Traje de Dos Piezas Classic Fit Hugo Boss', 299.99, 'Ropa', 'Traje de dos piezas de corte clásico con tela de alta calidad.', 5, 1),
+('Traje Slim Fit Zara', 199.99, 'Ropa', 'Traje de corte slim fit, ideal para ocasiones formales y elegantes.', 8, 1),
+('Traje de Tres Piezas Calvin Klein', 379.99, 'Ropa', 'Traje de tres piezas, incluye chaleco, para un look completo y sofisticado.', 7, 1),
+('Traje de Lana Merino Tommy Hilfiger', 349.99, 'Ropa', 'Traje de lana merino, cómodo y elegante para eventos de alta gama.', 6, 1),
+('Traje de Dos Piezas a Rayas Hugo Boss', 329.99, 'Ropa', 'Traje con patrón a rayas para un estilo moderno y elegante.', 5, 1),
+('Traje de Corte Ajustado Mango', 149.99, 'Ropa', 'Traje de corte ajustado, ideal para ocasiones especiales con un diseño contemporáneo.', 12, 1),
+('Traje Formal de Tres Piezas H&M', 229.99, 'Ropa', 'Traje formal con chaleco incluido, adecuado para bodas y eventos importantes.', 8, 1),
+('Traje de Dos Piezas en Tweed Burberry', 599.99, 'Ropa', 'Traje de dos piezas en tejido tweed, perfecto para un estilo clásico y de alta gama.', 4, 1),
+('Traje de Lino Formal Ralph Lauren', 399.99, 'Ropa', 'Traje de lino, fresco y cómodo, ideal para climas cálidos.', 7, 1),
+('Traje de Corte Moderno Dockers', 179.99, 'Ropa', 'Traje de corte moderno con tela ligera, perfecto para reuniones de negocios.', 9, 1),
+('Traje Formal de Dos Piezas Lacoste', 349.99, 'Ropa', 'Traje elegante de dos piezas, ideal para ocasiones formales y de alta gama.', 6, 1),
+('Traje Slim Fit de Lino Massimo Dutti', 219.99, 'Ropa', 'Traje de lino de corte slim, ideal para eventos formales en climas cálidos.', 10, 1),
+('Traje de Algodón Ajustado Ted Baker', 269.99, 'Ropa', 'Traje de algodón de corte ajustado, elegante y cómodo para todo el día.', 8, 1),
+('Traje Formal de Tres Piezas Banana Republic', 299.99, 'Ropa', 'Traje de tres piezas con un corte tradicional, ideal para entrevistas y reuniones importantes.', 5, 1),
+('Traje de Dos Piezas Elegante Hugo Boss', 499.99, 'Ropa', 'Traje elegante de dos piezas con tela de lana, perfecto para bodas y eventos formales.', 4, 1),
+('Traje de Corte Slim Boss Orange', 399.99, 'Ropa', 'Traje de corte slim con detalles modernos, ideal para ocasiones elegantes.', 7, 1),
+('Traje de Dos Piezas con Chaleco Ted Baker', 399.99, 'Ropa', 'Traje de dos piezas con chaleco incluido, para un estilo clásico con toque moderno.', 6, 1),
+('Traje de Tres Piezas de Lino Tommy Hilfiger', 469.99, 'Ropa', 'Traje de tres piezas en lino, perfecto para climas cálidos y eventos elegantes.', 5, 1),
+('Traje de Dos Piezas con Rayas Verticales Zara', 199.99, 'Ropa', 'Traje de dos piezas con rayas verticales, ideal para un look moderno y profesional.', 10, 1),
+('Traje de Dos Piezas Estilo Vintage Massimo Dutti', 319.99, 'Ropa', 'Traje de dos piezas estilo vintage con detalles clásicos para eventos formales.', 6, 1),
+('Traje Formal Ajustado Ralph Lauren', 499.99, 'Ropa', 'Traje formal ajustado, ideal para ocasiones elegantes con un toque de sofisticación.', 5, 1),
+('Traje Slim Fit con Chaleco Massimo Dutti', 279.99, 'Ropa', 'Traje de corte slim con chaleco, adecuado para eventos formales y reuniones.', 7, 1),
+('Traje de Lino Elegante Hugo Boss', 419.99, 'Ropa', 'Traje elegante de lino, ideal para bodas o eventos formales en climas cálidos.', 6, 1),
+('Traje de Corte Clásico Dockers', 169.99, 'Ropa', 'Traje de corte clásico, ideal para el trabajo diario y eventos de oficina.', 12, 1),
+('Traje a Rayas Verticales de Tres Piezas H&M', 229.99, 'Ropa', 'Traje con rayas verticales en tres piezas, perfecto para eventos formales y entrevistas.', 9, 1),
+('Traje de Cuello Alto Tommy Hilfiger', 349.99, 'Ropa', 'Traje con cuello alto de lana, perfecto para climas fríos y eventos de invierno.', 6, 1),
+('Traje Slim Fit Formal Mango', 179.99, 'Ropa', 'Traje slim fit ideal para eventos formales y reuniones de negocios.', 10, 1),
+('Traje de Corte Clásico con Chaleco Banana Republic', 299.99, 'Ropa', 'Traje clásico con chaleco incluido, perfecto para ocasiones formales y bodas.', 8, 1),
+('Traje Elegante de Dos Piezas Dockers', 229.99, 'Ropa', 'Traje elegante de dos piezas con tela de calidad, ideal para el trabajo y reuniones.', 11, 1),
+('Traje de Corte Moderno H&M', 159.99, 'Ropa', 'Traje de corte moderno, ideal para un look fresco y juvenil en eventos formales.', 14, 1),
+('Traje Formal Ajustado de Lino Ralph Lauren', 389.99, 'Ropa', 'Traje formal ajustado de lino, ideal para eventos de día y climas cálidos.', 7, 1),
+('Traje de Dos Piezas con Estilo Vintage Ted Baker', 329.99, 'Ropa', 'Traje de dos piezas estilo vintage, ideal para eventos formales con un toque de distinción.', 8, 1),
+('Traje de Tres Piezas Slim Fit Hugo Boss', 499.99, 'Ropa', 'Traje de tres piezas en corte slim fit, ideal para bodas y eventos de alto nivel.', 4, 1),
+('Traje de Lino Formal Massimo Dutti', 379.99, 'Ropa', 'Traje formal de lino, ideal para el verano y eventos formales.', 9, 1),
+('Traje Slim Fit con Chaleco y Rayas Banana Republic', 349.99, 'Ropa', 'Traje slim fit con chaleco y rayas, perfecto para un look elegante y moderno.', 6, 1),
+('Traje de Corte Ajustado con Estilo H&M', 169.99, 'Ropa', 'Traje de corte ajustado con detalles elegantes, ideal para reuniones y eventos formales.', 10, 1),
+('Traje de Tres Piezas en Tweed Burberry', 649.99, 'Ropa', 'Traje de tres piezas en tweed, ideal para un look sofisticado y clásico.', 4, 1),
+('Traje de Cuello Alto Slim Fit Zara', 249.99, 'Ropa', 'Traje slim fit con cuello alto, ideal para el invierno y eventos formales de noche.', 7, 1),
+('Traje Formal de Tres Piezas Dockers', 269.99, 'Ropa', 'Traje de tres piezas con corte formal, ideal para ocasiones especiales y entrevistas laborales.', 5, 1),
+('Traje Formal de Dos Piezas H&M', 179.99, 'Ropa', 'Traje formal de dos piezas con corte ajustado, perfecto para el trabajo diario y eventos de oficina.', 12, 1),
+('Traje de Dos Piezas en Lino Massimo Dutti', 299.99, 'Ropa', 'Traje de dos piezas en lino, ideal para eventos formales en climas cálidos.', 8, 1),
+('Traje Formal Slim Fit Hugo Boss', 399.99, 'Ropa', 'Traje formal slim fit, ideal para eventos de alto nivel y ocasiones elegantes.', 5, 1),
+('Traje de Tres Piezas Estilo Vintage Tommy Hilfiger', 379.99, 'Ropa', 'Traje de tres piezas estilo vintage, ideal para ocasiones especiales y formales.', 6, 1),
+('Traje de Corte Slim con Chaleco Mango', 269.99, 'Ropa', 'Traje slim fit con chaleco, perfecto para reuniones y eventos formales.', 7, 1),
+('Traje de Dos Piezas en Tweed Hugo Boss', 499.99, 'Ropa', 'Traje elegante de dos piezas en tejido tweed, ideal para eventos de gala y bodas.', 5, 1),
+('Traje Formal de Dos Piezas Tommy Hilfiger', 359.99, 'Ropa', 'Traje formal de dos piezas, adecuado para eventos importantes y de alta gama.', 6, 1),
+('Traje de Tres Piezas en Lino Burberry', 699.99, 'Ropa', 'Traje de tres piezas en lino, ideal para eventos de verano y de día.', 4, 1),
+('Traje Slim Fit Estilo Formal Ralph Lauren', 469.99, 'Ropa', 'Traje slim fit estilo formal, perfecto para cenas de gala y eventos importantes.', 6, 1),
+('Traje Formal Elegante Mango', 239.99, 'Ropa', 'Traje elegante de dos piezas con diseño moderno, ideal para reuniones de negocios.', 9, 1),
+('Traje de Lino Slim Fit Tommy Hilfiger', 349.99, 'Ropa', 'Traje de lino slim fit, ideal para bodas y eventos formales en climas cálidos.', 7, 1),
+('Traje Formal Clásico Zara', 229.99, 'Ropa', 'Traje formal clásico, ideal para cualquier tipo de evento formal o reunión de negocios.', 8, 1),
+('Traje Slim Fit Elegante H&M', 189.99, 'Ropa', 'Traje slim fit con corte moderno y elegante, perfecto para el trabajo y eventos formales.', 10, 1),
+('Traje de Tres Piezas en Lino Mango', 359.99, 'Ropa', 'Traje de tres piezas en lino, ideal para eventos formales durante el verano.', 6, 1),
+('Traje de Dos Piezas en Corte Slim Boss', 379.99, 'Ropa', 'Traje de dos piezas con corte slim y tela de alta calidad, perfecto para eventos elegantes.', 6, 1),
+('Traje de Tres Piezas a Rayas Dockers', 299.99, 'Ropa', 'Traje de tres piezas con patrón de rayas, ideal para el trabajo y ocasiones formales.', 8, 1),
+('Traje de Corte Clásico con Chaleco Zara', 269.99, 'Ropa', 'Traje de corte clásico con chaleco, perfecto para eventos y reuniones importantes.', 9, 1),
+('Traje de Lino Ajustado Mango', 329.99, 'Ropa', 'Traje de lino de corte ajustado, ideal para eventos formales en climas cálidos.', 7, 1),
+('Traje Formal de Tres Piezas Tommy Hilfiger', 479.99, 'Ropa', 'Traje formal de tres piezas, ideal para eventos de alto nivel y celebraciones importantes.', 5, 1),
+('Traje Slim Fit de Cuello Alto Zara', 299.99, 'Ropa', 'Traje de corte slim con cuello alto, ideal para el invierno y eventos formales.', 7, 1),
+('Traje Formal de Dos Piezas Dockers', 259.99, 'Ropa', 'Traje de dos piezas con corte formal, ideal para el trabajo y ocasiones elegantes.', 10, 1),
+('Traje de Tres Piezas a Rayas Burberry', 599.99, 'Ropa', 'Traje de tres piezas con rayas finas, elegante y adecuado para eventos de alta gama.', 4, 1),
+('Traje Slim Fit Elegante Massimo Dutti', 319.99, 'Ropa', 'Traje slim fit elegante, ideal para cenas y eventos formales de alta categoría.', 8, 1),
+('Traje Formal de Corte Ajustado H&M', 179.99, 'Ropa', 'Traje formal ajustado de corte clásico, ideal para entrevistas de trabajo y reuniones formales.', 12, 1),
+('Traje de Tres Piezas con Chaleco H&M', 249.99, 'Ropa', 'Traje de tres piezas con chaleco, perfecto para eventos especiales y reuniones de alto nivel.', 7, 1),
+('Traje de Lino Slim Fit Zara', 369.99, 'Ropa', 'Traje de lino slim fit, ideal para eventos de verano o bodas al aire libre.', 6, 1),
+('Traje de Dos Piezas con Estilo Moderno Tommy Hilfiger', 449.99, 'Ropa', 'Traje de dos piezas con estilo moderno y elegante, adecuado para eventos de lujo.', 5, 1),
+('Traje Formal de Tres Piezas Ralph Lauren', 549.99, 'Ropa', 'Traje de tres piezas con tela de lana de alta calidad, perfecto para ocasiones de gala.', 4, 1),
+('Traje Slim Fit con Chaleco Dockers', 279.99, 'Ropa', 'Traje de corte slim fit con chaleco, ideal para bodas y eventos formales.', 8, 1),
+('Traje de Cuello Alto Formal Massimo Dutti', 379.99, 'Ropa', 'Traje formal con cuello alto, ideal para ocasiones elegantes durante el invierno.', 7, 1),
+('Traje de Dos Piezas con Rayas Ralph Lauren', 399.99, 'Ropa', 'Traje de dos piezas con rayas finas, adecuado para eventos y reuniones de trabajo.', 6, 1),
+('Traje de Tres Piezas de Alta Gama Hugo Boss', 699.99, 'Ropa', 'Traje de tres piezas de alta gama, ideal para bodas y eventos de lujo.', 5, 1),
+('Traje de Corte Moderno con Chaleco Dockers', 249.99, 'Ropa', 'Traje moderno con chaleco incluido, perfecto para eventos especiales.', 9, 1),
+('Traje de Tres Piezas a Rayas Massimo Dutti', 439.99, 'Ropa', 'Traje de tres piezas con rayas, elegante y moderno, ideal para ocasiones importantes.', 4, 1),
+('Traje de Lino Formal Zara', 369.99, 'Ropa', 'Traje de lino formal, ideal para bodas y eventos de verano.', 6, 1),
+('Traje Slim Fit de Tres Piezas Burberry', 749.99, 'Ropa', 'Traje slim fit de tres piezas, elegante y adecuado para eventos de gala y celebraciones exclusivas.', 4, 1),
+('Traje de Cuello Alto Ralph Lauren', 389.99, 'Ropa', 'Traje de cuello alto de corte moderno, ideal para eventos formales durante la temporada fría.', 5, 1),
+('Traje Formal a Rayas Tommy Hilfiger', 319.99, 'Ropa', 'Traje formal con rayas finas, ideal para eventos de negocios y cenas formales.', 6, 1),
+('Traje de Tres Piezas Estilo Slim Mango', 349.99, 'Ropa', 'Traje de tres piezas en estilo slim fit, perfecto para reuniones de alto nivel y eventos importantes.', 7, 1),
+('Traje de Lino Elegante Zara', 299.99, 'Ropa', 'Traje de lino elegante, ideal para eventos de verano o bodas al aire libre.', 8, 1),
+('Traje Formal de Dos Piezas Hugo Boss', 559.99, 'Ropa', 'Traje formal de dos piezas, con tela de lana de alta calidad, ideal para eventos formales y bodas.', 5, 1),
+('Traje de Dos Piezas Slim Fit Banana Republic', 289.99, 'Ropa', 'Traje de dos piezas en corte slim fit, ideal para el trabajo y eventos profesionales.', 7, 1),
+('Traje de Tres Piezas con Rayas H&M', 299.99, 'Ropa', 'Traje de tres piezas con rayas finas, elegante y sofisticado, adecuado para reuniones de negocios.', 8, 1),
+('Traje de Dos Piezas Slim Fit Calvin Klein', 329.99, 'Ropa', 'Traje de corte slim fit, ideal para ocasiones elegantes y de negocios.', 7, 1),
+('Traje Formal de Tres Piezas Dockers', 289.99, 'Ropa', 'Traje de tres piezas, perfecto para eventos formales y reuniones de alto nivel.', 9, 1),
+('Traje de Lino Slim Fit Tommy Hilfiger', 399.99, 'Ropa', 'Traje de lino slim fit, ideal para bodas y eventos en clima cálido.', 6, 1),
+('Traje Formal a Rayas Calvin Klein', 319.99, 'Ropa', 'Traje formal con rayas, adecuado para el trabajo y cenas formales.', 8, 1),
+('Traje de Tres Piezas a Rayas Ralph Lauren', 649.99, 'Ropa', 'Traje de tres piezas con rayas finas, ideal para eventos formales y reuniones de alto nivel.', 4, 1),
+('Traje de Corte Ajustado Formal Massimo Dutti', 259.99, 'Ropa', 'Traje ajustado de corte formal, ideal para bodas y cenas elegantes.', 7, 1),
+('Traje Slim Fit de Lana Burberry', 499.99, 'Ropa', 'Traje slim fit de lana, elegante y perfecto para eventos de gala y ocasiones especiales.', 6, 1),
+('Traje de Cuello Alto Formal Dockers', 359.99, 'Ropa', 'Traje formal de cuello alto, ideal para eventos formales de invierno.', 6, 1),
+('Traje de Tres Piezas Moderno Tommy Hilfiger', 549.99, 'Ropa', 'Traje de tres piezas moderno y elegante, ideal para bodas y cenas de gala.', 5, 1),
+('Traje Formal de Tres Piezas Massimo Dutti', 429.99, 'Ropa', 'Traje de tres piezas, ideal para el trabajo y eventos formales de alto nivel.', 6, 1),
+('Traje de Tres Piezas de Lana Dockers', 389.99, 'Ropa', 'Traje de tres piezas de lana, perfecto para el invierno y ocasiones elegantes.', 7, 1),
+('Traje de Corte Slim Moderno H&M', 179.99, 'Ropa', 'Traje de corte slim, ideal para eventos formales y reuniones de negocios.', 10, 1),
+('Traje Formal a Rayas Dockers', 289.99, 'Ropa', 'Traje formal con rayas finas, ideal para cenas de gala y eventos de alto nivel.', 8, 1),
+('Traje de Lino Slim Fit Ted Baker', 369.99, 'Ropa', 'Traje de lino slim fit, perfecto para bodas y eventos formales de verano.', 6, 1),
+('Traje de Tres Piezas Formal H&M', 249.99, 'Ropa', 'Traje de tres piezas formal, ideal para reuniones de negocios y eventos importantes.', 7, 1),
+('Traje de Corte Slim Moderno Zara', 219.99, 'Ropa', 'Traje de corte slim moderno, ideal para cenas elegantes y eventos formales.', 10, 1),
+('Traje de Dos Piezas de Corte Clásico Hugo Boss', 499.99, 'Ropa', 'Traje de dos piezas con corte clásico, ideal para eventos formales y reuniones de negocios.', 6, 1),
+('Traje Slim Fit de Tres Piezas Zara', 349.99, 'Ropa', 'Traje slim fit de tres piezas, elegante y moderno, ideal para eventos de alto nivel.', 7, 1);
 
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Mono Corto Pull&Bear', 29.99, 'Ropa', 'Mono estilo playero con estampado.', 6, 1);
-
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Vestido Tejido Free People', 89.90, 'Ropa', 'Vestido bohemio de punto grueso.', 3, 1);
-
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Mono Largo Bershka', 34.99, 'Ropa', 'Mono de tirantes con espalda cruzada.', 4, 1);
-
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Vestido Wrap Diane von Furstenberg', 298.00, 'Ropa', 'Vestido cruzado de seda estampada.', 1, 1);
-
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Mono Peto Levis', 79.90, 'Ropa', 'Mono vaquero estilo peto clásico.', 4, 1);
-
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Vestido Lino Arket', 79.00, 'Ropa', 'Vestido suelto de lino para verano.', 3, 1);
-
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Mono Satén & Other Stories', 89.00, 'Ropa', 'Mono elegante con diseño fluido.', 2, 1);
-
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Vestido Maxi Desigual', 95.90, 'Ropa', 'Vestido largo con estampado colorido.', 3, 1);
-
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Mono Palazzo Topshop', 55.00, 'Ropa', 'Mono de pierna ancha con cinturón.', 4, 1);
-
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Vestido Cóctel Coast', 149.00, 'Ropa', 'Vestido corto para eventos formales.', 2, 1);
-
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Mono Short Oysho', 39.99, 'Ropa', 'Mono corto estilo casual.', 5, 1);
-
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Vestido Playa Calzedonia', 45.00, 'Ropa', 'Vestido ligero de tejido transparente.', 4, 1);
-
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Mono Terciopelo Urban Outfitters', 69.90, 'Ropa', 'Mono de terciopelo con manga larga.', 3, 1);
-
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Vestido Asimétrico COS', 89.00, 'Ropa', 'Vestido con diseño asimétrico minimalista.', 2, 1);
-
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Mono Estampado Anthropologie', 128.00, 'Ropa', 'Mono con estampado bohemio exclusivo.', 2, 1);
-
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Vestido Denim Pepe Jeans', 85.00, 'Ropa', 'Vestido vaquero con botones frontales.', 3, 1);
-
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Mono Rayas Sandro', 175.00, 'Ropa', 'Mono de rayas con cinturón incorporado.', 2, 1);
-
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Vestido Punto Guess', 99.90, 'Ropa', 'Vestido ceñido de punto con logo.', 3, 1);
-
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Mono Kimono Style Uterqüe', 129.00, 'Ropa', 'Mono estilo kimono con estampado oriental.', 2, 1);
-
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Vestido Volantes Reformation', 248.00, 'Ropa', 'Vestido sostenible con volantes.', 1, 1);
-
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Mono Work Wear Dickies', 59.90, 'Ropa', 'Mono de trabajo resistente.', 4, 1);
-
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Vestido Camiseta Tommy Hilfiger', 79.90, 'Ropa', 'Vestido estilo camiseta oversized.', 3, 1);
-
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Mono Plisado Adolfo Domínguez', 159.00, 'Ropa', 'Mono con plisado permanente.', 2, 1);
-
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Vestido Jersey Weekend Max Mara', 195.00, 'Ropa', 'Vestido de punto fino con cuello alto.', 2, 1);
-
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Mono Casual GAP', 69.95, 'Ropa', 'Mono informal de algodón.', 3, 1);
-
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Vestido Tubo Hugo Boss', 229.00, 'Ropa', 'Vestido entallado para oficina.', 2, 1);
-
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Mono Print River Island', 65.00, 'Ropa', 'Mono con estampado geométrico.', 3, 1);
-
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Vestido Encaje Self-Portrait', 375.00, 'Ropa', 'Vestido de encaje con detalles calados.', 1, 1);
-
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Mono Jumpsuit Forever 21', 29.90, 'Ropa', 'Mono básico con bolsillos.', 5, 1);
-
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Vestido Blazer Zara', 69.90, 'Ropa', 'Vestido estilo americana cruzado.', 3, 1);
-
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Mono Halter Mango', 49.99, 'Ropa', 'Mono con cuello halter y espalda descubierta.', 4, 1);
-
-INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo)
-VALUES ('Vestido Bohemio Free People', 168.00, 'Ropa', 'Vestido largo estilo boho con bordados.', 2, 1);
+-------------------------------------------------------------------------------
+-- Subcategoría: Shorts y Chalecos (100 INSERTS)
+-------------------------------------------------------------------------------
+INSERT INTO Producto (nombre, precio, categoria, descripcion, stockMinimo, activo) VALUES
+('Shorts Deportivos Nike', 29.99, 'Ropa', 'Shorts deportivos Nike con tecnología Dri-FIT, ideales para entrenamientos.', 10, 1),
+('Chaleco de Algodón Zara', 39.99, 'Ropa', 'Chaleco de algodón con cierre frontal, ideal para un look casual de verano.', 6, 1),
+('Shorts de Pijama H&M', 19.99, 'Ropa', 'Shorts cómodos de pijama de algodón, perfectos para descansar en casa.', 15, 1),
+('Chaleco con Capucha Adidas', 49.99, 'Ropa', 'Chaleco con capucha de Adidas, ideal para actividades al aire libre y entrenamientos.', 8, 1),
+('Shorts de Ciclismo Under Armour', 34.99, 'Ropa', 'Shorts de ciclismo Under Armour con tecnología transpirable y ajustada.', 10, 1),
+('Chaleco de Lana Massimo Dutti', 59.99, 'Ropa', 'Chaleco de lana Massimo Dutti, perfecto para el clima fresco del otoño.', 5, 1),
+('Shorts Cortos Levis', 27.99, 'Ropa', 'Shorts cortos Levis de mezclilla, ideales para el verano y días soleados.', 12, 1),
+('Chaleco de Piel Mango', 89.99, 'Ropa', 'Chaleco de piel Mango, perfecto para un look elegante y moderno.', 4, 1),
+('Shorts Deportivo Adidas', 22.99, 'Ropa', 'Shorts deportivos Adidas con cintura elástica, ideales para cualquier actividad física.', 14, 1),
+('Chaleco de Algodón Levis', 45.99, 'Ropa', 'Chaleco de algodón Levis con cierre y detalles bordados.', 7, 1),
+('Shorts de Playa H&M', 18.99, 'Ropa', 'Shorts de playa de H&M con diseño tropical y ligero para días de sol.', 13, 1),
+('Chaleco Vaquero Zara', 39.99, 'Ropa', 'Chaleco vaquero de Zara, un básico para looks urbanos y casuales.', 6, 1),
+('Shorts de Running Nike', 26.99, 'Ropa', 'Shorts de running Nike, ligeros y cómodos para cualquier entrenamiento.', 11, 1),
+('Chaleco de Piel Sintética Massimo Dutti', 54.99, 'Ropa', 'Chaleco de piel sintética Massimo Dutti, ideal para un look sofisticado en invierno.', 5, 1),
+('Shorts de Jean Mango', 32.99, 'Ropa', 'Shorts de mezclilla Mango, diseño clásico para el verano.', 9, 1),
+('Chaleco Deportivo Under Armour', 46.99, 'Ropa', 'Chaleco deportivo Under Armour, transpirable y cómodo para entrenamientos intensos.', 7, 1),
+('Shorts de Algodón H&M', 24.99, 'Ropa', 'Shorts de algodón H&M, perfectos para un día relajado y cómodo.', 12, 1),
+('Chaleco con Bolsillos New Balance', 59.99, 'Ropa', 'Chaleco con bolsillos New Balance, ideal para caminar o actividades al aire libre.', 6, 1),
+('Shorts de Baño Levis', 23.99, 'Ropa', 'Shorts de baño Levis con diseño a rayas, perfectos para la piscina o playa.', 10, 1),
+('Chaleco de Piel Levis', 79.99, 'Ropa', 'Chaleco de piel Levis, diseño clásico y elegante para el otoño o invierno.', 5, 1),
+('Shorts de Entrenamiento Reebok', 28.99, 'Ropa', 'Shorts de entrenamiento Reebok, cómodos y funcionales para cualquier actividad física.', 11, 1),
+('Chaleco Puffer H&M', 49.99, 'Ropa', 'Chaleco puffer H&M, cálido y ligero, ideal para climas fríos.', 6, 1),
+('Shorts de Cintura Alta Mango', 25.99, 'Ropa', 'Shorts de cintura alta Mango, perfectos para un look casual y veraniego.', 9, 1),
+('Chaleco Deportivo Nike', 47.99, 'Ropa', 'Chaleco deportivo Nike, ideal para mantenerte cómodo y seco durante el ejercicio.', 7, 1),
+('Shorts de Compresión Under Armour', 35.99, 'Ropa', 'Shorts de compresión Under Armour, con tecnología que ofrece soporte durante entrenamientos intensos.', 13, 1),
+('Chaleco de Cuero Massimo Dutti', 129.99, 'Ropa', 'Chaleco de cuero Massimo Dutti, diseño sofisticado y elegante.', 4, 1),
+('Shorts de Pantalón Corto Levis', 29.99, 'Ropa', 'Shorts de pantalón corto Levis, cómodos y frescos para los días calurosos.', 10, 1),
+('Chaleco Transpirable Adidas', 54.99, 'Ropa', 'Chaleco transpirable Adidas, ideal para actividades deportivas al aire libre.', 6, 1),
+('Shorts de Algodón para Mujer H&M', 22.99, 'Ropa', 'Shorts de algodón para mujer H&M, ideales para un día de descanso en casa.', 12, 1),
+('Chaleco de Lana Zara', 58.99, 'Ropa', 'Chaleco de lana de Zara, perfecto para climas fríos y eventos informales.', 5, 1),
+('Shorts de Ciclismo Nike', 30.99, 'Ropa', 'Shorts de ciclismo Nike, cómodos y con detalles reflectantes para mayor seguridad.', 11, 1),
+('Chaleco de Piel Sintética Mango', 79.99, 'Ropa', 'Chaleco de piel sintética Mango, perfecto para un look de invierno elegante.', 5, 1),
+('Shorts de Verano Massimo Dutti', 27.99, 'Ropa', 'Shorts de verano Massimo Dutti, cómodos y con diseño fresco para el calor.', 10, 1),
+('Chaleco de Algodón Nike', 49.99, 'Ropa', 'Chaleco de algodón Nike, ideal para deportes al aire libre o un look relajado.', 6, 1),
+('Shorts Largos Levis', 32.99, 'Ropa', 'Shorts largos Levis, perfectos para un look casual y cómodo durante todo el día.', 9, 1),
+('Chaleco Casual H&M', 42.99, 'Ropa', 'Chaleco casual H&M, cómodo y estilizado para días frescos de primavera.', 7, 1),
+('Shorts de Pijama Levis', 18.99, 'Ropa', 'Shorts de pijama Levis, suaves y cómodos para un descanso reparador.', 14, 1),
+('Chaleco de Algodón para Mujer Mango', 39.99, 'Ropa', 'Chaleco de algodón para mujer Mango, ligero y perfecto para los días cálidos.', 6, 1),
+('Shorts para Correr Nike', 31.99, 'Ropa', 'Shorts para correr Nike, con tela ligera y transpirable para un entrenamiento cómodo.', 10, 1),
+('Chaleco de Fibras Naturales Zara', 56.99, 'Ropa', 'Chaleco de fibras naturales Zara, elegante y cómodo para el verano.', 5, 1),
+('Shorts de Pantalón Corto New Balance', 28.99, 'Ropa', 'Shorts de pantalón corto New Balance, ideales para entrenamientos y actividades deportivas.', 12, 1),
+('Chaleco Urbano Levis', 64.99, 'Ropa', 'Chaleco urbano Levis, diseño moderno para un look casual y cómodo.', 6, 1),
+('Shorts de Noche H&M', 21.99, 'Ropa', 'Shorts de noche H&M, cómodos y ligeros para dormir en noches cálidas.', 15, 1),
+('Chaleco Puffer de Invierno H&M', 79.99, 'Ropa', 'Chaleco puffer de invierno H&M, ideal para mantener el calor en climas fríos.', 5, 1),
+('Shorts de Yoga Adidas', 32.99, 'Ropa', 'Shorts de yoga Adidas, flexibles y cómodos para realizar cualquier movimiento.', 10, 1),
+('Chaleco sin Mangas New Balance', 59.99, 'Ropa', 'Chaleco sin mangas New Balance, ideal para hacer ejercicio con total comodidad.', 7, 1),
+('Shorts de Playa Massimo Dutti', 26.99, 'Ropa', 'Shorts de playa Massimo Dutti, con diseño relajado y cómodo para el verano.', 12, 1),
+('Chaleco de Cuero Zara', 129.99, 'Ropa', 'Chaleco de cuero Zara, diseño vanguardista para un look urbano y moderno.', 4, 1),
+('Shorts Cortos de Algodón Levis', 24.99, 'Ropa', 'Shorts cortos de algodón Levis, cómodos para el día a día en climas cálidos.', 13, 1),
+('Chaleco de Piel de Cordero Mango', 129.99, 'Ropa', 'Chaleco de piel de cordero Mango, cálido y elegante para el invierno.', 5, 1),
+('Shorts Deportivos de Running Nike', 34.99, 'Ropa', 'Shorts deportivos de running Nike, diseñados para comodidad y rendimiento.', 11, 1),
+('Chaleco de Invierno H&M', 89.99, 'Ropa', 'Chaleco de invierno H&M, perfecto para climas fríos, ligero y cálido.', 6, 1),
+('Shorts de Verano Adidas', 27.99, 'Ropa', 'Shorts de verano Adidas, ideales para paseos y actividades al aire libre.', 10, 1),
+('Chaleco con Bolsillos Levis', 49.99, 'Ropa', 'Chaleco con bolsillos Levis, práctico y cómodo para un look informal.', 7, 1),
+('Shorts de Algodón para Hombre H&M', 23.99, 'Ropa', 'Shorts de algodón para hombre H&M, cómodos y frescos para el día.', 15, 1),
+('Chaleco Deportivo Reebok', 56.99, 'Ropa', 'Chaleco deportivo Reebok, ideal para mantenerte en forma durante cualquier actividad física.', 8, 1),
+('Shorts de Compresión Reebok', 29.99, 'Ropa', 'Shorts de compresión Reebok, ideales para mantener los músculos sujetos durante los entrenamientos.', 12, 1),
+('Chaleco de Algodón para Hombre Zara', 44.99, 'Ropa', 'Chaleco de algodón para hombre Zara, suave y cómodo para un look relajado.', 6, 1),
+('Shorts de Pijama para Mujer H&M', 17.99, 'Ropa', 'Shorts de pijama para mujer H&M, hechos de material suave y cómodo para dormir.', 14, 1),
+('Chaleco de Piel de Cordero Levis', 119.99, 'Ropa', 'Chaleco de piel de cordero Levis, diseño lujoso y elegante para los días fríos.', 5, 1),
+('Shorts Deportivos Under Armour', 31.99, 'Ropa', 'Shorts deportivos Under Armour, ligeros y de alta tecnología para el deporte.', 10, 1),
+('Chaleco Deportivo para Hombre Nike', 49.99, 'Ropa', 'Chaleco deportivo para hombre Nike, ideal para actividades al aire libre y deportes.', 7, 1),
+('Shorts Cargo Levis', 33.99, 'Ropa', 'Shorts cargo Levis, prácticos con múltiples bolsillos y estilo casual.', 9, 1),
+('Chaleco de Lana para Mujer Massimo Dutti', 72.99, 'Ropa', 'Chaleco de lana para mujer Massimo Dutti, elegante y cálido para invierno.', 6, 1),
+('Shorts de Yoga para Mujer Adidas', 27.99, 'Ropa', 'Shorts de yoga para mujer Adidas, flexibles y cómodos para una gran movilidad.', 10, 1),
+('Chaleco con Capucha para Hombre Reebok', 59.99, 'Ropa', 'Chaleco con capucha para hombre Reebok, ideal para los días frescos de otoño.', 7, 1),
+('Shorts de Baño para Hombre Zara', 22.99, 'Ropa', 'Shorts de baño para hombre Zara, con estampado tropical y cómodo para el mar.', 11, 1),
+('Chaleco en Punto de Algodón Mango', 38.99, 'Ropa', 'Chaleco en punto de algodón Mango, fresco y ligero, ideal para el verano.', 8, 1),
+('Shorts Deportivos para Hombre Puma', 28.99, 'Ropa', 'Shorts deportivos para hombre Puma, ligeros y cómodos para entrenamientos intensos.', 12, 1),
+('Chaleco Vaquero para Mujer Levis', 56.99, 'Ropa', 'Chaleco vaquero para mujer Levis, estilo casual y moderno, ideal para los días cálidos.', 6, 1),
+('Shorts de Algodón para Hombre New Balance', 23.99, 'Ropa', 'Shorts de algodón para hombre New Balance, confortables y perfectos para el verano.', 13, 1),
+('Chaleco Transpirable Reebok', 52.99, 'Ropa', 'Chaleco transpirable Reebok, ideal para correr o hacer ejercicio en climas cálidos.', 7, 1),
+('Shorts Estilo Cargo New Era', 29.99, 'Ropa', 'Shorts estilo cargo New Era, con diseño urbano y funcional, perfectos para el día a día.', 10, 1),
+('Chaleco de Plumas para Mujer Mango', 79.99, 'Ropa', 'Chaleco de plumas para mujer Mango, cálido y elegante para los días fríos.', 5, 1),
+('Shorts de Compresión para Mujer Nike', 32.99, 'Ropa', 'Shorts de compresión para mujer Nike, con soporte adicional para ejercicios de alta intensidad.', 11, 1),
+('Chaleco de Piel Sintética para Mujer Zara', 88.99, 'Ropa', 'Chaleco de piel sintética para mujer Zara, ideal para un look elegante y acogedor.', 5, 1),
+('Shorts Deportivos con Bolsillos H&M', 24.99, 'Ropa', 'Shorts deportivos con bolsillos H&M, ideales para entrenamiento y actividades físicas.', 12, 1),
+('Chaleco de Traje Levis', 99.99, 'Ropa', 'Chaleco de traje Levis, elegante y perfecto para ocasiones especiales o formales.', 6, 1),
+('Shorts de Verano para Mujer Massimo Dutti', 26.99, 'Ropa', 'Shorts de verano para mujer Massimo Dutti, con diseño fresco y cómodo para días calurosos.', 11, 1),
+('Chaleco Termal Nike', 65.99, 'Ropa', 'Chaleco termal Nike, ideal para actividades al aire libre en invierno o en zonas frías.', 7, 1),
+('Shorts Largos de Algodón New Balance', 28.99, 'Ropa', 'Shorts largos de algodón New Balance, ideales para un look relajado y cómodo en verano.', 10, 1),
+('Chaleco con Bolsillos y Cierre Mango', 48.99, 'Ropa', 'Chaleco con bolsillos y cierre de Mango, perfecto para un look informal y práctico.', 8, 1),
+('Shorts Deportivos de Algodón Adidas', 27.99, 'Ropa', 'Shorts deportivos de algodón Adidas, suaves y cómodos para todo tipo de entrenamiento.', 11, 1),
+('Chaleco de Acolchado para Hombre Zara', 72.99, 'Ropa', 'Chaleco de acolchado para hombre Zara, perfecto para el invierno y actividades al aire libre.', 6, 1),
+('Shorts de Playa para Mujer H&M', 21.99, 'Ropa', 'Shorts de playa para mujer H&M, con estampado tropical, cómodos para la piscina o el mar.', 12, 1),
+('Chaleco de Punto para Mujer Massimo Dutti', 52.99, 'Ropa', 'Chaleco de punto para mujer Massimo Dutti, ideal para un look elegante y relajado.', 7, 1),
+('Shorts de Jean para Hombre Levis', 34.99, 'Ropa', 'Shorts de jean para hombre Levis, con estilo clásico y cómodo para el verano.', 9, 1),
+('Chaleco Bomber Nike', 79.99, 'Ropa', 'Chaleco bomber Nike, cómodo y deportivo, ideal para días fríos y actividades casuales.', 6, 1),
+('Shorts de Atletismo New Balance', 33.99, 'Ropa', 'Shorts de atletismo New Balance, ligeros y funcionales para correr y entrenar.', 10, 1),
+('Chaleco Cargado de Bolsillos Reebok', 55.99, 'Ropa', 'Chaleco cargado de bolsillos Reebok, práctico y funcional para actividades al aire libre.', 7, 1),
+('Shorts de Pijama para Hombre H&M', 19.99, 'Ropa', 'Shorts de pijama para hombre H&M, cómodos y perfectos para un buen descanso nocturno.', 14, 1),
+('Chaleco Casual para Hombre Mango', 49.99, 'Ropa', 'Chaleco casual para hombre Mango, adecuado para un look relajado y moderno.', 6, 1),
+('Shorts de Ciclismo para Mujer Nike', 38.99, 'Ropa', 'Shorts de ciclismo para mujer Nike, con tecnología avanzada para mayor comodidad y rendimiento.', 12, 1),
+('Chaleco Urbano Massimo Dutti', 63.99, 'Ropa', 'Chaleco urbano Massimo Dutti, estilo moderno y funcional para los días fríos.', 6, 1),
+('Shorts de Fútbol para Hombre Adidas', 24.99, 'Ropa', 'Shorts de fútbol para hombre Adidas, con ajuste cómodo y diseño perfecto para el deporte.', 11, 1),
+('Chaleco Retro Levis', 89.99, 'Ropa', 'Chaleco retro Levi\s, estilo clásico y moderno, ideal para looks informales y urbanos.', 6, 1),
+('Shorts de Running con Tecnología Nike', 31.99, 'Ropa', 'Shorts de running con tecnología Nike, ligeros y cómodos para largas distancias.', 10, 1),
+('Chaleco de Invierno con Forro H&M', 72.99, 'Ropa', 'Chaleco de invierno con forro H&M, cálido y ligero para actividades al aire libre.', 5, 1),
+('Shorts de Algodón para Mujer New Balance', 22.99, 'Ropa', 'Shorts de algodón para mujer New Balance, frescos y cómodos para el verano.', 13, 1),
+('Chaleco de Traje para Hombre Mango', 94.99, 'Ropa', 'Chaleco de traje para hombre Mango, elegante y adecuado para eventos formales.', 6, 1);
 
 SELECT COUNT(*) AS TotalProductos FROM Producto;
 SELECT * FROM Producto ORDER BY nombre, precio;
