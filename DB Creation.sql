@@ -39,8 +39,9 @@ GO
 /*
   ---------------------------------------------------
   3. TABLA: Usuario
-     - usuarioID (PK)
+     - usuarioID (PK, cédula 9 dígitos)
      - nombre (no nulo)
+     - apellido (no nulo) [NUEVO]
      - email (no nulo, único)
      - rol (no nulo)
      - telefono (opcional)
@@ -52,8 +53,9 @@ GO
   ---------------------------------------------------
 */
 CREATE TABLE Usuario (
-    usuarioID   INT            IDENTITY(1,1) NOT NULL,
+    usuarioID   VARCHAR(9)     NOT NULL,
     nombre      VARCHAR(100)   NOT NULL,
+    apellido    VARCHAR(100)   NOT NULL,
     email       VARCHAR(100)   NOT NULL,
     rol         VARCHAR(50)    NOT NULL,
     telefono    VARCHAR(20),
@@ -67,13 +69,16 @@ CREATE TABLE Usuario (
 
     CONSTRAINT FK_Usuario_Region
         FOREIGN KEY (regionID) 
-        REFERENCES Region(regionID)
+        REFERENCES Region(regionID),
+        
+    -- Restricción para asegurar que la cédula tenga 9 dígitos
+    CONSTRAINT CK_Usuario_Cedula
+        CHECK (usuarioID LIKE '[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]')
 );
 
--- Índice adicional para buscar Usuarios por nombre
+-- Índices para búsquedas
 CREATE INDEX IX_Usuario_Nombre ON Usuario (nombre);
-
--- Opcional: Para búsquedas frecuentes por regionID
+CREATE INDEX IX_Usuario_Apellido ON Usuario (apellido);
 CREATE INDEX IX_Usuario_RegionID ON Usuario (regionID);
 GO
 
@@ -104,19 +109,15 @@ CREATE TABLE Producto (
     CONSTRAINT PK_Producto
         PRIMARY KEY (productoID),
 
-    -- Aseguramos que precio sea mayor a 0
     CONSTRAINT CK_Producto_PrecioPositivo
         CHECK (precio > 0),
 
-    -- Aseguramos stockMinimo >= 0
     CONSTRAINT CK_Producto_StockMinimo
         CHECK (stockMinimo >= 0)
 );
 
--- Índice para búsquedas por nombre de producto
+-- Índices para búsquedas
 CREATE INDEX IX_Producto_Nombre ON Producto (nombre);
-
--- Índice para búsquedas por categoría
 CREATE INDEX IX_Producto_Categoria ON Producto (categoria);
 GO
 
@@ -135,12 +136,12 @@ GO
   ---------------------------------------------------
 */
 CREATE TABLE Inventario (
-    inventarioID       INT            IDENTITY(1,1) NOT NULL,
-    productoID         INT            NOT NULL,
-    regionID           INT            NOT NULL,
-    cantidad           INT            NOT NULL DEFAULT 0,
-    ultimaActualizacion DATETIME      NOT NULL DEFAULT GETDATE(),
-    estado             VARCHAR(50)    NULL,
+    inventarioID        INT            IDENTITY(1,1) NOT NULL,
+    productoID          INT            NOT NULL,
+    regionID            INT            NOT NULL,
+    cantidad            INT            NOT NULL DEFAULT 0,
+    ultimaActualizacion DATETIME       NOT NULL DEFAULT GETDATE(),
+    estado              VARCHAR(50)    NULL,
 
     CONSTRAINT PK_Inventario
         PRIMARY KEY (inventarioID),
@@ -151,16 +152,13 @@ CREATE TABLE Inventario (
     CONSTRAINT FK_Inventario_Region
         FOREIGN KEY (regionID)   REFERENCES Region(regionID),
 
-    -- Aseguramos que la cantidad no sea negativa
     CONSTRAINT CK_Inventario_CantidadNoNegativa
         CHECK (cantidad >= 0)
 );
 
--- Índice para búsquedas conjuntas por producto y región
+-- Índices para búsquedas
 CREATE INDEX IX_Inventario_Producto_Region 
     ON Inventario (productoID, regionID);
-
--- Índice para búsquedas por estado (opcional)
 CREATE INDEX IX_Inventario_Estado ON Inventario (estado);
 GO
 
@@ -171,7 +169,7 @@ GO
      - regionID (FK a Region)
      - usuarioID (FK a Usuario)
      - fecha (default GETDATE())
-     - estado (p.ej. 'Pendiente','EnProceso','Completado', 'Cancelado')
+     - estado (p.ej. 'Pendiente','EnProceso','Completado','Cancelado')
      - total (>= 0, o calculado)
   Relación:
      - N Pedidos en 1 Region
@@ -181,7 +179,7 @@ GO
 CREATE TABLE Pedido (
     pedidoID   INT            IDENTITY(1,1) NOT NULL,
     regionID   INT            NOT NULL,
-    usuarioID  INT            NOT NULL,
+    usuarioID  VARCHAR(9)     NOT NULL,  -- Modificado para coincidir con el tipo de cédula
     fecha      DATETIME       NOT NULL DEFAULT GETDATE(),
     estado     VARCHAR(50)    NOT NULL DEFAULT 'Pendiente',
     total      DECIMAL(10,2)  NOT NULL DEFAULT 0,
@@ -195,12 +193,11 @@ CREATE TABLE Pedido (
     CONSTRAINT FK_Pedido_Usuario
         FOREIGN KEY (usuarioID) REFERENCES Usuario(usuarioID),
 
-    -- Aseguramos que el total no sea negativo
     CONSTRAINT CK_Pedido_TotalNoNegativo
         CHECK (total >= 0)
 );
 
--- Opcional: CHECK constraint para limitar estados posibles
+-- CHECK constraint para estados válidos
 ALTER TABLE Pedido 
 ADD CONSTRAINT CK_Pedido_EstadoValido
     CHECK (estado IN ('Pendiente','EnProceso','Completado','Cancelado'));
@@ -212,7 +209,7 @@ GO
 
 /*
   ---------------------------------------------------
-  7. TABLA: DetallePedido (o "contiene")
+  7. TABLA: DetallePedido
      - pedidoID (FK)
      - productoID (FK)
      - cantidad (>= 1)
@@ -230,19 +227,15 @@ CREATE TABLE DetallePedido (
     precioUnitario DECIMAL(10,2)  NOT NULL,
     subtotal       DECIMAL(10,2)  NOT NULL,
 
-    -- PK compuesta
     CONSTRAINT PK_DetallePedido
         PRIMARY KEY (pedidoID, productoID),
 
-    -- FK a Pedido
     CONSTRAINT FK_DetallePedido_Pedido
         FOREIGN KEY (pedidoID) REFERENCES Pedido(pedidoID),
 
-    -- FK a Producto
     CONSTRAINT FK_DetallePedido_Producto
         FOREIGN KEY (productoID) REFERENCES Producto(productoID),
 
-    -- Asegurar integridad en valores
     CONSTRAINT CK_DetallePedido_CantidadPositiva
         CHECK (cantidad >= 1),
 
@@ -253,10 +246,8 @@ CREATE TABLE DetallePedido (
         CHECK (subtotal >= 0)
 );
 
--- Índice para consultas por producto
+-- Índices para consultas
 CREATE INDEX IX_DetallePedido_Producto ON DetallePedido (productoID);
-
--- Opcional: si se consultan a menudo todas las filas de un pedido
 CREATE INDEX IX_DetallePedido_Pedido ON DetallePedido (pedidoID);
 GO
 

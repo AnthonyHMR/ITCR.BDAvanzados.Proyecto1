@@ -11791,7 +11791,7 @@ VALUES
 
 
 SELECT COUNT(*) AS TotalRegiones FROM Region;
-SELECT * FROM Region ORDER BY pais, nombre;
+SELECT * FROM Region ORDER BY regionID, pais, nombre;
 GO
 
 
