@@ -57,7 +57,6 @@ CREATE TABLE Usuario (
     nombre      VARCHAR(100)   NOT NULL,
     apellido    VARCHAR(100)   NOT NULL,
     email       VARCHAR(100)   NOT NULL,
-    rol         VARCHAR(50)    NOT NULL,
     telefono    VARCHAR(20),
     regionID    INT            NOT NULL,
 
