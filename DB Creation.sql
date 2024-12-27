@@ -43,7 +43,6 @@ GO
      - nombre (no nulo)
      - apellido (no nulo) [NUEVO]
      - email (no nulo, único)
-     - rol (no nulo)
      - telefono (opcional)
      - regionID (FK a Region)
   Relación: 
