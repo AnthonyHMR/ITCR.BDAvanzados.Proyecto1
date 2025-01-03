@@ -2,33 +2,45 @@ USE DB_InventariosGlobal;
 GO
 
 -------------------------------------------------------------------------------
--- Vista para unificar los datos de Usuario y UsuarioSensibles
+-- Vista para unificar los datos de Usuario y Usuario sensible
 -------------------------------------------------------------------------------
-
 CREATE VIEW Usuario_Unificado AS
 SELECT 
     u.usuarioID,
     u.nombre,
     u.apellido,
+    u.regionID,
     us.email,
-    us.telefono,
-    us.regionID
+    us.telefono
 FROM Usuario u
-LEFT JOIN UsuarioSensibles us
+LEFT JOIN [TONY].DB_DatosSensibles.dbo.Usuario us
     ON u.usuarioID = us.usuarioID;
 
 -------------------------------------------------------------------------------
--- Vista para unificar los datos de Pedido y PedidoSensibles
+-- Vista para unificar los datos de DetallePedido y DetallePedido sensible
 -------------------------------------------------------------------------------
-
-CREATE VIEW Pedido_Unificado AS
+CREATE VIEW DetallePedido_Unificado AS
 SELECT 
-    p.pedidoID,
-    p.usuarioID,
-    p.fecha,
-    ps.estado,
-    ps.total
-FROM Pedido p
-LEFT JOIN PedidoSensibles ps
-    ON p.pedidoID = ps.pedidoID;
+    dp.pedidoID,
+    dp.productoID,
+    dps.cantidad,
+    dps.precioUnitario,
+    dps.subtotal
+FROM DetallePedido dp
+LEFT JOIN [TONY].DB_DatosSensibles.dbo.DetallePedido dps
+    ON dp.pedidoID = dps.pedidoID;
 
+-------------------------------------------------------------------------------
+-- Vista para unificar los datos de Inventario y Inventario sensible
+-------------------------------------------------------------------------------
+CREATE VIEW Inventario_Unificado AS
+SELECT 
+    inv.inventarioID,
+	inv.productoID,
+	inv.regionID,
+	inv.estado,
+    invs.cantidad,
+    invs.ultimaActualizacion
+FROM Inventario inv
+LEFT JOIN [TONY].DB_DatosSensibles.dbo.Inventario invs
+    ON inv.inventarioID = invs.inventarioID;
