@@ -9,7 +9,11 @@ Este proyecto consiste en el diseño, desarrollo e implementación de una **base
 - **Monitoreo y optimización** del rendimiento mediante herramientas como SQL Server Profiler y Dynamic Management Views (DMVs).
 
 <p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="Docs\diagramaInventario.drawio.png" width="525" alt="diagramaEntidadRelación" /></a>
+  <a href="https://github.com/AnthonyHMR/ITCR.BDAvanzados.Proyecto1/blob/main/Docs/diagramaInventario.drawio.png" target="blank"><img src="Docs\diagramaInventario.drawio.png" width="525" alt="diagramaEntidadRelación" /></a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/AnthonyHMR/ITCR.BDAvanzados.Proyecto1/blob/main/Docs\ModeloFísico.jpg" target="blank"><img src="Docs\ModeloFísico.jpg" width="525" alt="modeloFísico" /></a>
 </p>
 
 
