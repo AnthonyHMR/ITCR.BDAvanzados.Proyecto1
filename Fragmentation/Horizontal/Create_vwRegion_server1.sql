@@ -1,0 +1,40 @@
+-- ================================================================
+-- Descripción: Crea una vista que combina los datos de Region de ambos
+--              servidores, proporcionando una vista global de todas las regiones
+-- 
+-- Notas importantes: 
+--    1. Este script debe ejecutarse en el servidor KUN
+--    2. Reemplazar [LAY] por el nombre de tu servidor vinculado
+--    3. Verificar que ambas tablas Region tengan la misma estructura
+--    4. Asegurar que existan los permisos necesarios en ambos servidores
+-- ================================================================
+
+USE DB_InventariosGlobal;
+GO
+
+-- Eliminar la vista si ya existe para evitar errores
+IF EXISTS (SELECT * FROM sys.views WHERE name = 'vwRegion')
+    DROP VIEW vwRegion;
+GO
+
+-- Crear vista que une los datos de Region de ambos servidores
+CREATE VIEW vwRegion AS
+SELECT 
+    r.regionID,      -- ID único de la región
+    r.nombre,        -- Nombre de la región
+    r.pais,         -- País al que pertenece la región
+    r.zonaHoraria   -- Zona horaria de la región
+FROM DB_InventariosGlobal.dbo.Region r              -- Tabla Region del servidor local (KUN)
+UNION ALL           -- Usar UNION ALL para incluir todos los registros (incluso duplicados)
+SELECT 
+    k.regionID,     
+    k.nombre,       
+    k.pais,        
+    k.zonaHoraria  
+FROM [LAY].[DB_InventariosGlobal].[dbo].[Region] k; -- Tabla Region del servidor remoto
+                                                     -- IMPORTANTE: Reemplazar [LAY] por el nombre
+                                                     -- de tu servidor vinculado
+GO
+
+-- Comando para probar la vista una vez creada
+-- SELECT * FROM dbo.vwRegion;
