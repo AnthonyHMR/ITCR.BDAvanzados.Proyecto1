@@ -1,3 +1,6 @@
+USE DB_InventariosGlobal;
+GO
+
 INSERT INTO DetallePedido (pedidoID, productoID, cantidad, precioUnitario, subtotal) VALUES (1, 1, 10, 15.99, 159.90);
 INSERT INTO DetallePedido (pedidoID, productoID, cantidad, precioUnitario, subtotal) VALUES (2, 2, 13, 29.99, 389.87);
 INSERT INTO DetallePedido (pedidoID, productoID, cantidad, precioUnitario, subtotal) VALUES (3, 3, 12, 45.00, 540.00);
@@ -1994,3 +1997,8 @@ INSERT INTO DetallePedido (pedidoID, productoID, cantidad, precioUnitario, subto
 INSERT INTO DetallePedido (pedidoID, productoID, cantidad, precioUnitario, subtotal) VALUES (9883, 9883, 14, 79.99, 1119.86);
 INSERT INTO DetallePedido (pedidoID, productoID, cantidad, precioUnitario, subtotal) VALUES (9884, 9884, 1, 79.99, 79.99);
 INSERT INTO DetallePedido (pedidoID, productoID, cantidad, precioUnitario, subtotal) VALUES (9885, 9885, 1, 79.99, 79.99);
+
+
+SELECT COUNT(*) AS TotalDetallePedido FROM DetallePedido;
+SELECT * FROM DetallePedido ORDER BY pedidoID;
+GO

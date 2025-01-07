@@ -1,3 +1,6 @@
+USE DB_InventariosGlobal;
+GO
+
 INSERT INTO Usuario (usuarioID, nombre, apellido, email, telefono, regionID) VALUES (100030226, 'Leslie', 'Chalk', 'lchalkog@senate.gov', '531-922-3031', 1881);
 INSERT INTO Usuario (usuarioID, nombre, apellido, email, telefono, regionID) VALUES (100200685, 'Arlena', 'Gierok', 'agierok1@acquirethisname.com', '948-254-8387', 4002);
 INSERT INTO Usuario (usuarioID, nombre, apellido, email, telefono, regionID) VALUES (100257701, 'Frannie', 'Nairne', 'fnairnelz@hatena.ne.jp', '749-325-4532', 2792);
@@ -8057,3 +8060,7 @@ INSERT INTO Usuario (usuarioID, nombre, apellido, email, telefono, regionID) VAL
 INSERT INTO Usuario (usuarioID, nombre, apellido, email, telefono, regionID) VALUES (999804265, 'Frieda', 'Bartolic', 'fbartolicpf@miibeian.gov.cn', '616-768-6094', 9916);
 INSERT INTO Usuario (usuarioID, nombre, apellido, email, telefono, regionID) VALUES (999954691, 'Cesare', 'Povall', 'cpovalln6@symantec.com', '686-108-1287', 835);
 INSERT INTO Usuario (usuarioID, nombre, apellido, email, telefono, regionID) VALUES (999972793, 'Kati', 'Stedall', 'kstedallaa@blinklist.com', '276-852-9857', 371);
+
+SELECT COUNT(*) AS TotalUsuario FROM Usuario;
+SELECT * FROM Usuario ORDER BY regionID, usuarioID;
+GO

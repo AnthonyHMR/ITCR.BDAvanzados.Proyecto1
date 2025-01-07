@@ -1,3 +1,8 @@
+USE DB_InventariosGlobal;
+GO
+
+SET IDENTITY_INSERT dbo.Inventario ON;
+
 INSERT INTO Inventario (inventarioID, productoID, regionID, cantidad, ultimaActualizacion, estado) VALUES (281, 281, 281, 45, '2025-01-06 23:31:15.550', 'Disponible');
 INSERT INTO Inventario (inventarioID, productoID, regionID, cantidad, ultimaActualizacion, estado) VALUES (282, 282, 282, 50, '2025-01-06 23:31:15.550', 'Disponible');
 INSERT INTO Inventario (inventarioID, productoID, regionID, cantidad, ultimaActualizacion, estado) VALUES (283, 283, 283, 20, '2025-01-06 23:31:15.550', 'Disponible');
@@ -7256,3 +7261,9 @@ INSERT INTO Inventario (inventarioID, productoID, regionID, cantidad, ultimaActu
 INSERT INTO Inventario (inventarioID, productoID, regionID, cantidad, ultimaActualizacion, estado) VALUES (10011, 9997, 739, 55, '2025-01-06 23:31:15.777', 'Disponible');
 INSERT INTO Inventario (inventarioID, productoID, regionID, cantidad, ultimaActualizacion, estado) VALUES (10012, 9998, 942, 45, '2025-01-06 23:31:15.777', 'Disponible');
 INSERT INTO Inventario (inventarioID, productoID, regionID, cantidad, ultimaActualizacion, estado) VALUES (10013, 9999, 414, 50, '2025-01-06 23:31:15.777', 'Disponible');
+
+SET IDENTITY_INSERT dbo.Inventario OFF;
+
+SELECT COUNT(*) AS TotalInventario FROM Inventario;
+SELECT * FROM Inventario ORDER BY productoID, cantidad;
+GO

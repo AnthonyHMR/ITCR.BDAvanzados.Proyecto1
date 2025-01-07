@@ -1,3 +1,8 @@
+USE DB_InventariosGlobal;
+GO
+
+SET IDENTITY_INSERT dbo.Region ON;
+
 INSERT INTO dbo.Region (regionID, nombre, pais, zonaHoraria) VALUES (1, 'Ciudad Autónoma de Buenos Aires', 'Argentina', 'UTC-3');
 INSERT INTO dbo.Region (regionID, nombre, pais, zonaHoraria) VALUES (2, 'La Plata', 'Argentina', 'UTC-3');
 INSERT INTO dbo.Region (regionID, nombre, pais, zonaHoraria) VALUES (3, 'Mar del Plata', 'Argentina', 'UTC-3');
@@ -1994,3 +1999,13 @@ INSERT INTO dbo.Region (regionID, nombre, pais, zonaHoraria) VALUES (9882, 'Miah
 INSERT INTO dbo.Region (regionID, nombre, pais, zonaHoraria) VALUES (9883, 'Tlaxiaco', 'México', 'UTC-6');
 INSERT INTO dbo.Region (regionID, nombre, pais, zonaHoraria) VALUES (9884, 'San Pedro Mixtepec', 'México', 'UTC-6');
 INSERT INTO dbo.Region (regionID, nombre, pais, zonaHoraria) VALUES (9885, 'Santa Cruz Xoxocotlán', 'México', 'UTC-6');
+
+SET IDENTITY_INSERT dbo.Region OFF;
+
+SELECT COUNT(*) AS TotalRegiones FROM Region;
+SELECT * FROM Region ORDER BY regionID, pais, nombre;
+GO
+
+SELECT DISTINCT pais 
+FROM Region
+ORDER BY pais; 

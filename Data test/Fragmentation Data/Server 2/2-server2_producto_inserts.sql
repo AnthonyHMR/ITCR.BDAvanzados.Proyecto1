@@ -1,3 +1,8 @@
+USE DB_InventariosGlobal;
+GO
+
+SET IDENTITY_INSERT dbo.Producto ON;
+
 INSERT INTO Producto (productoID, nombre, precio, categoria, descripcion, stockMinimo, activo) VALUES (281, 'Top Deportivo con Escote Redondo Nike', 34.90, 'Ropa', 'Top para actividades deportivas.', 5, 1);
 INSERT INTO Producto (productoID, nombre, precio, categoria, descripcion, stockMinimo, activo) VALUES (282, 'Camiseta Básica de Manga Larga Uniqlo', 19.90, 'Ropa', 'Camiseta lisa de manga larga.', 6, 1);
 INSERT INTO Producto (productoID, nombre, precio, categoria, descripcion, stockMinimo, activo) VALUES (283, 'Top con Escote en Espalda Bershka', 29.90, 'Ropa', 'Top moderno con escote en la espalda.', 3, 1);
@@ -7248,3 +7253,9 @@ INSERT INTO Producto (productoID, nombre, precio, categoria, descripcion, stockM
 INSERT INTO Producto (productoID, nombre, precio, categoria, descripcion, stockMinimo, activo) VALUES (9997, 'Camiseta de Fútbol FC Zürich Home 2023/24', 89.99, 'Camisetas de Fútbol', 'Camiseta oficial del FC Zürich para la temporada 2023/24.', 20, 1);
 INSERT INTO Producto (productoID, nombre, precio, categoria, descripcion, stockMinimo, activo) VALUES (9998, 'Camiseta de Fútbol Basel Away 2023/24', 89.99, 'Camisetas de Fútbol', 'Camiseta de visitante del Basel para la temporada 2023/24.', 20, 1);
 INSERT INTO Producto (productoID, nombre, precio, categoria, descripcion, stockMinimo, activo) VALUES (9999, 'Camiseta de Fútbol Young Boys Third 2023/24', 89.99, 'Camisetas de Fútbol', 'Tercera camiseta del Young Boys para la temporada 2023/24.', 20, 1);
+
+SET IDENTITY_INSERT dbo.Producto OFF;
+
+SELECT COUNT(*) AS TotalProductos FROM Producto;
+SELECT * FROM Producto ORDER BY productoID, nombre, precio;
+GO
