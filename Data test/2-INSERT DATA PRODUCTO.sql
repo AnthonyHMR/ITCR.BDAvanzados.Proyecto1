@@ -10173,5 +10173,5 @@ VALUES
 ('Camiseta de Fútbol LA Galaxy Home 2023/24', 89.99, 'Camisetas de Fútbol', 'Camiseta oficial del LA Galaxy para la temporada 2023/24.', 20, 1);
 
 SELECT COUNT(*) AS TotalProductos FROM Producto;
-SELECT * FROM Producto ORDER BY nombre, precio;
+SELECT * FROM Producto ORDER BY productoID, nombre, precio;
 GO

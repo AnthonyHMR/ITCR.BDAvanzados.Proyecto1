@@ -69,9 +69,10 @@ GO
 USE master;
 GO
 
-/*
-   5) Eliminar la base de datos
-*/
-PRINT 'Eliminando la base de datos DB_InventariosGlobal...';
+-- Forzar cierre de conexiones
+ALTER DATABASE DB_InventariosGlobal SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
+GO
+
+-- Eliminar la base de datos
 DROP DATABASE DB_InventariosGlobal;
 GO
