@@ -1,3 +1,13 @@
+/*
+Procedimiento almacenado que recupera información detallada de un usuario específico.
+Consolida datos de usuario desde dos fuentes diferentes (local y LAY), retornando los detalles 
+personales y de contacto del usuario incluyendo su ID, nombre completo, email, teléfono y región asignada.
+
+Parámetros:
+    @usuarioID VARCHAR(9) - Identificador único del usuario que se desea consultar.
+                           Debe ser un ID válido existente en la base de datos.
+*/
+
 USE DB_InventariosGlobal;
 GO
 CREATE OR ALTER PROC SP_002_UserInformation

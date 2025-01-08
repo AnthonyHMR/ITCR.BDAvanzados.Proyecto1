@@ -1,4 +1,27 @@
--- VERSIÓN OPTIMIZADA
+/*
+Procedimiento almacenado optimizado para actualizar información de productos que implementa 
+las mejores prácticas de rendimiento y manejo de errores. Características principales:
+
+- Manejo de transacciones para garantizar la integridad de datos
+- Control de concurrencia mediante ROWLOCK
+- Validaciones eficientes en bloque
+- Optimización de actualizaciones verificando cambios reales
+- Manejo robusto de errores mediante TRY-CATCH
+- Conteo de actualizaciones para verificar efectividad
+- SET NOCOUNT ON para reducir tráfico de red
+
+Parámetros:
+    @productoID INT           - ID del producto a actualizar (requerido)
+    @nombre VARCHAR(100)      - Nuevo nombre del producto
+    @precio DECIMAL(10,2)     - Nuevo precio (debe ser mayor que 0)
+    @categoria VARCHAR(50)    - Nueva categoría del producto
+    @descripcion VARCHAR(250) - Nueva descripción del producto
+    @stockMinimo INT         - Nuevo valor de stock mínimo (no puede ser negativo)
+    @activo BIT              - Nuevo estado de activación del producto
+
+Retorna mensaje de éxito o detalles del error en caso de fallo.
+*/
+
 USE DB_InventariosGlobal;
 GO
 CREATE OR ALTER PROC SP_007_UpdateProduct_Optimizado

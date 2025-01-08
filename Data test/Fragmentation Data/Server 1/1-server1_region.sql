@@ -1,3 +1,25 @@
+/*
+Script de Inserción de Datos - Tabla Region
+Base de datos: DB_InventariosGlobal
+
+Descripción:
+Este script inicializa los registros de regiones geográficas en el sistema, 
+específicamente para localidades en Australia. Se habilita la inserción de 
+identidad explícita para mantener consistencia en los IDs de región.
+
+Campos incluidos:
+- regionID: Identificador único de la región
+- nombre: Nombre de la ciudad o localidad
+- pais: País al que pertenece la región
+- zonaHoraria: Zona horaria en formato UTC
+
+Notas:
+- Todas las regiones incluidas pertenecen a Australia
+- La zona horaria está estandarizada en UTC+10 para todas las localidades
+- Los IDs de región siguen una secuencia específica comenzando en 281
+
+*/
+
 USE DB_InventariosGlobal;
 GO
 

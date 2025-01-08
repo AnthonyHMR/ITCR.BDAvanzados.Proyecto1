@@ -1,3 +1,26 @@
+/*
+Script de Inserción de Datos - Tabla Usuario
+Base de datos: DB_InventariosGlobal
+
+Descripción:
+Este script realiza la inserción de registros de usuarios en la tabla 'Usuario' del sistema.
+Los datos incluyen información personal y de contacto de los usuarios, junto con su
+asociación a regiones específicas mediante el regionID.
+
+Campos incluidos:
+- usuarioID: Identificador único del usuario (formato: 9 dígitos)
+- nombre: Nombre del usuario
+- apellido: Apellido del usuario
+- email: Dirección de correo electrónico
+- telefono: Número telefónico de contacto
+- regionID: Identificador de la región asociada al usuario
+
+Nota: Los IDs de usuario siguen un formato específico comenzando con '10'
+seguido de 7 dígitos adicionales.
+
+*/
+
+
 USE DB_InventariosGlobal;
 GO
 

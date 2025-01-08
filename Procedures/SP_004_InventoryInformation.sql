@@ -1,3 +1,14 @@
+/*
+Procedimiento almacenado que recupera información consolidada del inventario según su estado.
+Combina registros de inventario desde dos fuentes diferentes (local y LAY) y retorna detalles 
+completos incluyendo IDs de inventario, producto y región, cantidad, fecha de última actualización 
+y estado. Los resultados se ordenan por ID de inventario.
+
+Parámetros:
+    @estado VARCHAR(50) = 'Disponible' - Estado del inventario a consultar.
+                                        'Disponible' es el valor predeterminado.
+*/
+
 USE DB_InventariosGlobal;
 GO
 CREATE OR ALTER PROC SP_004_InventoryInformation

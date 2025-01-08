@@ -1,3 +1,14 @@
+/*
+Procedimiento almacenado que recupera información de todos los usuarios pertenecientes a un país específico.
+Consolida datos desde dos fuentes diferentes (local y LAY), realizando un join entre las tablas Usuario y Region 
+para obtener información detallada de los usuarios incluyendo sus datos personales y la región/país al que pertenecen.
+Los resultados se ordenan por ID de usuario.
+
+Parámetros:
+    @pais VARCHAR(50) = 'México' - País del cual se desea obtener la información de usuarios. 
+                                  México es el valor predeterminado.
+*/
+
 USE DB_InventariosGlobal;
 GO
 CREATE OR ALTER PROC SP_003_UserInformationRegion

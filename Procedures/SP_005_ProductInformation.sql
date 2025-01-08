@@ -1,3 +1,14 @@
+/*
+Procedimiento almacenado que recupera información de todos los productos activos de una categoría específica.
+Consolida datos desde dos fuentes diferentes (local y LAY) y retorna detalles completos de los productos 
+incluyendo ID, nombre, precio, categoría, descripción y stock mínimo. Los resultados se ordenan por ID 
+de producto y solo incluyen productos que están marcados como activos.
+
+Parámetros:
+    @categoria VARCHAR(50) = 'Ropa de Baño' - Categoría de productos a consultar.
+                                             'Ropa de Baño' es el valor predeterminado.
+*/
+
 USE DB_InventariosGlobal;
 GO
 CREATE OR ALTER PROC SP_005_ProductInformation

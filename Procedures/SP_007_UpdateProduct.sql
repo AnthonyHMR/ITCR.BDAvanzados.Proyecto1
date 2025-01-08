@@ -1,3 +1,26 @@
+/*
+Procedimiento almacenado que actualiza la información de un producto específico en ambas bases de datos 
+(local y LAY). Permite la actualización parcial o completa de los atributos del producto y realiza 
+validaciones de datos antes de efectuar los cambios.
+
+Parámetros:
+    @productoID INT           - ID del producto a actualizar (requerido)
+    @nombre VARCHAR(100)      - Nuevo nombre del producto
+    @precio DECIMAL(10,2)     - Nuevo precio (debe ser mayor que 0)
+    @categoria VARCHAR(50)    - Nueva categoría del producto
+    @descripcion VARCHAR(250) - Nueva descripción del producto
+    @stockMinimo INT         - Nuevo valor de stock mínimo (no puede ser negativo)
+    @activo BIT              - Nuevo estado de activación del producto
+
+Validaciones:
+    - Verifica que el precio sea mayor que 0
+    - Verifica que el stock mínimo no sea negativo
+    - Verifica que el nombre no esté vacío
+    - Verifica la existencia del producto en ambas bases de datos
+
+Retorna un mensaje de éxito si la actualización se realiza correctamente o un error si las validaciones fallan.
+*/
+
 USE DB_InventariosGlobal;
 GO
 CREATE OR ALTER PROC SP_007_UpdateProduct

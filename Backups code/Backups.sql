@@ -1,3 +1,25 @@
+/*
+Script de respaldo y restauración para la base de datos DB_InventariosGlobal.
+Implementa un respaldo completo (full backup) con nomenclatura de archivo por fecha/hora
+y su correspondiente proceso de restauración.
+
+Funcionalidad del respaldo:
+- Genera nombre de archivo con timestamp para identificación única
+- Realiza respaldo completo de la base de datos
+- Guarda el archivo .bak en la ruta C:\DB
+- Muestra estadísticas del progreso cada 10%
+
+Funcionalidad de la restauración:
+- Pone la base de datos en modo usuario único
+- Restaura desde el archivo de respaldo especificado 
+- Reubica los archivos .mdf y .ldf a las rutas definidas
+- Permite sobrescribir si existe (REPLACE)
+- Restaura con recuperación completa
+- Devuelve la base de datos a modo multiusuario
+
+IMPORTANTE: Ajustar las rutas y nombre del archivo de respaldo según el entorno.
+*/
+
 -- RESPALDO FULL
 DECLARE @FechaHora NVARCHAR(20)
 SET @FechaHora = FORMAT(GETDATE(), 'yyyyMMdd_HHmmss')
@@ -31,6 +53,30 @@ GO
 
 ------------------------------------------------------------------------------------
 
+/*
+Script de respaldo diferencial y restauración para la base de datos DB_InventariosGlobal.
+El respaldo diferencial guarda solo los cambios realizados desde el último respaldo completo,
+resultando en archivos más pequeños y tiempos de respaldo más cortos.
+
+Funcionalidad del respaldo diferencial:
+- Genera nombre de archivo con timestamp y extensión .dif
+- Realiza respaldo diferencial usando WITH DIFFERENTIAL
+- Guarda el archivo en la ruta C:\DB
+- Muestra estadísticas del progreso cada 10%
+- Usa SKIP, NOREWIND y NOUNLOAD para optimizar el proceso
+
+Funcionalidad de la restauración:
+- Restaura desde el archivo diferencial especificado
+- Reubica los archivos .mdf y .ldf a las rutas definidas 
+- Permite sobrescribir si existe (REPLACE)
+- Restaura con recuperación completa
+
+IMPORTANTE: 
+- Se requiere un respaldo completo previo
+- Ajustar las rutas y nombre del archivo según el entorno
+- La restauración diferencial debe realizarse después de restaurar el respaldo completo base
+*/
+
 -- RESPALDO DIFERENCIAL
 DECLARE @BackupFileName NVARCHAR(MAX);
 SET @BackupFileName = 'C:\DB\DB_InventariosGlobal_' 
@@ -54,6 +100,32 @@ WITH MOVE 'DB_InventariosGlobal' TO 'C:\DB\DB_InventariosGlobal.mdf',
 GO
 
 ------------------------------------------------------------------------------------
+
+/*
+Script de respaldo y restauración del registro de transacciones (log) para la base de datos DB_InventariosGlobal.
+El respaldo transaccional captura la secuencia de cambios en el registro de transacciones desde el último respaldo,
+permitiendo recuperar la base de datos a un punto específico en el tiempo.
+
+Funcionalidad del respaldo transaccional:
+- Genera nombre de archivo con timestamp y extensión .trn
+- Realiza respaldo del log usando BACKUP LOG
+- Guarda el archivo en la ruta C:\DB
+- Muestra estadísticas del progreso cada 10%
+- Usa SKIP, NOREWIND y NOUNLOAD para optimizar el proceso
+
+Funcionalidad de la restauración:
+- Restaura desde el archivo de log especificado
+- Reubica los archivos .mdf y .ldf a las rutas definidas
+- Permite sobrescribir si existe (REPLACE)
+- Restaura con recuperación completa
+
+IMPORTANTE:
+- Requiere que la base de datos esté en modo de recuperación FULL
+- Se requiere un respaldo completo previo
+- La restauración debe realizarse en secuencia: full -> diferencial -> logs
+- Ajustar las rutas y nombre del archivo según el entorno
+- El respaldo de logs es crucial para la recuperación punto en el tiempo
+*/
 
 -- RESPALDO TRANSACIONAL
 DECLARE @BackupFileName NVARCHAR(MAX);

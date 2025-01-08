@@ -1,3 +1,26 @@
+/*
+Script de Inserción de Datos - Tabla Inventario
+Base de datos: DB_InventariosGlobal
+
+Descripción:
+Este script inicializa los registros de inventario, estableciendo la relación entre productos
+y regiones con sus respectivas cantidades en stock. Se habilita la inserción de identidad
+explícita para mantener consistencia en los IDs de inventario.
+
+Campos incluidos:
+- inventarioID: Identificador único del registro de inventario
+- productoID: Identificador del producto referenciado
+- regionID: Identificador de la región donde se encuentra el inventario
+- cantidad: Cantidad actual del producto en stock
+- ultimaActualizacion: Timestamp de la última modificación del registro
+- estado: Estado actual del inventario (ej: 'Disponible')
+
+Nota: Las fechas de última actualización están en formato 'YYYY-MM-DD HH:MM:SS.MSS'
+y todos los registros iniciales se establecen con estado 'Disponible'.
+
+*/
+
+
 USE DB_InventariosGlobal;
 GO
 

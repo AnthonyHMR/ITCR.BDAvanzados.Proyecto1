@@ -1,3 +1,27 @@
+/*
+Script de Inserción de Datos - Tabla Pedido
+Base de datos: DB_InventariosGlobal
+
+Descripción:
+Este script inicializa los registros de pedidos en el sistema, vinculando usuarios
+y regiones con sus respectivas órdenes. Se habilita la inserción de identidad
+explícita para mantener consistencia en los IDs de pedidos.
+
+Campos incluidos:
+- pedidoID: Identificador único del pedido
+- regionID: Identificador de la región donde se realiza el pedido
+- usuarioID: Identificador del usuario que realiza el pedido
+- fecha: Fecha y hora de creación del pedido
+- estado: Estado actual del pedido ('Pendiente', 'EnProceso', 'Completado')
+- total: Monto total del pedido
+
+Notas:
+- Las fechas se convierten explícitamente usando CONVERT con el estilo 120 (ODBC canónico)
+- Los estados posibles son: 'Pendiente', 'EnProceso', 'Completado'
+- Los totales se registran con dos decimales
+
+*/
+
 USE DB_InventariosGlobal;
 GO
 

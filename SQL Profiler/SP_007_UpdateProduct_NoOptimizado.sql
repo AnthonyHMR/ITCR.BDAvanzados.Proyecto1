@@ -1,4 +1,27 @@
--- VERSIÓN NO OPTIMIZADA
+/*
+AVISO: Esta es una versión no optimizada del SP_007_UpdateProduct. Se mantiene como ejemplo 
+de prácticas NO recomendadas en el desarrollo de procedimientos almacenados.
+
+Procedimiento almacenado que actualiza información de productos con las siguientes deficiencias:
+- Validaciones redundantes y verbosas
+- Verificaciones de existencia ineficientes usando COUNT
+- Sin manejo de transacciones
+- Uso de CASE innecesario en lugar de ISNULL
+- Actualizaciones separadas sin verificación de cambios reales
+- Consultas repetitivas a las bases de datos
+
+Parámetros:
+    @productoID INT           - ID del producto a actualizar (requerido)
+    @nombre VARCHAR(100)      - Nuevo nombre del producto
+    @precio DECIMAL(10,2)     - Nuevo precio (debe ser mayor que 0)
+    @categoria VARCHAR(50)    - Nueva categoría del producto
+    @descripcion VARCHAR(250) - Nueva descripción del producto
+    @stockMinimo INT         - Nuevo valor de stock mínimo (no puede ser negativo)
+    @activo BIT              - Nuevo estado de activación del producto
+
+Usar preferentemente la versión optimizada SP_007_UpdateProduct en su lugar.
+*/
+
 USE DB_InventariosGlobal;
 GO
 CREATE OR ALTER PROC SP_007_UpdateProduct_NoOptimizado

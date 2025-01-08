@@ -1,3 +1,13 @@
+/*
+Procedimiento almacenado que recupera información consolidada de regiones para un país específico.
+Combina datos de regiones desde dos fuentes diferentes (local y LAY) y permite filtrar por país.
+Los datos retornados incluyen el ID de región, nombre, país y zona horaria.
+
+Parámetros:
+    @pais VARCHAR(50) = 'México' - País del cual se desea obtener la información regional. 
+                                  México es el valor predeterminado.
+*/
+
 USE DB_InventariosGlobal;
 GO
 
