@@ -1,6 +1,8 @@
 USE DB_InventariosGlobal;
 GO
 
+SELECT * FROM Inventario
+
 BEGIN TRANSACTION invent
 
 UPDATE Inventario
