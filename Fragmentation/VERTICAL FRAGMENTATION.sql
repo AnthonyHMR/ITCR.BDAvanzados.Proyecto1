@@ -1,25 +1,24 @@
+CREATE DATABASE DB_DatosSensibles;
+GO
+
 USE DB_InventariosGlobal;
 GO
 
 -------------------------------------------------------------------------------
 -- Crear tabla para datos sensibles de Usuario
 -------------------------------------------------------------------------------
-EXEC sp_serveroption @server = 'TONY', @optname = 'rpc', @optvalue = 'true';
-
-EXEC sp_serveroption @server = 'TONY', @optname = 'rpc out', @optvalue = 'true';
-
-EXEC ('CREATE TABLE DB_DatosSensibles.dbo.Usuario (
+CREATE TABLE DB_DatosSensibles.dbo.Usuario (
     usuarioID   VARCHAR(9) NOT NULL,
     email       VARCHAR(100) NOT NULL,
     telefono    VARCHAR(20),
 
     CONSTRAINT PK_UsuarioSensible
         PRIMARY KEY (usuarioID)
-);') AT [TONY];
+);
 GO
 
 -- Migrar datos sensibles de la tabla original
-INSERT INTO [TONY].DB_DatosSensibles.dbo.Usuario (usuarioID, email, telefono)
+INSERT INTO DB_DatosSensibles.dbo.Usuario (usuarioID, email, telefono)
 SELECT usuarioID, email, telefono
 FROM Usuario;
 
@@ -32,13 +31,13 @@ DROP COLUMN email, telefono;
 
 -- Confirmar fragmentacion de las tablas
 SELECT * FROM Usuario;
-SELECT * FROM [TONY].DB_DatosSensibles.dbo.Usuario;
+SELECT * FROM DB_DatosSensibles.dbo.Usuario;
 
 
 -------------------------------------------------------------------------------
 -- Crear tabla para datos sensibles de DetallePedido
 -------------------------------------------------------------------------------
-EXEC ('CREATE TABLE DB_DatosSensibles.dbo.DetallePedido (
+CREATE TABLE DB_DatosSensibles.dbo.DetallePedido (
     pedidoID       INT            NOT NULL,
     productoID     INT            NOT NULL,
     cantidad       INT            NOT NULL DEFAULT 1,
@@ -56,11 +55,11 @@ EXEC ('CREATE TABLE DB_DatosSensibles.dbo.DetallePedido (
 
     CONSTRAINT CK_DetallePedido_SubtotalPositivo
         CHECK (subtotal >= 0)
-);') AT [TONY];
+);
 GO
 
 -- Migrar datos sensibles de la tabla original
-INSERT INTO [TONY].DB_DatosSensibles.dbo.DetallePedido (pedidoID, productoID, cantidad, precioUnitario, subtotal)
+INSERT INTO DB_DatosSensibles.dbo.DetallePedido (pedidoID, productoID, cantidad, precioUnitario, subtotal)
 SELECT pedidoID, productoID, cantidad, precioUnitario, subtotal
 FROM DetallePedido;
 
@@ -73,14 +72,14 @@ DROP COLUMN cantidad, precioUnitario, subtotal;
 
 -- Confirmar fragmentacion de las tablas
 SELECT * FROM DetallePedido;
-SELECT * FROM [TONY].DB_DatosSensibles.dbo.DetallePedido;
+SELECT * FROM DB_DatosSensibles.dbo.DetallePedido;
 
 
 -------------------------------------------------------------------------------
 -- Crear tabla para datos sensibles de Inventario
 -------------------------------------------------------------------------------
-EXEC ('CREATE TABLE DB_DatosSensibles.dbo.Inventario (
-    inventarioID        INT            IDENTITY(1,1) NOT NULL,
+CREATE TABLE DB_DatosSensibles.dbo.Inventario (
+    inventarioID        INT            NOT NULL,
     cantidad            INT            NOT NULL DEFAULT 0,
     ultimaActualizacion DATETIME       NOT NULL DEFAULT GETDATE(),
 	
@@ -89,11 +88,11 @@ EXEC ('CREATE TABLE DB_DatosSensibles.dbo.Inventario (
 		
     CONSTRAINT CK_Inventario_CantidadNoNegativa
         CHECK (cantidad >= 0)
-);') AT [TONY];
+);
 GO
 
 -- Migrar datos sensibles de la tabla original
-INSERT INTO [TONY].DB_DatosSensibles.dbo.Inventario (inventarioID, cantidad, ultimaActualizacion)
+INSERT INTO DB_DatosSensibles.dbo.Inventario (inventarioID, cantidad, ultimaActualizacion)
 SELECT inventarioID, cantidad, ultimaActualizacion
 FROM Inventario;
 
@@ -106,4 +105,4 @@ DROP COLUMN cantidad, ultimaActualizacion;
 
 -- Confirmar fragmentacion de las tablas
 SELECT * FROM Inventario;
-SELECT * FROM [TONY].DB_DatosSensibles.dbo.Inventario;
+SELECT * FROM DB_DatosSensibles.dbo.Inventario;

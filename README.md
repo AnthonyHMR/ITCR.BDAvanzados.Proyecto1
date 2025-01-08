@@ -18,15 +18,6 @@ Este proyecto consiste en el diseño, desarrollo e implementación de una **base
 
 
 
-Region
-Producto
-
-Usuario
-Inventario
-Pedido
-
-DetallePedido
-
 # Desarrolladores
 
 * **Anthony Montero** - [AnthonyHMR](https://github.com/issolis)

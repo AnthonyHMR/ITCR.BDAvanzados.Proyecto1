@@ -13,8 +13,9 @@ SELECT
     us.email,
     us.telefono
 FROM Usuario u
-LEFT JOIN [TONY].DB_DatosSensibles.dbo.Usuario us
+LEFT JOIN DB_DatosSensibles.dbo.Usuario us
     ON u.usuarioID = us.usuarioID;
+GO
 
 -------------------------------------------------------------------------------
 -- Vista para unificar los datos de DetallePedido y DetallePedido sensible
@@ -27,9 +28,9 @@ SELECT
     dps.precioUnitario,
     dps.subtotal
 FROM DetallePedido dp
-LEFT JOIN [TONY].DB_DatosSensibles.dbo.DetallePedido dps
+LEFT JOIN DB_DatosSensibles.dbo.DetallePedido dps
     ON dp.pedidoID = dps.pedidoID;
-
+GO
 -------------------------------------------------------------------------------
 -- Vista para unificar los datos de Inventario y Inventario sensible
 -------------------------------------------------------------------------------
@@ -42,5 +43,6 @@ SELECT
     invs.cantidad,
     invs.ultimaActualizacion
 FROM Inventario inv
-LEFT JOIN [TONY].DB_DatosSensibles.dbo.Inventario invs
+LEFT JOIN DB_DatosSensibles.dbo.Inventario invs
     ON inv.inventarioID = invs.inventarioID;
+GO
