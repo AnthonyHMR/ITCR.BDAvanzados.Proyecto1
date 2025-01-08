@@ -1,3 +1,24 @@
+/*
+Script de Inserción de Datos - Tabla DetallePedido
+Base de datos: DB_InventariosGlobal
+
+Descripción:
+Este script registra los detalles específicos de cada pedido, incluyendo los productos
+individuales, cantidades y cálculos de precios. La tabla DetallePedido funciona como
+una tabla de unión que relaciona los pedidos con sus productos correspondientes.
+
+Campos incluidos:
+- pedidoID: Identificador del pedido (llave foránea)
+- productoID: Identificador del producto (llave foránea)
+- cantidad: Número de unidades del producto
+- precioUnitario: Precio por unidad del producto al momento de la compra
+- subtotal: Resultado de cantidad * precioUnitario
+
+Nota: Los subtotales son calculados y almacenados con precisión de dos decimales,
+manteniendo consistencia con los precios unitarios y las cantidades especificadas.
+
+*/
+
 USE DB_InventariosGlobal;
 GO
 

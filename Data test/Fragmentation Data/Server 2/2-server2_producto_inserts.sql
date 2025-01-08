@@ -1,3 +1,24 @@
+/*
+Script de Inserción de Datos - Tabla Producto
+Base de datos: DB_InventariosGlobal
+
+Descripción:
+Este script realiza la inserción inicial de productos en la tabla 'Producto' del sistema de inventarios.
+Incluye la configuración de productos base con sus respectivos identificadores, precios, categorías
+y niveles mínimos de stock. Se habilita la inserción de identidad explícita para mantener
+consistencia en los IDs de productos.
+
+Campos incluidos:
+- productoID: Identificador único del producto
+- nombre: Nombre descriptivo del producto
+- precio: Precio unitario
+- categoria: Clasificación del producto
+- descripcion: Descripción detallada del producto
+- stockMinimo: Cantidad mínima requerida en inventario
+- activo: Estado del producto en el sistema (1=activo, 0=inactivo)
+
+*/
+
 USE DB_InventariosGlobal;
 GO
 
